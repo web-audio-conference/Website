@@ -8,7 +8,7 @@ module.exports = function(config) {
       input: 'src',
       output: 'dist'
     },
-    templateFormats: ['html', 'md', 'css'],
+    templateFormats: ['html', 'md', 'css', 'liquid'],
     htmlTemplateEngine: 'liquid',
     markdownTemplateEngine: 'liquid'
   };

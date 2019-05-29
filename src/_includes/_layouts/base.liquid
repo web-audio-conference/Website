@@ -5,14 +5,22 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
     <link href="/assets/css/style.css" rel="stylesheet" type="text/css"/>
-    <title>{{ settingss.siteName }}</title>
+    <title>
+      {{ settings.siteName }}
+      |
+      {{ title }}
+    </title>
   </head>
   <body>
-    <a href="/">Home Link!</a>
-    {{ content }}
 
-    {% for post in collection.posts %}
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    {% endfor %}
+    <header>
+      <nav>
+        <a href='/'>Home</a>
+        <a href='/about'>About</a>
+        <a href='/proceedings'>Proceedings</a>
+      </nav>
+    </header>
+
+    {{ content }}
   </body>
 </html>

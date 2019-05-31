@@ -2,25 +2,70 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
     <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
     <link href="/assets/css/style.css" rel="stylesheet" type="text/css"/>
     <title>
       {{ settings.siteName }}
       |
       {{ title }}
     </title>
+
   </head>
   <body>
 
     <header>
-      <nav>
-        <a href='/'>Home</a>
-        <a href='/about'>About</a>
-        <a href='/proceedings'>Proceedings</a>
+      <img alt="Responsive image" class="img-fluid" src="/assets/images/wac2019.png">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/">WAC</a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="mx-auto">
+            <ul class="navbar-nav">
+              <li {% if page.url == "/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+                <a class="nav-link" href="/">Home<span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li {% if page.url == "/about/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li {% if page.url == "/proceedings/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+                <a class="nav-link" href="/proceedings">Proceedings</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
-    {{ content }}
+    <main>
+      <div class="container-fluid">
+        <div class="row justify-content-md-center">
+          <div class="col-lg-6 text-center">
+            <h2>{{ title }}</h2>
+            <p>{{ content }}</p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="navbar fixed-bottom navbar-dark bg-dark">
+      <div class="navbar container-fluid text-light">
+        <div class="row mx-auto">
+          <div class="col-6">Copyright &copy;</div>
+
+          <div class="col-6">Contact:<a href="@gmail.com">@gmail.com</a>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>

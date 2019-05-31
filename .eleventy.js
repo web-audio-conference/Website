@@ -3,6 +3,8 @@ module.exports = function(config) {
     return collection.getFilteredByGlob('src/posts/*.md');
   });
 
+  config.addPassthroughCopy('src/assets');
+
   return {
     dir: {
       input: 'src',
@@ -10,6 +12,7 @@ module.exports = function(config) {
     },
     templateFormats: ['html', 'md', 'css', 'liquid'],
     htmlTemplateEngine: 'liquid',
-    markdownTemplateEngine: 'liquid'
+    markdownTemplateEngine: 'liquid',
+    passthroughFileCopy: true
   };
 };

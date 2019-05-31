@@ -15,34 +15,32 @@
   </head>
   <body>
 
-    <header>
-      <img alt="Responsive image" class="img-fluid" src="/assets/images/wac2019.png">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="/">WAC</a>
-        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <img alt="Responsive image" class="img-fluid" src="/assets/images/wac2019.png">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="/">WAC</a>
+      <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="mx-auto">
-            <ul class="navbar-nav">
-              <li {% if page.url == "/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-                <a class="nav-link" href="/">Home<span class="sr-only">(current)</span>
-                </a>
-              </li>
-              <li {% if page.url == "/about/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-                <a class="nav-link" href="/about">About</a>
-              </li>
-              <li {% if page.url == "/proceedings/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-                <a class="nav-link" href="/proceedings">Proceedings</a>
-              </li>
-            </ul>
-          </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="mx-auto">
+          <ul class="navbar-nav">
+            <li {% if page.url == "/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+              <a class="nav-link" href="/">Home<span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li {% if page.url == "/about/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+              <a class="nav-link" href="/about">About</a>
+            </li>
+            <li {% if page.url == "/proceedings/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+              <a class="nav-link" href="/proceedings">Proceedings</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
-    <main>
+    <main class="mb-5">
       <div class="container-fluid">
         <div class="row justify-content-md-center">
           <div class="col-lg-6 text-center">

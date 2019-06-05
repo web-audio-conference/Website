@@ -3,7 +3,7 @@ module.exports = function(config) {
     return collection.getFilteredByGlob('src/posts/*.md');
   });
 
-  config.addPassthroughCopy('src/assets');
+  config.addPassthroughCopy('src/assets');  // To pass through css, images and scripts to output folder (dist)
 
   return {
     dir: {

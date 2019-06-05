@@ -1,0 +1,8 @@
+.link {
+    color: rgb(0, 184, 230);
+    font-weight: 2px;
+}
+
+.link:hover {
+    color: rgb(2, 204, 255);
+}

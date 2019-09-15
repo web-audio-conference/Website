@@ -11,6 +11,7 @@ module.exports = function(config) {
   let jsonPath = 'src/_data/papers/json/';
   let title, abstract;
 
+  // Parsing excel sheet 1 and writing md files from it
   excel = path.join(excels, 'CameraReadyPapers2017.xls');
 
   excel2json(
@@ -24,16 +25,32 @@ module.exports = function(config) {
       if (err) {
         console.error(err);
       } else {
-        //console.log(result);
+        /*
         fs.writeFileSync(
           path.join(jsonPath, 'test.json'),
           JSON.parse(result),
-          'utf8'
-        );
+          'utf8');
+        */
+        console.log(result.length);
+        for (let x in result) {
+          fs.writeFileSync(
+            path.join(mdPath, `2017_${result[x]['Paper ID']}.md`),
+            '---\ntitle: "' +
+              result[x]['Paper Title'] +
+              '"' +
+              '\nabstract: "' +
+              result[x]['Abstract'] +
+              '"' +
+              '\ntags: ' +
+              'year2017' +
+              '\n---'
+          );
+        }
       }
     }
   );
 
+  // Parsing bibfiles and writing md files from it
   bibFiles = fs.readdirSync(bibs);
 
   bibFiles.forEach(function(file) {
@@ -41,12 +58,6 @@ module.exports = function(config) {
 
     let bib = fs.readFileSync(path.join(bibs, file), 'utf8');
     let parsed = bibtexParse.parse(bib);
-
-    /*     fs.writeFileSync(
-      path.join(jsons, newFileName + '.11tydata.json'),
-      JSON.stringify(parsed),
-      'utf8'
-    ); */
 
     title = parsed.entries[0].properties.title.value.slice(1, -1);
     if (title.includes('{\\&}')) {

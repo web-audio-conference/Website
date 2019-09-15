@@ -15,3 +15,9 @@ date: '2019-05-23'
 {% for post in collections.year2016 %}
 <a href="{{ post.url }}">{{ post.data.title }}</a>
 {% endfor %}
+
+# 2017
+
+{% for post in collections.year2017 %}
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+{% endfor %}

@@ -1,0 +1,242 @@
+[
+  {
+    "Files": "",
+    "Paper ID": "4",
+    "Paper Title": "Improvise musical ...Loops with others thanks to your Wi-Fi device’s Web browser",
+    "Abstract": "During a 15 to 30 minutes live performance, members of the audience are invited to trigger and modulate sounds with their mobile device’s Web browsers.\nThey are offered a preset musical theme (composed of several melodic/rhythmic patterns, synthesizer presets and audio samples). Performers may modify these patterns or presets, make new versions of these and thus create a new musical theme.\nDuring a collective live performance, players connected to the ...Loops system experience instrument switches so they may discover and play different musical parts (from drum samples and monophonic synthesizer step sequencers to touch keyboard triggered polyphonic synthesizers).\nNotes played by the connected crowd are displayed on a video projected screen.",
+    "Author Names": "Iwan Lavanant (...Loops - Collective Musical Jams)*",
+    "Author Emails": "loops@solam.co",
+    "Primary Contact Author Email": "loops@solam.co",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "open-band-audiotype.pdf (1432504 bytes)",
+    "Paper ID": "13",
+    "Paper Title": "Open band - Audio Type",
+    "Abstract": "Open Band, a platform for collective sound dialogues, is a performance that aims to experience the empowerment of public in musical context, blurring the limits of audience and performers. In this project we seek to create a web based open environment for people to play music together in a web agora, using web technologies to propose an anonymous open chat, where letters are converted to music. Instead of lone playing experience of the musician with his own instrument, we try to extend the power of individual action through a collective network. In this current version, we are working only with web audio synthesis, based on an idea of audio typography.",
+    "Author Names": "Ariane Stolfi (Universidade de São Paulo)*; Fabio Goródscy (Universidade de São Paulo); Mathieu Barthet (QMUL)",
+    "Author Emails": "arianestolfi@gmail.com; fabiogorodscy@gmail.com; m.barthet@qmul.ac.uk",
+    "Primary Contact Author Email": "arianestolfi@gmail.com",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "19",
+    "Paper Title": "Smartphony #1",
+    "Abstract": "This work is a continuation of my last year's performance \"Concert for Smartphones\". This time i'm going to dive deeper into spatialized sound synthesis. Main concepts and technical ideas of the performance: 1. network time synchronization for precise rhythmic patterns; 2. distributed diffusion of harmonics of complex tones; 3. different approaches to controlling the musical expression; 4. classical 4-part musical form based on contrasts. Performance duration: 12-18 min. Previous recordings of my audience participation performances are accessible at: https://www.youtube.com/watch?v=ivWLK6wnBdU&index=1&list=PL-R2oTCHob0TAGe3_cCWm2rHcVKxCyr3M.",
+    "Author Names": "Andrei Bundin (Herzen University)*",
+    "Author Emails": "iBundin@gmail.com",
+    "Primary Contact Author Email": "iBundin@gmail.com",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "21",
+    "Paper Title": "Synchronia",
+    "Abstract": "In search for new electronic instruments and fun interactive experiences, I'm developing a website in order to perform live dance music.\nThe page itself should be projected on the stage screen for visual and illumination purposes, of course, audio and images are synchronized.\nI want to implement some interaction via websockets so the audience can play along, but this is still work in progress...\nI’m using Web Midi so I can use my little Arturia keyboard to assign some knobs and buttons. For the audio, the amazing ToneJS library. For the canvas, it’s CreateJS and the rest divs and pieces are VanillaJS.",
+    "Author Names": "alfonso pardo (lalluvia)*",
+    "Author Emails": "alfonsofonso@gmail.com",
+    "Primary Contact Author Email": "alfonsofonso@gmail.com",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "23",
+    "Paper Title": "GridSound",
+    "Abstract": "The GridSound's DAW is a free open-source HTML5 Digital Audio Workstation based on the Web Audio API. Mix samples and create a composition directly in your modern browser. The project is currently in pre-alpha.",
+    "Author Names": "Thomas Tortorini (GridSound)*; Mélanie Ducani (GridSound)",
+    "Author Emails": "thomastortorini@gmail.com; melanieducani@gmail.com",
+    "Primary Contact Author Email": "thomastortorini@gmail.com",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "31",
+    "Paper Title": "Live JS",
+    "Abstract": "A completely live electronic music performance with visuals and lighting entirely powered by JavaScript.\n\nFollowing on from my submitted talk \"Is Web Audio ready for the stage/dancefloor\", I along with other members of Live JS (http://livejs.network) would like to demonstrate that it INDEED is ready!\n\nAt JSConf.asia, we were given the opportunity to take over the entire venue (including their massive lighting rig) and broadcast our pirate JavaScript signal to everyone for the after party! We'll be doing something similar at JSConf.eu in May (if all goes to plan).\n\nHere is a video of our JSConf.asia talk (30mins) and full improvised performance: https://youtu.be/s3fsRnFfyuo?t=2131\n\nMatt, Martin and Tim (possibly more of us, depending on who can come) will be dropping Web Audio powered samples, synthesisers, and looping using multiple midi controllers. We'll also be using JavaScript to drive a massive LED wall, realtime visuals and (if possible) moving head lighting via DMX.",
+    "Author Names": "Matt McKegg (Loop Drop)*; Martin Schuhfuss (Live JS); Tim Pietrusky (Live JS)",
+    "Author Emails": "matt@wetsand.co.nz; m.schuhfuss@gmail.com; timpietrusky@gmail.com",
+    "Primary Contact Author Email": "matt@wetsand.co.nz",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "33",
+    "Paper Title": "Smartphone Orchestra",
+    "Abstract": "The Smartphone Orchestra is an orchestra in which ten to thousands of smartphones are synchronised to potentially form the biggest orchestra in the world. An orchestra in which every participant's smartphone plays a unique part. An orchestra that can perform anywhere in the world. From contemporary music to a dance party. From supporting a singer-songwriter to an interactive theatrical piece; everything is possible.\n\nOur technology lets us synchronise thousands of smartphones in the browser and opens up numerous possibilities to tell stories or share experiences with mass audiences. It makes use of new technologies like Web Audio, Canvas, and WebSockets, and allows the user to simply go to a website with their WiFi or mobile connection and participate instantly. Compositions are made in Ableton Live and automatically converted into JavaScript code, allowing composers who might not be familiar with coding work with our system.",
+    "Author Names": "Hidde de Jong (Smartphone Orchestra)*",
+    "Author Emails": "hiddedejong0@gmail.com",
+    "Primary Contact Author Email": "hiddedejong0@gmail.com",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "WAC-2017-88-Fingers-final.pdf (416228 bytes)",
+    "Paper ID": "34",
+    "Paper Title": "88 Fingers",
+    "Abstract": "88 Fingers is a performance in which up to 88 players in the audience perform on an automatized piano (i.e. a YAMAHA Disklavier) via their mobile devices.\nThe piano is presented in the performance space as if it would be the instrument of a solo performer (e.g. on stage or in the center of the space). \nApart from the web-based system that allows the players to select a single key of the piano and to play it during the concert the concept of the performance does not impose any further constraints. \nThe performance is structured into two parts of 10 minutes separated by a discussion among the members of the audience of approximately 10 minutes.\nThe experience establishes a metaphor of a free and responsible society.",
+    "Author Names": "Norbert Schnell (Ircam)*; Benjamin Matuszewski (Ircam)",
+    "Author Emails": "Norbert.Schnell@ircam.fr; benjamin.matuszewski@ircam.fr",
+    "Primary Contact Author Email": "Norbert.Schnell@ircam.fr",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "35",
+    "Paper Title": "Drops #2",
+    "Abstract": "Drops #2 is a collective improvisation for an unlimited number of players who are partially co-located in a common space, partially connected remotely over the internet.\nThe players trigger sounds and interact through their mobile devices by touching the screen whereby the sounds played by each player are repeated by the devices of two other players.\nThe sound is played via the loudspeakers of the players' mobile devices.\nAround each player unfolds a complex entanglement of different layers of sound.\nThe player's sound is embedded into the polyphony generated by the players at immediate proximity as well as into the sound texture created by all players together.\nThe sound of the players' mobile devices is completed by an resonating low-pitch sound texture.\nThis sound texture is associated to the video projection of an earth globe that visualizes all drops at the geolocation position of their player.",
+    "Author Names": "Norbert Schnell (Ircam)*; Benjamin Matuszewski (Ircam)",
+    "Author Emails": "Norbert.Schnell@ircam.fr; benjamin.matuszewski@ircam.fr",
+    "Primary Contact Author Email": "Norbert.Schnell@ircam.fr",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "36",
+    "Paper Title": "Piano Phase Perpetuum",
+    "Abstract": "\"Piano Phase Perpetuum\" is a listening experience that rearranges the first section of Steve Reich's piece \"Piano Phase\" as an automatic performance for an unlimited number of low-latency mobile devices.\nThe participants, distributed over a performance space (e.g. the audience of a concert hall or a gallery space) hold up their mobile devices without further interacting with them.\nThe arrangement follows the original score of the piece in which two piano voices playing the same melodic figure of twelve 16th notes.\nSince one pianist regularly slightly increases the tempo, the figures shift in time creating a constantly evolving pattern. \nInstead of two pianists, the piece is played automatically by two groups of mobile devices.\nEach mobile device plays one note of the five pitch classes of the melodic figure using five piano samples so that the shifting patterns are create complex echoes and motion in space.\nA reasonable duration for the performance is between 10 and 15 minutes.",
+    "Author Names": "Benjamin Matuszewski (Ircam); Norbert Schnell (Ircam)*",
+    "Author Emails": "benjamin.matuszewski@ircam.fr; Norbert.Schnell@ircam.fr",
+    "Primary Contact Author Email": "Norbert.Schnell@ircam.fr",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "41",
+    "Paper Title": "-",
+    "Abstract": "-",
+    "Author Names": "Anna Terzaroli (Santa Cecilia Conservatory of Rome, Dept. of Composition and Conducting)*",
+    "Author Emails": "anna.giw@libero.it",
+    "Primary Contact Author Email": "anna.giw@libero.it",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "46",
+    "Paper Title": "GrainField",
+    "Abstract": "GrainField is a performance for solo performer and an unlimited number of players in the audience who participate through their mobile devices.\nIn this performance, the sound produced by the improvising performer (e.g. a percussionist, beatboxer or singer) is recorded via a microphone and sent in chunks of a few seconds round-robin to the mobile devices of the players.\nControlling a granular synthesis engine, the players perform with a segment of sound by tilting their mobile device.\nThe players' sounds change asynchronously and smoothly at different phases of the recording cycle of 10 to 30 seconds.\nThe resulting soundfield is perceived as a diffuse granular echo or resonance of the performer.\nThe performance is an exercise of collective improvisation that is nourished by the mutual listening of the solo performer and the players in the audience.\nThe duration of the performance is determined by the performer and typically lies between 10 and 20 minutes.",
+    "Author Names": "Benjamin Matuszewski (Ircam); Norbert Schnell (Ircam)*",
+    "Author Emails": "benjamin.matuszewski@ircam.fr; Norbert.Schnell@ircam.fr",
+    "Primary Contact Author Email": "Norbert.Schnell@ircam.fr",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "Ben Houge WAC Performance 2017 formatted, revised.pdf (129363 bytes)",
+    "Paper ID": "47",
+    "Paper Title": "Quiver, Pop, and Dissolve: Three Essays in Gastromorphology",
+    "Abstract": "The worlds of art and gastronomy have been colliding with increasing frequency in recent years. As artists are reconsidering the aesthetic potential of the chemical senses of taste and smell, chefs have been exploring the narrative and communicative potential of a meal. The Web Audio API represents a uniquely portable and scalable solution to the challenges of synchronizing sound to a dining experience. \n\nWorking in collaboration with a well-regarded London-based chef, we propose a multisensory performance actuated by the audience members themselves. Three small dishes will be distributed to audience members in succession. Each dish will be accompanied by music from a custom-built web app using the Web Audio API, played from audience members’ mobile devices.",
+    "Author Names": "Ben Houge (Berklee College of Music)*",
+    "Author Emails": "bhouge@berklee.edu",
+    "Primary Contact Author Email": "bhouge@berklee.edu",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "Ehsan Ziya - Apophenia Camera Ready.pdf (1738336 bytes)",
+    "Paper ID": "50",
+    "Paper Title": "Apophenia",
+    "Abstract": "Apophenia is an interactive music piece that sets out to explore ways to achieve a balance between artistic narration and interactivity in a generative music system. The piece is delivered as an interactive musical system that heavily utilises the Web Audio API for real-time sound synthesis, sampling and audio processing.\n\nUsers are initially presented with a set of points where each points represents a note. The user can use the mouse to hover over multiple notes to generate chords and trigger melodies by clicking. The piece progresses as the user finds special connections between the notes. These special connections will reveal a visual pattern and eventually the user will discover a new dimension in the piece. \n\nApophenia: http://zya.github.io/apophenia",
+    "Author Names": "Ehsan Ziya (Freelance)*",
+    "Author Emails": "ehsan.ziya@gmail.com",
+    "Primary Contact Author Email": "ehsan.ziya@gmail.com",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "53",
+    "Paper Title": "FutureCollider: Generative Sonification of Large Hadron Collider data using Tone.JS",
+    "Abstract": "FutureCollider is an interactive sonification of particle collisions in the Large Hadron Collider.\nThe dataset consists of predictions of particle identity, trajectory, momentum and energy, generated by running an unsupervised learning algorithm on a dataset from the CERN Open Data Portal. As these collisions have not occurred yet, the listener is exploring a sonification of future particle collisions.\nThe vertical scroll position affects the timbre, tempo and progress of the music, transforming a gesture associated with passive information consumption into active musical engagement.\nThe audio itself is triggered and synthesised using Tone.js, a Web Audio framework, allowing every part of the audio to vary in response to the user’s input.",
+    "Author Names": "Nontokozo Sihwa (Goldsmiths College)*",
+    "Author Emails": "nsihw001@gold.ac.uk",
+    "Primary Contact Author Email": "nsihw001@gold.ac.uk",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "webbyjam_58.doc (110592 bytes); webbyjam_58.pdf (236794 bytes); 58_webbyjam_58_CENTRED_AUHTOR-DELETED_PAGE.pdf (240972 bytes)",
+    "Paper ID": "58",
+    "Paper Title": "WebbyJam, a Web Tune Editor to Find Enjoyment",
+    "Abstract": "This paper describes the functions, concept and technical points of WebbyJam.",
+    "Author Names": "Hiroyuki Takakura (CodeNinth)*",
+    "Author Emails": "takakura@codeninth.com",
+    "Primary Contact Author Email": "takakura@codeninth.com",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "64",
+    "Paper Title": "Live Coding YouTube",
+    "Abstract": "Music listening has changed greatly with the emergence of music streaming services, such as Spotify or Youtube. However, did it inspire us to make new experimental music? Live Coding YouTube is a response to the anticipation of novel performance practices using streaming media. A live coder uses any available video from YouTube, a video streaming service, as source material to perform an improvised audiovisual piece. The challenge is to manipulate the emerging media that are streamed from a networked service given the limited functionality of the API provided. The piece finds parallels in early experimental music that manipulates magnetic tape and vinyl records. On the contrary, the audiovisual space that a musician can explore on the fly is practically infinite. The performance system is built entirely on a web browser and publicly available in the following address: https://livecodingyoutube.github.io/",
+    "Author Names": "Jungho Bang (University of Michigan)*; Sang Won Lee (University of Michigan); Georg Essl (University of Wisconsin, Milwaukee)",
+    "Author Emails": "bjungho@umich.edu; snaglee@umich.edu; essl@uwm.edu",
+    "Primary Contact Author Email": "bjungho@umich.edu",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "Latex (7) (2).pdf (1702195 bytes)",
+    "Paper ID": "69",
+    "Paper Title": "Sonification and Visualization of Parametric Equations",
+    "Abstract": "This paper describes how parametric equations can be sonified using the Web Audio API and visualized using a vectorscope built using the HTML5 canvas element. A working demonstration can be found at academo.org/demos/vectorscope, with a selection of user-adjustable parametric equations, including Lissajous figures and hypotrochoids.",
+    "Author Names": "Edward Ball (Academo)*",
+    "Author Emails": "info@academo.org",
+    "Primary Contact Author Email": "info@academo.org",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "WACp2017.pdf (135512 bytes)",
+    "Paper ID": "70",
+    "Paper Title": "Hyperconnected Action Painting",
+    "Abstract": "This performance invites the audience to participate in an immersive experience using their mobile devices. The aim is at capturing their actions on a digital painting inspired by Jackson Pollock's action painting technique. The audience is connected to a wireless network and a Web Audio application that recognizes a number of gestures through the mobile accelerometer sensor, which trigger different sounds. Gestures will be recognized and mapped to a digital canvas. A set of loudspeakers will complement the audience's actions with ambient sounds. The performance explores audio spatialization using both loudspeakers and mobile phone speakers, that combined with the digital painting provides an immersive audiovisual experience. The final digital canvas will be available online as a memory of the performance.",
+    "Author Names": "Anna Xambó (Georgia Institute of Technology)*; Gerard Roma (University of Huddersfield)",
+    "Author Emails": "anna.xambo@gatech.edu; gerard.roma@gmail.com",
+    "Primary Contact Author Email": "anna.xambo@gatech.edu",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "Sunspots_WAC_text.doc (24576 bytes)",
+    "Paper ID": "71",
+    "Paper Title": "Sunspots",
+    "Abstract": "Sunspots is a web art piece that allows the audience to explore a virtual 3D world. It is an interactive component to a physical audio release on dual-LP vinyl (also called Sunspots), allowing the material to go beyond fixed-media representation. Three environments can be navigated, each with their own audio and visual textures. The visuals make use of Three.js and custom shaders to allow for strange cloth-based physical simulations live in the browser. WebAudio is used for creation and spatialization of the sound in the 3D environment. \nThe audio for each environment is generated by overlapping multiple channels of \"instruments\" that are created by randomly loading different short segments of closely-related analog synthesizer material. The idea is to create generative versions of the pieces on the album that will vary endlessly and create a unique user experience.\n\nhttps://spiricom.github.io/sunspots/",
+    "Author Names": "Jeffrey Snyder (Princeton University)*; Drew Wallace (Princeton University)",
+    "Author Emails": "josnyder@princeton.edu; drewjpwallace@gmail.com",
+    "Primary Contact Author Email": "josnyder@princeton.edu",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "performance.wac.2017.camera.pdf (31953 bytes)",
+    "Paper ID": "75",
+    "Paper Title": "Frabjous day",
+    "Abstract": "Frabjous day is a live-coding performance using a browser-based live-coding environment, gibberwocky, co-developed by the performer with Dr. Graham Wakefield. gibberwocky features deep integration with Ableton Live, possessing a variety of affordances for both musical sequencing and rapidly creating / assigning audio-rate modulation graphs. gibberwocky places emphasis on dynamic annotations to source code that reveal the state of underlying algorithms, including animated sparklines visually depicting synthesis modulations over time. gibberwocky also makes heavy use of a new JavaScript synthesis library, genish.js, to generate musical patterns via digital signal processing techniques.",
+    "Author Names": "Charlie Roberts (Worcester Polytechnic Institute)*",
+    "Author Emails": "charlie@charlie-roberts.com",
+    "Primary Contact Author Email": "charlie@charlie-roberts.com",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "Sound_Colour_Space_A_Virtual_Museum.pdf (960340 bytes)",
+    "Paper ID": "76",
+    "Paper Title": "Sound Colour Space – A Virtual Museum",
+    "Abstract": "The project Sound Colour Space – A Virtual Museum investigates the conceptual field of sound, tone, pitch, and timbre in its relation to visual phenomena and geometrical concepts. It thus contributes to an interdisciplinary field of research and explores its adequate modes of representation and communication. Many scientists and philosophers from antiquity to modern times have studied the relationships between sound, light and geometry. Their visualisations of acoustical, optical and perceptual topics appeal to the eye and can be studied comparatively. These pictures are interesting because of their diagrammatic structure, as well as how they combine text, images and spatial structures on a flat surface and in the way they address topological, philosophical and psychological questions. They often have an aesthetic value of their own. Besides preparing these diagrams for online publication, we created interactive audiovisual examples that were also used for artistic projects.\n.",
+    "Author Names": "Raimund Vogtenhuber (University of Arts Zurich / ICST)*",
+    "Author Emails": "raimund.vogtenhuber@zhdk.ch",
+    "Primary Contact Author Email": "raimund.vogtenhuber@zhdk.ch",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "",
+    "Paper ID": "78",
+    "Paper Title": "DIALECTIC IN SUSPENSE",
+    "Abstract": "A sound work about the conflicting relation between nature and contradictory human development. Natural spaces and ambient sounds mixed with residual human pollution are combined with real-time audio and data processing that shows both human and nature strategies to overcome the critical anthropocentric presence. The work has three different movements bringing the public the opportunity to enhance their environmental conscience and perspective about it. \nNo-input technique will be used not just as a compositional resource but as a metaphor: the sound made by the residual noise of human-made equipment. The noise will be treated through delays, looper, ring modulator, different distortions, filters. In parallel, a pre-analysis based on MIR stored in a database is combined with real-time processing and synthesis, random processes and human control via external interfaces. Historical climate data is used to model sound in real-time.",
+    "Author Names": "Matias Lennie Bruno (Redpanal.org)*; Hernán Ordiales (RedPanal)",
+    "Author Emails": "matias.lennie@gmail.com; hordiales@gmail.com",
+    "Primary Contact Author Email": "matias.lennie@gmail.com",
+    "Track Name": "Performances and Artworks"
+  },
+  {
+    "Files": "wac-2017-diamonds-final.pdf (213737 bytes)",
+    "Paper ID": "82",
+    "Paper Title": "Diamonds in Dystopia",
+    "Abstract": "Diamonds in Dystopia is a body of work and web framework for creatively datamining large sources of text and incorporating improvisation into experiential storytelling. The audience acts as collaborator by selecting words to trigger reactions generating and sending distilled, improvisational phrases culled from a massive corpus of text to the poet on stage. The individual taps coming from the audience also trigger synthesized audio effects to create a musical experience and contributing to a visual projection of the generated poem. The creators are interested in creative data mining and incorporating interactive media into performances that challenge people’s perceptions and expectations for the mediums of music, digital art and design, and poetry.",
+    "Author Names": "Jesse Allison (Louisiana State University)*; Derick Ostrenko (Louisiana State University); Vincent Cellucci (Louisiana State University)",
+    "Author Emails": "jtallison@lsu.edu; dostrenko@lsu.edu; vcellu1@lsu.edu",
+    "Primary Contact Author Email": "jtallison@lsu.edu",
+    "Track Name": "Performances and Artworks"
+  }
+]

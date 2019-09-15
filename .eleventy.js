@@ -1,11 +1,38 @@
 const bibtexParse = require('bibtex-parse');
 const fs = require('fs');
 const path = require('path');
+//const parser = new (require('simple-excel-to-json')).XlsParser();
+const excel2json = require('xls-to-json');
 
 module.exports = function(config) {
   let bibs = 'src/_data/papers/bib';
+  let excels = 'src/_data/papers/excel/';
   let mdPath = 'src/posts/';
+  let jsonPath = 'src/_data/papers/json/';
   let title, abstract;
+
+  excel = path.join(excels, 'CameraReadyPapers2017.xls');
+
+  excel2json(
+    {
+      input: excel, // input xls
+      output: jsonPath, // output json
+      sheet: 'Performances and Artworks', // specific sheetname
+      rowsToSkip: 2 // number of rows to skip at the top of the sheet; defaults to 0
+    },
+    function(err, result) {
+      if (err) {
+        console.error(err);
+      } else {
+        //console.log(result);
+        fs.writeFileSync(
+          path.join(jsonPath, 'test.json'),
+          JSON.parse(result),
+          'utf8'
+        );
+      }
+    }
+  );
 
   bibFiles = fs.readdirSync(bibs);
 

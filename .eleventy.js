@@ -4,13 +4,24 @@ const path = require('path');
 //const parser = new (require('simple-excel-to-json')).XlsParser();
 const excel2json = require('xls-to-json');
 
-module.exports = function(config) {
-  let bibs = 'src/_data/papers/bib';
+module.exports = function (config) {
+  let bibs = 'src/_data/papers/bib/';
   let excels = 'src/_data/papers/excel/';
   let mdPath = 'src/posts/';
   let jsonPath = 'src/_data/papers/json/';
-  let title, abstract;
-
+  var title,
+    abstract,
+    booktitle,
+    pages,
+    author,
+    editor,
+    year,
+    month,
+    publisher,
+    address,
+    issn,
+    id;
+  /*
   // Parsing excel sheet 1 and writing md files from it
   excel = path.join(excels, 'CameraReadyPapers2017.xls');
 
@@ -25,13 +36,13 @@ module.exports = function(config) {
       if (err) {
         console.error(err);
       } else {
-        /*
+        
         fs.writeFileSync(
           path.join(jsonPath, 'test.json'),
           JSON.parse(result),
           'utf8');
-        */
-        console.log(result.length);
+        
+        //console.log(result.length);
         for (let x in result) {
           fs.writeFileSync(
             path.join(mdPath, `2017_${result[x]['Paper ID']}.md`),
@@ -49,16 +60,59 @@ module.exports = function(config) {
       }
     }
   );
-
+*/
   // Parsing bibfiles and writing md files from it
   bibFiles = fs.readdirSync(bibs);
 
-  bibFiles.forEach(function(file) {
-    newFileName = file.slice(0, -4);
+  bibFiles.forEach(function (file) {
+    year = file.slice(3, 6);
 
     let bib = fs.readFileSync(path.join(bibs, file), 'utf8');
     let parsed = bibtexParse.parse(bib);
+    fs.writeFileSync(
+      path.join(jsonPath, 'bibtojson.json'),
+      JSON.stringify(parsed),
+      'utf8'
+    );
 
+    for (let i in parsed.entries) {
+      abstract = parsed.entries[i].properties.abstract.value;
+      address = parsed.entries[i].properties.address.value;
+      author = parsed.entries[i].properties.author.value;
+      booktitle = parsed.entries[i].properties.booktitle.value;
+      editor = parsed.entries[i].properties.editor.value;
+      month = parsed.entries[i].properties.booktitle.value;
+      if (parsed.entries[i].properties.hasOwnProperty('pages')) {
+        pages = parsed.entries[i].properties.pages.value;
+      } else {
+        pages = "";
+      }
+      publisher = parsed.entries[i].properties.publisher.value;
+      series = parsed.entries[i].properties.series.value;
+      title = parsed.entries[i].properties.title.value;
+      year = parsed.entries[i].properties.year.value;
+      id = parsed.entries[i].id;
+
+      //fs.writeFileSync(path.join(mdPath, `${id}.md`),'---\ntitle: "' + title.slice(1, -1) + '\nabstract: ' + abstract + '"' + '\ntags: ' + 'year' + year + '\n---');
+      data = `---
+      \ntitle: "x" 
+      \nabstract: "abstract going here"
+      \naddress: "${address}" 
+      \nauthor: "" 
+      \nbooktitle: "${booktitle}" 
+      \neditor: "" 
+      \nmonth: "${month}"
+      \npages: "${pages}" 
+      \npublisher: "${publisher}" 
+      \nseries: "${series}"  
+      \nyear: "${year}" 
+      \nid: "${id}" 
+      \ntags: year${year} 
+      \n---`;
+
+      fs.writeFileSync(path.join(mdPath, `${id}.md`), data);
+    }
+    /*
     title = parsed.entries[0].properties.title.value.slice(1, -1);
     if (title.includes('{\\&}')) {
       title = title.replace(/{\\&}/gi, '&');
@@ -67,20 +121,7 @@ module.exports = function(config) {
     if (abstract.includes('{\\&}')) {
       abstract = abstract.replace(/{\\&}/gi, '&');
     }
-
-    fs.writeFileSync(
-      path.join(mdPath, newFileName + '.md'),
-      '---\ntitle: "' +
-        title +
-        '"' +
-        '\nabstract: "' +
-        abstract +
-        '"' +
-        '\ntags: ' +
-        'year' +
-        newFileName.slice(0, 4) +
-        '\n---'
-    );
+    */
   });
 
   config.addCollection('posts', collection => {

@@ -1,9 +1,25 @@
 ---
-  layout: _layouts/base.liquid
+layout: _layouts/base.liquid
 ---
 
 <main>
   <div class="abstract">{{abstract}}</div>
-
+  <div>
+    <code style="display:block;">
+      @inproceedings{ {{id}},
+        abstract = { {{abstract}} },
+        address = { {{address}} },
+        author = { {{author}} },
+        booktitle = { {{booktitle}} },
+        editor = { {{editor}} },
+        month = { {{month}} },
+        pages = { {{pages}} },
+        publisher = { {{publisher}} },
+        series = { {{series}} },
+        title = { {{title}} },
+        year = { {{year}} }
+        }
+    </code>
+  </div>
   <img alt="Responsive image" class="img-fluid" src="/assets/images/wac2019.png" width="50%">
 </main>

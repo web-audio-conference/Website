@@ -92,23 +92,25 @@ module.exports = function (config) {
       title = parsed.entries[i].properties.title.value;
       year = parsed.entries[i].properties.year.value;
       id = parsed.entries[i].id;
+      type = parsed.entries[i].properties.type.value;
 
-      //fs.writeFileSync(path.join(mdPath, `${id}.md`),'---\ntitle: "' + title.slice(1, -1) + '\nabstract: ' + abstract + '"' + '\ntags: ' + 'year' + year + '\n---');
-      data = `---
-      \ntitle: "x" 
-      \nabstract: "abstract going here"
-      \naddress: "${address}" 
-      \nauthor: "" 
-      \nbooktitle: "${booktitle}" 
-      \neditor: "" 
-      \nmonth: "${month}"
-      \npages: "${pages}" 
-      \npublisher: "${publisher}" 
-      \nseries: "${series}"  
-      \nyear: "${year}" 
-      \nid: "${id}" 
-      \ntags: year${year} 
-      \n---`;
+
+      data = `--- 
+  title: "${title.slice(1, -1)}" 
+  abstract: "abstract here" 
+  address: "${address}" 
+  author: "" 
+  booktitle: "${booktitle}" 
+  editor: "" 
+  month: "${month}"
+  pages: "${pages}" 
+  publisher: "${publisher}" 
+  series: "${series}"
+  type: "${type}"  
+  year: "${year}" 
+  id: "${id}" 
+  tags: year${year} 
+---`;
 
       fs.writeFileSync(path.join(mdPath, `${id}.md`), data);
     }

@@ -4,22 +4,22 @@ layout: _layouts/base.liquid
 
 <main>
   <div class="abstract">{{abstract}}</div>
-  <div>
-    <code style="display:block;">
-      @inproceedings{ {{id}},
-        abstract = { {{abstract}} },
-        address = { {{address}} },
-        author = { {{author}} },
-        booktitle = { {{booktitle}} },
-        editor = { {{editor}} },
-        month = { {{month}} },
-        pages = { {{pages}} },
-        publisher = { {{publisher}} },
-        series = { {{series}} },
-        title = { {{title}} },
-        year = { {{year}} }
-        }
-    </code>
-  </div>
+  <pre class="bibtex">
+    <code>
+@inproceedings&#123;{{id}},
+  abstract = &#123;{{abstract}}&#125;,
+  address = &#123;{{address}}&#125;,
+  author = &#123;{{author}}&#125;,
+  booktitle = &#123;{{booktitle}}&#125;,
+  editor = &#123;{{editor}}&#125;,
+  month = &#123;{{month}}&#125;,
+  pages = &#123;{{pages}}&#125;,
+  publisher = &#123;{{publisher}}&#125;,
+  series = &#123;{{series}}&#125;,
+  title = &#123;{{title}}&#125;,
+  year = &#123;{{year}}&#125;
+}
+      </code>
+    </pre>
   <img alt="Responsive image" class="img-fluid" src="/assets/images/wac2019.png" width="50%">
 </main>

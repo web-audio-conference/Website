@@ -6,3 +6,18 @@
 .link:hover {
     color: rgb(2, 204, 255);
 }
+
+.bibtex{
+    color: black;
+    font-size: 0.8em;
+    line-height: 1.5;
+    white-space: pre;
+    overflow-x: scroll;
+    display: block;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #fafafa;
+    margin: 0;
+}

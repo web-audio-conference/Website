@@ -3,7 +3,8 @@ layout: _layouts/base.liquid
 ---
 
 <main>
-  <div class="abstract">{{abstract}}</div>
+  <div class="abstract">{{ abstract }}</div>
+  <a href="{{ pdflink }}" target="blank">PDF</a>
   <pre class="bibtex">
     <code>
 @inproceedings&#123;{{id}},
@@ -21,5 +22,11 @@ layout: _layouts/base.liquid
 }
       </code>
     </pre>
-  <img alt="Responsive image" class="img-fluid" src="/assets/images/wac2019.png" width="50%">
+
+  <img
+    alt="Responsive image"
+    class="img-fluid"
+    src="/assets/images/wac2019.png"
+    width="50%"
+  />
 </main>

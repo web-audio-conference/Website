@@ -6,8 +6,22 @@ date: '2019-05-23'
 
 # 2015
 
+## Papers
+
 {% for post in collections.year2015 %}
+{% if post.data.type == 'Paper' %}
+{{ post.data.author }}:
 <a href="{{ post.url }}">{{ post.data.title }}</a>
+{% endif %}
+{% endfor %}
+
+## Posters
+
+{% for post in collections.year2015 %}
+{% if post.data.type == 'Poster' %}
+{{ post.data.author }}:
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+{% endif %}
 {% endfor %}
 
 # 2016
@@ -58,15 +72,6 @@ date: '2019-05-23'
 
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Talk' %}
-{{ post.data.author }}:
-<a href="{{ post.url }}">{{ post.data.title }}</a>
-{% endif %}
-{% endfor %}
-
-## Posters
-
-{% for post in collections.year2017 %}
-{% if post.data.type == 'Poster' %}
 {{ post.data.author }}:
 <a href="{{ post.url }}">{{ post.data.title }}</a>
 {% endif %}

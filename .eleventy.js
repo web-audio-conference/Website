@@ -53,10 +53,9 @@ module.exports = function(config) {
   bibFiles = fs.readdirSync(bibs);
 
   bibFiles.forEach(function(file) {
-    year = file.slice(3, 6);
-
     let bib = fs.readFileSync(path.join(bibs, file), 'utf8');
     let parsed = bibtexParse.parse(bib);
+
     fs.writeFileSync(
       path.join(jsonPath, 'bibtojson.json'),
       JSON.stringify(parsed),
@@ -74,7 +73,6 @@ module.exports = function(config) {
         month,
         publisher,
         address,
-        issn,
         id,
         pdflink;
 
@@ -102,10 +100,10 @@ module.exports = function(config) {
       id = parsed.entries[i].id;
       type = parsed.entries[i].properties.type.value;
 
-      pdflink = `/_data/papers/pdf/2017/${id.slice(-2)}.pdf`;
-      if (id.slice(-2).includes('_')) {
-        pdflink = `/_data/papers/pdf/2017/${id.slice(-1)}.pdf`;
-      }
+      pdflink = `/_data/papers/pdf/${year}/${year}_${id
+        .split('_')
+        .slice(-1)}.pdf`;
+
       data = `--- 
   title: "${title}" 
   abstract: "${abstract}" 

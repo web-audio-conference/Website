@@ -1,23 +1,52 @@
+body {
+  font-family: 'Varela', sans-serif;
+}
 .link {
-    color: rgb(0, 184, 230);
-    font-weight: 2px;
+  color: rgb(0, 184, 230);
+  font-weight: 2px;
 }
 
 .link:hover {
-    color: rgb(2, 204, 255);
+  color: rgb(2, 204, 255);
 }
 
-.bibtex{
-    color: black;
-    font-size: 0.8em;
-    line-height: 1.5;
-    white-space: pre;
-    overflow-x: scroll;
-    display: block;
-    margin-bottom: 1rem;
-    padding: 1rem;
-    word-break: break-all;
-    word-wrap: break-word;
-    background-color: #fafafa;
-    margin: 0;
+.bibtex {
+  color: black;
+  font-size: 0.8em;
+  line-height: 1.5;
+  white-space: pre;
+  overflow-x: scroll;
+  display: block;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem;
+  padding-bottom: 0;
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #fafafa;
+}
+
+.author {
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.abstract {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+main {
+  padding-bottom: 2rem;
+}
+
+.PDF {
+  color: white;
+  background-color: rgb(40, 40, 40);
+  padding: 1rem;
+}
+.PDF:hover {
+  color: white;
+  background-color: rgb(20, 20, 20);
+  text-decoration: none;
 }

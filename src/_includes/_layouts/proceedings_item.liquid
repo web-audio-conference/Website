@@ -2,10 +2,15 @@
 layout: _layouts/base.liquid
 ---
 
-<main>
-  <div class="abstract">{{ abstract }}</div>
-  <a href="{{ pdflink }}" target="blank">PDF</a>
-  <pre class="bibtex">
+<main class="container">
+  <div class="author">{{ author }}</div>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div class="abstract">{{ abstract }}</div>
+    </div>
+    <div class="col-md-6">
+      <pre class="bibtex">
     <code>
 @inproceedings&#123;{{id}},
   abstract = &#123;{{abstract}}&#125;,
@@ -18,15 +23,12 @@ layout: _layouts/base.liquid
   publisher = &#123;{{publisher}}&#125;,
   series = &#123;{{series}}&#125;,
   title = &#123;{{title}}&#125;,
-  year = &#123;{{year}}&#125;
+  year = &#123;{{year}}&#125;,
+  ISSN = &#123;{{ISSN}}&#125;
 }
       </code>
     </pre>
-
-  <img
-    alt="Responsive image"
-    class="img-fluid"
-    src="/assets/images/wac2019.png"
-    width="50%"
-  />
+      <a href="{{ pdflink }}" target="blank" class="PDF">Download PDF</a>
+    </div>
+  </div>
 </main>

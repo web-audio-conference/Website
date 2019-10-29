@@ -76,23 +76,31 @@ module.exports = function(config) {
         id,
         pdflink;
 
-      abstract = parsed.entries[i].properties.abstract.value;
-      if (abstract.includes('"')) {
-        abstract = abstract.replace(/"/g, "'");
+      if (parsed.entries[i].properties.hasOwnProperty('abstract')) {
+        abstract = parsed.entries[i].properties.abstract.value;
+
+        if (abstract.includes('"')) {
+          abstract = abstract.replace(/"/g, "'");
+        }
+        if (abstract.includes('- ')) {
+          abstract = abstract.replace(/- /gi, '');
+        }
+      } else {
+        abstract = '';
       }
-      if (abstract.includes('- ')) {
-        abstract = abstract.replace(/- /gi, '');
-      }
+
       address = parsed.entries[i].properties.address.value;
       author = parsed.entries[i].properties.author.value;
       booktitle = parsed.entries[i].properties.booktitle.value;
       editor = parsed.entries[i].properties.editor.value;
       month = parsed.entries[i].properties.booktitle.value;
+
       if (parsed.entries[i].properties.hasOwnProperty('pages')) {
         pages = parsed.entries[i].properties.pages.value;
       } else {
         pages = '';
       }
+
       publisher = parsed.entries[i].properties.publisher.value;
       series = parsed.entries[i].properties.series.value;
       title = parsed.entries[i].properties.title.value;
@@ -120,6 +128,7 @@ module.exports = function(config) {
   id: "${id}" 
   tags: year${year} 
   pdflink: ${pdflink}
+  ISSN: Can't find it!
 ---`;
 
       fs.writeFileSync(path.join(mdPath, `${id}.md`), data);

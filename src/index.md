@@ -1,5 +1,5 @@
 ---
-layout: _layouts/base.liquid
+layout: _layouts/home.liquid
 welcomeMessage: 'Home'
 title: 'Home'
 ---

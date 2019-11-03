@@ -76,6 +76,9 @@ module.exports = function(config) {
         id,
         pdflink;
 
+      let newAuthors = '';
+      let newEditors = '';
+
       if (parsed.entries[i].properties.hasOwnProperty('abstract')) {
         abstract = parsed.entries[i].properties.abstract.value;
 
@@ -91,8 +94,42 @@ module.exports = function(config) {
 
       address = parsed.entries[i].properties.address.value;
       author = parsed.entries[i].properties.author.value;
+
+      if (author.includes(' and ')) {
+        let authors = author.split(' and ');
+        authors.forEach(function(element) {
+          let revAuthor = element
+            .split(',')
+            .reverse()
+            .join(' ');
+          newAuthors += revAuthor + ',';
+        });
+        author = newAuthors.slice(1, -1);
+      } else {
+        let revAuthor = author.split(',').reverse();
+        newAuthors += revAuthor;
+        author = newAuthors.replace(',', ' ').slice(1);
+      }
+
       booktitle = parsed.entries[i].properties.booktitle.value;
       editor = parsed.entries[i].properties.editor.value;
+
+      if (editor.includes(' and ')) {
+        let editors = editor.split(' and ');
+        editors.forEach(function(element) {
+          let revEditor = element
+            .split(',')
+            .reverse()
+            .join(' ');
+          newEditors += revEditor + ',';
+        });
+        editor = newEditors.slice(1, -1);
+      } else {
+        let revEditor = editor.split(',').reverse();
+        newEditors += revEditor;
+        editor = newEditor.replace(',', ' ').slice(1);
+      }
+
       month = parsed.entries[i].properties.booktitle.value;
 
       if (parsed.entries[i].properties.hasOwnProperty('pages')) {
@@ -128,7 +165,7 @@ module.exports = function(config) {
   id: "${id}" 
   tags: year${year} 
   pdflink: ${pdflink}
-  ISSN: Can't find it!
+  ISSN: 2663-5844
 ---`;
 
       fs.writeFileSync(path.join(mdPath, `${id}.md`), data);

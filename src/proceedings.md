@@ -1,12 +1,12 @@
 ---
-layout: _layouts/base.liquid
+layout: _layouts/general.liquid
 title: 'Proceedings'
 date: '2019-05-23'
 ---
 
-# 2018
+## 2018
 
-## Papers
+### Papers
 
 {% for post in collections.year2018 %}
 {% if post.data.type == 'Paper' %}
@@ -15,9 +15,9 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-# 2017
+## 2017
 
-## Papers
+### Papers
 
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Paper' %}
@@ -26,7 +26,7 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-## Posters
+### Posters
 
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Poster' %}
@@ -35,7 +35,7 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-## Demos
+### Demos
 
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Demo' %}
@@ -44,7 +44,7 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-## Performances
+### Performances
 
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Performance' %}
@@ -53,7 +53,7 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-## Talks
+### Talks
 
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Talk' %}
@@ -62,7 +62,7 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-## Artworks
+### Artworks
 
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Artwork' %}
@@ -71,9 +71,9 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-# 2016
+## 2016
 
-## Papers
+### Papers
 
 {% for post in collections.year2016 %}
 {% if post.data.type == 'Paper' %}
@@ -82,7 +82,7 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-## Demos
+### Demos
 
 {% for post in collections.year2016 %}
 {% if post.data.type == 'Demo' %}
@@ -91,7 +91,7 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-## Performances
+### Performances
 
 {% for post in collections.year2016 %}
 {% if post.data.type == 'Performance' %}
@@ -100,7 +100,7 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-## Talks
+### Talks
 
 {% for post in collections.year2016 %}
 {% if post.data.type == 'Talk' %}
@@ -109,7 +109,7 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-## Artworks
+### Artworks
 
 {% for post in collections.year2016 %}
 {% if post.data.type == 'Artwork' %}
@@ -118,9 +118,9 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-# 2015
+## 2015
 
-## Papers
+### Papers
 
 {% for post in collections.year2015 %}
 {% if post.data.type == 'Paper' %}
@@ -129,7 +129,7 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
-## Posters
+### Posters
 
 {% for post in collections.year2015 %}
 {% if post.data.type == 'Poster' %}

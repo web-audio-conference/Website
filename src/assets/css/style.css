@@ -1,5 +1,6 @@
 body {
   font-family: 'Varela', sans-serif;
+  position: relative;
 }
 .link {
   color: rgb(0, 184, 230);
@@ -37,7 +38,7 @@ body {
 }
 
 main {
-  padding-bottom: 2rem;
+  padding-bottom: 6rem;
 }
 
 .PDF {
@@ -49,4 +50,14 @@ main {
   color: white;
   background-color: rgb(20, 20, 20);
   text-decoration: none;
+}
+
+h1,
+h2 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.twitter {
+  padding-top: 5rem;
 }

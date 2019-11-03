@@ -30,35 +30,22 @@
               <a class="nav-link" href="/">Home<span class="sr-only">(current)</span>
               </a>
             </li>
-            <li {% if page.url == "/about/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-              <a class="nav-link" href="/about">About</a>
+            <li {% if page.url == "/past/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+              <a class="nav-link" href="/past">Past WACs</a>
             </li>
             <li {% if page.url == "/proceedings/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
               <a class="nav-link" href="/proceedings">Proceedings</a>
             </li>
-            <li {% if page.url == "/past/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-              <a class="nav-link" href="/past">Past WACs</a>
-            </li>
-            <li {% if page.url == "/statements/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-              <a class="nav-link" href="/statements">Statements</a>
-            </li>
-            <li {% if page.url == "/twitter/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-              <a class="nav-link" href="/twitter">Twitter</a>
+            <li {% if page.url == "/code-of-conduct/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+              <a class="nav-link" href="/code-of-conduct">Code of Conduct</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <main class="mb-5">
-      <div class="container-fluid">
-        <div class="row justify-content-md-center">
-          <div class="col-lg-6">
-            <h1>{{ title }}</h1>
-            <div>{{ content }}</div>
-          </div>
-        </div>
-      </div>
+    <main>
+      {{ content }}
     </main>
 
     <nav class="navbar fixed-bottom navbar-dark bg-dark footer">

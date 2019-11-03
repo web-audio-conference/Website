@@ -1,5 +1,5 @@
 ---
-layout: _layouts/base.liquid
+layout: _layouts/general.liquid
 title: 'Code of conduct'
 ---
 

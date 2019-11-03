@@ -2,16 +2,21 @@
 layout: _layouts/base.liquid
 ---
 
-<main class="container">
-  <div class="author">{{ author }}</div>
+<div class="mb-5">
+  <div class="container-fluid">
+    <div class="row justify-content-md-center">
+      <div class="col-lg-6">
+        <h1 class="title" id="title">{{ title }}</h1>
+        <div>
+          <div class="author">{{ author }}</div>
 
-  <div class="row">
-    <div class="col-md-6">
-      <div class="abstract">{{ abstract }}</div>
-    </div>
-    <div class="col-md-6">
-      <pre class="bibtex">
-    <code>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="abstract">{{ abstract }}</div>
+            </div>
+            <div class="col-md-6">
+              <pre class="bibtex">
+            <code>
 @inproceedings&#123;{{id}},
   abstract = &#123;{{abstract}}&#125;,
   address = &#123;{{address}}&#125;,
@@ -26,9 +31,15 @@ layout: _layouts/base.liquid
   year = &#123;{{year}}&#125;,
   ISSN = &#123;{{ISSN}}&#125;
 }
-      </code>
-    </pre>
-      <a href="{{ pdflink }}" target="blank" class="PDF">Download PDF</a>
+              </code>
+            </pre>
+              <a href="{{ pdflink }}" target="blank" class="PDF"
+                >Download PDF</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</main>
+</div>

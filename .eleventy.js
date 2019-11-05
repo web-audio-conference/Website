@@ -74,7 +74,8 @@ module.exports = function(config) {
         publisher,
         address,
         id,
-        pdflink;
+        pdflink,
+        media;
 
       let newAuthors = '';
       let newEditors = '';
@@ -105,10 +106,12 @@ module.exports = function(config) {
           newAuthors += revAuthor + ',';
         });
         author = newAuthors.slice(1, -1);
-      } else {
+      } else if (author.includes(',')) {
         let revAuthor = author.split(',').reverse();
         newAuthors += revAuthor;
         author = newAuthors.replace(',', ' ').slice(1);
+      } else {
+        author = author;
       }
 
       booktitle = parsed.entries[i].properties.booktitle.value;
@@ -124,10 +127,12 @@ module.exports = function(config) {
           newEditors += revEditor + ',';
         });
         editor = newEditors.slice(1, -1);
-      } else {
+      } else if (editor.includes(',')) {
         let revEditor = editor.split(',').reverse();
         newEditors += revEditor;
         editor = newEditor.replace(',', ' ').slice(1);
+      } else {
+        author = author;
       }
 
       month = parsed.entries[i].properties.booktitle.value;
@@ -149,6 +154,12 @@ module.exports = function(config) {
         .split('_')
         .slice(-1)}.pdf`;
 
+      if (parsed.entries[i].properties.hasOwnProperty('url')) {
+        media = parsed.entries[i].properties.url.value;
+      } else {
+        media = 'none';
+      }
+
       data = `--- 
   title: "${title}" 
   abstract: "${abstract}" 
@@ -163,7 +174,8 @@ module.exports = function(config) {
   type: "${type}"  
   year: "${year}" 
   id: "${id}" 
-  tags: year${year} 
+  tags: year${year}
+  media: ${media} 
   pdflink: ${pdflink}
   ISSN: 2663-5844
 ---`;

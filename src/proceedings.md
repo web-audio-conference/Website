@@ -15,6 +15,24 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
+### Keynotes
+
+{% for post in collections.year2018 %}
+{% if post.data.type == 'Keynote' %}
+{{ post.data.author }}:
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+{% endif %}
+{% endfor %}
+
+### Videos
+
+{% for post in collections.year2018 %}
+{% if post.data.type == 'Video' %}
+{{ post.data.author }}:
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+{% endif %}
+{% endfor %}
+
 ## 2017
 
 ### Papers
@@ -71,6 +89,24 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
+### Keynotes
+
+{% for post in collections.year2017 %}
+{% if post.data.type == 'Keynote' %}
+{{ post.data.author }}:
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+{% endif %}
+{% endfor %}
+
+### Videos
+
+{% for post in collections.year2017 %}
+{% if post.data.type == 'video' %}
+{{ post.data.author }}:
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+{% endif %}
+{% endfor %}
+
 ## 2016
 
 ### Papers
@@ -118,6 +154,24 @@ date: '2019-05-23'
 {% endif %}
 {% endfor %}
 
+### Keynotes
+
+{% for post in collections.year2016 %}
+{% if post.data.type == 'Keynote' %}
+{{ post.data.author }}:
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+{% endif %}
+{% endfor %}
+
+### Tutorials
+
+{% for post in collections.year2016 %}
+{% if post.data.type == 'Tutorial' %}
+{{ post.data.author }}:
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+{% endif %}
+{% endfor %}
+
 ## 2015
 
 ### Papers
@@ -133,6 +187,24 @@ date: '2019-05-23'
 
 {% for post in collections.year2015 %}
 {% if post.data.type == 'Poster' %}
+{{ post.data.author }}:
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+{% endif %}
+{% endfor %}
+
+### Keynotes
+
+{% for post in collections.year2015 %}
+{% if post.data.type == 'Keynote' %}
+{{ post.data.author }}:
+<a href="{{ post.url }}">{{ post.data.title }}</a>
+{% endif %}
+{% endfor %}
+
+### Videos
+
+{% for post in collections.year2015 %}
+{% if post.data.type == 'Video' %}
 {{ post.data.author }}:
 <a href="{{ post.url }}">{{ post.data.title }}</a>
 {% endif %}

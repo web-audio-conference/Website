@@ -41,12 +41,15 @@ main {
   padding-bottom: 6rem;
 }
 
-.PDF {
+.PDF,
+.media {
   color: white;
   background-color: rgb(40, 40, 40);
   padding: 1rem;
+  display: inline-block;
 }
-.PDF:hover {
+.PDF:hover,
+.media:hover {
   color: white;
   background-color: rgb(20, 20, 20);
   text-decoration: none;

@@ -10,6 +10,7 @@ date: '2019-05-23'
 
 {% for post in collections.year2018 %}
 {% if post.data.type == 'Paper' %}
+<i class="fas fa-file-pdf" style="font-size:22px;color:red;display:inline"></i>
 {{ post.data.author }}:
 <a href="{{ post.url }}">{{ post.data.title }}</a>
 {% endif %}

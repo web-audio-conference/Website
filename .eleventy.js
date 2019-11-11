@@ -2,9 +2,9 @@ const bibToWeb = require('./bibToWeb');
 const excelToWeb = require('./excelToWeb');
 
 module.exports = function(config) {
-  bibToWeb('src/_data/papers/bib/');
-
   //excelToWeb('CameraReadyPapers2017.xls');
+
+  bibToWeb('src/_data/papers/bib/');
 
   config.addCollection('posts', collection => {
     return collection.getFilteredByGlob(['src/posts/*.md']);

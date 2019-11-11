@@ -1,66 +1,79 @@
 body {
-  font-family: 'Varela', sans-serif;
-  position: relative;
+    font-family: 'Lato', sans-serif;
+    position: relative;
 }
+
 .link {
-  color: rgb(0, 184, 230);
-  font-weight: 2px;
+    color: rgb(0, 184, 230);
+    font-weight: 2px;
 }
 
 .link:hover {
-  color: rgb(2, 204, 255);
+    color: rgb(2, 204, 255);
 }
 
 .bibtex {
-  color: black;
-  font-size: 0.8em;
-  line-height: 1.5;
-  white-space: pre;
-  overflow-x: scroll;
-  display: block;
-  margin-bottom: 1.5rem;
-  padding: 0.5rem;
-  padding-bottom: 0;
-  word-break: break-all;
-  word-wrap: break-word;
-  background-color: #fafafa;
+    color: black;
+    font-size: 0.8em;
+    line-height: 1.5;
+    white-space: pre;
+    overflow-x: scroll;
+    display: block;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem;
+    padding-bottom: 0;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #fafafa;
 }
 
 .author {
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 2rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 .abstract {
-  margin-top: 0;
-  margin-bottom: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
 }
 
 main {
-  padding-bottom: 6rem;
+    padding-bottom: 6rem;
 }
 
 .PDF,
 .media {
-  color: white;
-  background-color: rgb(40, 40, 40);
-  padding: 1rem;
-  display: inline-block;
+    color: white;
+    background-color: rgb(40, 40, 40);
+    padding: 1rem;
+    display: inline-block;
 }
+
 .PDF:hover,
 .media:hover {
-  color: white;
-  background-color: rgb(20, 20, 20);
-  text-decoration: none;
+    color: white;
+    background-color: rgb(20, 20, 20);
+    text-decoration: none;
 }
 
 h1,
-h2 {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+h2,
+h3 {
+    margin-top: 3rem;
+}
+
+h3 {
+    margin-bottom: 2rem;
 }
 
 .twitter {
-  padding-top: 5rem;
+    padding-top: 5rem;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    font-size: 20px;
+    margin-bottom: 3rem;
 }

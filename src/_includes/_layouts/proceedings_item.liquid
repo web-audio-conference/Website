@@ -8,7 +8,7 @@ layout: _layouts/base.liquid
       <div class="col-lg-6">
         <h1 class="title" id="title">{{ title }}</h1>
         <div>
-          <div class="author">{{ author }}</div>
+          <div class="author">{{ webAuthor }}</div>
 
           <div class="row">
             <div class="col-md-6">
@@ -38,12 +38,11 @@ layout: _layouts/base.liquid
           <div class="row">
             <div class="col-md-6">
               <div>
-                <a href="{{ pdflink }}" target="blank" class="PDF"
-                  >Download PDF</a
-                >
-                <a href="{{ media }}" target="blank" class="media"
-                  >Watch video</a
-                >
+                {% if pdflink != 'none' %}
+                <a href="{{ pdflink }}" target="blank" class="PDF">Download PDF</a>
+                {% endif %} {% if media != 'none' %}
+                <a href="{{ media }}" target="blank" class="media">Watch video</a>
+                {% endif %}
               </div>
             </div>
           </div>

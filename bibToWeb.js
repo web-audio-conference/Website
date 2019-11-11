@@ -1,12 +1,15 @@
 const bibtexParse = require('bibtex-parse');
 const fs = require('fs');
 const path = require('path');
+//const pdfNumPg = require('./pdfNumPg.js');
+const pdfParse = require('pdf-parse');
 
 let mdPath = 'src/posts/';
 let jsonPath = 'src/_data/papers/json/';
 
 module.exports = function(bibs) {
   // Parsing bibfiles and writing md files from it
+
   bibFiles = fs.readdirSync(bibs);
 
   bibFiles.forEach(function(file) {
@@ -35,7 +38,6 @@ module.exports = function(bibs) {
         media;
 
       let newAuthors = '';
-      let newEditors = '';
 
       if (parsed.entries[i].properties.hasOwnProperty('abstract')) {
         abstract = parsed.entries[i].properties.abstract.value;
@@ -62,43 +64,25 @@ module.exports = function(bibs) {
             .join(' ');
           newAuthors += revAuthor + ',';
         });
-        author = newAuthors.slice(1, -1);
+        webAuthor = newAuthors.slice(1, -1);
       } else if (author.includes(',')) {
         let revAuthor = author.split(',').reverse();
         newAuthors += revAuthor;
-        author = newAuthors.replace(',', ' ').slice(1);
+        webAuthor = newAuthors.replace(',', ' ').slice(1);
       } else {
-        author = author;
+        webAuthor = author;
       }
 
       booktitle = parsed.entries[i].properties.booktitle.value;
       editor = parsed.entries[i].properties.editor.value;
 
-      if (editor.includes(' and ')) {
-        let editors = editor.split(' and ');
-        editors.forEach(function(element) {
-          let revEditor = element
-            .split(',')
-            .reverse()
-            .join(' ');
-          newEditors += revEditor + ',';
-        });
-        editor = newEditors.slice(1, -1);
-      } else if (editor.includes(',')) {
-        let revEditor = editor.split(',').reverse();
-        newEditors += revEditor;
-        editor = newEditor.replace(',', ' ').slice(1);
-      } else {
-        author = author;
-      }
-
       month = parsed.entries[i].properties.booktitle.value;
 
-      if (parsed.entries[i].properties.hasOwnProperty('pages')) {
-        pages = parsed.entries[i].properties.pages.value;
-      } else {
-        pages = '';
-      }
+      /*       if (parsed.entries[i].properties.hasOwnProperty('pages')) {
+                  pages = parsed.entries[i].properties.pages.value;
+                } else {
+                  pages = '';
+                } */
 
       publisher = parsed.entries[i].properties.publisher.value;
       series = parsed.entries[i].properties.series.value;
@@ -107,21 +91,51 @@ module.exports = function(bibs) {
       id = parsed.entries[i].id;
       type = parsed.entries[i].properties.type.value;
 
-      pdflink = `/_data/papers/pdf/${year}/${year}_${id
-        .split('_')
-        .slice(-1)}.pdf`;
+      if (parsed.entries[i].type == 'inproceedings') {
+        pdflink = `/_data/papers/pdf/${year}/${year}_${id
+          .split('_')
+          .slice(-1)}.pdf`;
+      } else {
+        pdflink = 'none';
+      }
 
       if (parsed.entries[i].properties.hasOwnProperty('url')) {
         media = parsed.entries[i].properties.url.value;
       } else {
         media = 'none';
       }
+      /*
+      if (parsed.entries[i].type == 'inproceedings') {
+        try {
+          pdfID = id.split('_').slice(-1);
 
+          let dataBuffer = fs.readFileSync(
+            `src/_data/papers/pdf/${year}/${year}_${pdfID}.pdf`
+          );
+
+          pages = pdfParse(dataBuffer).then(function(data) {
+            return data.numpages;
+          });
+
+          async function callAsync() {
+            var x = await pages;
+            console.log(x);
+          }
+          pages = callAsync();
+          console.log(pages);
+        } catch (error) {
+          console.log(error);
+        }
+      } else {
+        pages = '';
+      }
+*/
       data = `--- 
 title: "${title}" 
 abstract: "${abstract}" 
 address: "${address}" 
-author: "${author}" 
+author: "${author}"
+webAuthor: "${webAuthor}" 
 booktitle: "${booktitle}" 
 editor: "${editor}" 
 month: "${month}"
@@ -139,15 +153,5 @@ ISSN: 2663-5844
 
       fs.writeFileSync(path.join(mdPath, `${id}.md`), data);
     }
-    /*
-    title = parsed.entries[0].properties.title.value.slice(1, -1);
-    if (title.includes("{\\&}")) {
-      title = title.replace(/{\\&}/gi, "&");
-    }
-    abstract = parsed.entries[0].properties.abstract.value;
-    if (abstract.includes("{\\&}")) {
-      abstract = abstract.replace(/{\\&}/gi, "&");
-    }
-    */
   });
 };

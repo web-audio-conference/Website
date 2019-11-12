@@ -4,63 +4,83 @@ title: 'Proceedings'
 date: '2019-05-23'
 ---
 
+<p>This webpage includes the publications and extended abstracts of all the WAC conferences: papers, posters, talks,
+  demos, artworks, performances, keynotes and workshops if applicable. </p>
+
+<ul>
+  <li><strong>Single peer-review</strong>: All the papers and extended abstracts of papers, posters, talks, demos,
+    artworks and performances have been single peer-reviewed by an expert program commitee (with at least 2-3 reviews).
+  </li>
+  <li><strong>Creative Commons license</strong>: The WAC papers are licensed under a <a
+      href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0
+      International License (CC BY 4.0)</a>, and the copyright remains to the author.</li>
+  <li><strong>ISSN</strong>: The ISSN for the proceedings series is ISSN 2663-5844.</li>
+  <li><strong>Items</strong>: Each item has an individual page with the title of the work, author
+    names, abstract, and the bibtex metadata. If exists, a PDF is linked in the individual webpage. If a related video
+    exists, a link to watch the video is linked in the individual page. </li>
+  <li><strong>Contact</strong>: If you find any errors in the list, please feel free to ...</li>
+  <li><strong>Zenodo</strong>: All PDFs are archived in Zenodo also.</li>
+</ul>
+
+<h2>WAC Proceedings (in backwards chronological order)</h2>
+
 <h2>2018</h2>
 
 <h3>Papers</h3>
 
 {% for post in collections.year2018 %}
-  {% if post.data.type == 'Paper' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Paper' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Keynotes</h3>
 
-{% for post in collections.year2018 %} 
-  {% if post.data.type == 'Keynote' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% for post in collections.year2018 %}
+{% if post.data.type == 'Keynote' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Videos</h3>
 
 {% for post in collections.year2018 %}
-  {% if post.data.type == 'Video' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Video' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h2>2017</h2>
@@ -68,153 +88,153 @@ date: '2019-05-23'
 <h3>Papers</h3>
 
 {% for post in collections.year2017 %}
-  {% if post.data.type == 'Paper' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Paper' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Posters</h3>
 
 {% for post in collections.year2017 %}
-  {% if post.data.type == 'Poster' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Poster' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Demos</h3>
 
 {% for post in collections.year2017 %}
-  {% if post.data.type == 'Demo' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Demo' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Performances</h3>
 
 {% for post in collections.year2017 %}
-  {% if post.data.type == 'Performance' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Performance' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Talks</h3>
 
 {% for post in collections.year2017 %}
-  {% if post.data.type == 'Talk' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Talk' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Artworks</h3>
 
 {% for post in collections.year2017 %}
-  {% if post.data.type == 'Artwork' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Artwork' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Keynotes</h3>
 
 {% for post in collections.year2017 %}
-  {% if post.data.type == 'Keynote' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Keynote' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Videos</h3>
 
 {% for post in collections.year2017 %}
-  {% if post.data.type == 'Video' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Video' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h2>2016</h2>
@@ -222,134 +242,134 @@ date: '2019-05-23'
 <h3>Papers</h3>
 
 {% for post in collections.year2016 %}
-  {% if post.data.type == 'Paper' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Paper' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Demos</h3>
 
 {% for post in collections.year2016 %}
-  {% if post.data.type == 'Demo' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Demo' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Performances</h3>
 
 {% for post in collections.year2016 %}
-  {% if post.data.type == 'Performance' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Performance' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Talks</h3>
 
 {% for post in collections.year2016 %}
-  {% if post.data.type == 'Talk' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Talk' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Artworks</h3>
 
 {% for post in collections.year2016 %}
-  {% if post.data.type == 'Artwork' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
+{% if post.data.type == 'Artwork' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
+  {% endif %}
 
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
-  {% endif %} 
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Keynotes</h3>
 
 {% for post in collections.year2016 %}
-  {% if post.data.type == 'Keynote' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Keynote' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Tutorials</h3>
 
 {% for post in collections.year2016 %}
-  {% if post.data.type == 'Tutorial' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Tutorial' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h2>2015</h2>
@@ -357,75 +377,75 @@ date: '2019-05-23'
 <h3>Papers</h3>
 
 {% for post in collections.year2015 %}
-  {% if post.data.type == 'Paper' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Paper' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Posters</h3>
 
 {% for post in collections.year2015 %}
-  {% if post.data.type == 'Poster' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Poster' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Keynotes</h3>
 
 {% for post in collections.year2015 %}
-  {% if post.data.type == 'Keynote' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Keynote' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}
 
 <h3>Videos</h3>
 
 {% for post in collections.year2015 %}
-  {% if post.data.type == 'Video' %} 
-    <ul>
-      {% if post.data.pdflink != 'none' %}
-        <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-      {% endif %} 
-      
-      {% if post.data.media != 'none' %}
-        <i class="fas fa-video"></i>
-      {% endif %}
-
-      {{ post.data.webAuthor }}:
-      <a href="{{ post.url }}">{{ post.data.title }}</a>
-    </ul>
+{% if post.data.type == 'Video' %}
+<ul>
+  {% if post.data.pdflink != 'none' %}
+  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
   {% endif %}
+
+  {% if post.data.media != 'none' %}
+  <i class="fas fa-video"></i>
+  {% endif %}
+
+  {{ post.data.webAuthor }}:
+  <a href="{{ post.url }}">{{ post.data.title }}</a>
+</ul>
+{% endif %}
 {% endfor %}

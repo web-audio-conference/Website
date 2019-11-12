@@ -1,18 +1,16 @@
-const fs = require('fs');
-const pdfParse = require('pdf-parse');
-const path = require('path');
+const fs = require("fs");
+const pdfParse = require("pdf-parse");
 
-module.exports = function(year) {
-  let pdfDir = fs.readdirSync(`src/_data/papers/pdf/${year}`);
+module.exports = function(year, id) {
+  pdfID = id.split("_").slice(-1);
 
-  pdfDir.forEach(function(file) {
-    let dataBuffer = fs.readFileSync(
-      path.join('src/_data/papers/pdf/2018', file)
-    );
+  let dataBuffer = fs.readFileSync(
+    `src/_data/papers/pdf/${year}/${year}_${pdfID}.pdf`
+  );
 
-    pdfParse(dataBuffer).then(function(data) {
-      // number of pages
-      return data.numpages;
-    });
+  pages = pdfParse(dataBuffer).then(function(data) {
+    return data.numpages;
   });
+
+  return pages;
 };

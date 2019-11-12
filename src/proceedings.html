@@ -31,16 +31,81 @@ date: '2019-05-23'
 {% for post in collections.year2018 %}
 {% if post.data.type == 'Paper' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Talks</h3>
+
+{% for post in collections.year2018 %}
+{% if post.data.type == 'Talk' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Demos</h3>
+
+{% for post in collections.year2018 %}
+{% if post.data.type == 'Demo' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Performances</h3>
+
+{% for post in collections.year2018 %}
+{% if post.data.type == 'Performance' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -50,35 +115,18 @@ date: '2019-05-23'
 {% for post in collections.year2018 %}
 {% if post.data.type == 'Keynote' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
-</ul>
-{% endif %}
-{% endfor %}
-
-<h3>Videos</h3>
-
-{% for post in collections.year2018 %}
-{% if post.data.type == 'Video' %}
-<ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
-
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
-
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -90,16 +138,18 @@ date: '2019-05-23'
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Paper' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -109,54 +159,18 @@ date: '2019-05-23'
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Poster' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
-</ul>
-{% endif %}
-{% endfor %}
-
-<h3>Demos</h3>
-
-{% for post in collections.year2017 %}
-{% if post.data.type == 'Demo' %}
-<ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
-
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
-
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
-</ul>
-{% endif %}
-{% endfor %}
-
-<h3>Performances</h3>
-
-{% for post in collections.year2017 %}
-{% if post.data.type == 'Performance' %}
-<ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
-
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
-
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -166,16 +180,39 @@ date: '2019-05-23'
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Talk' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Demos</h3>
+
+{% for post in collections.year2017 %}
+{% if post.data.type == 'Demo' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -185,16 +222,39 @@ date: '2019-05-23'
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Artwork' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Performances</h3>
+
+{% for post in collections.year2017 %}
+{% if post.data.type == 'Performance' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -204,35 +264,18 @@ date: '2019-05-23'
 {% for post in collections.year2017 %}
 {% if post.data.type == 'Keynote' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
-</ul>
-{% endif %}
-{% endfor %}
-
-<h3>Videos</h3>
-
-{% for post in collections.year2017 %}
-{% if post.data.type == 'Video' %}
-<ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
-
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
-
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -244,54 +287,18 @@ date: '2019-05-23'
 {% for post in collections.year2016 %}
 {% if post.data.type == 'Paper' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
-</ul>
-{% endif %}
-{% endfor %}
-
-<h3>Demos</h3>
-
-{% for post in collections.year2016 %}
-{% if post.data.type == 'Demo' %}
-<ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
-
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
-
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
-</ul>
-{% endif %}
-{% endfor %}
-
-<h3>Performances</h3>
-
-{% for post in collections.year2016 %}
-{% if post.data.type == 'Performance' %}
-<ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
-
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
-
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -301,16 +308,39 @@ date: '2019-05-23'
 {% for post in collections.year2016 %}
 {% if post.data.type == 'Talk' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Demos</h3>
+
+{% for post in collections.year2016 %}
+{% if post.data.type == 'Demo' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -320,16 +350,39 @@ date: '2019-05-23'
 {% for post in collections.year2016 %}
 {% if post.data.type == 'Artwork' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Performances</h3>
+
+{% for post in collections.year2016 %}
+{% if post.data.type == 'Performance' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -339,16 +392,18 @@ date: '2019-05-23'
 {% for post in collections.year2016 %}
 {% if post.data.type == 'Keynote' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -358,16 +413,18 @@ date: '2019-05-23'
 {% for post in collections.year2016 %}
 {% if post.data.type == 'Tutorial' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -379,16 +436,18 @@ date: '2019-05-23'
 {% for post in collections.year2015 %}
 {% if post.data.type == 'Paper' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -398,16 +457,18 @@ date: '2019-05-23'
 {% for post in collections.year2015 %}
 {% if post.data.type == 'Poster' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}
@@ -417,35 +478,18 @@ date: '2019-05-23'
 {% for post in collections.year2015 %}
 {% if post.data.type == 'Keynote' %}
 <ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
 
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
+    {% if post.data.pdflink != 'none' %}
+    <i class="fas fa-file-pdf" style="font-size:20px;"></i>
+    {% endif %}
 
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
-</ul>
-{% endif %}
-{% endfor %}
-
-<h3>Videos</h3>
-
-{% for post in collections.year2015 %}
-{% if post.data.type == 'Video' %}
-<ul>
-  {% if post.data.pdflink != 'none' %}
-  <i class="fas fa-file-pdf" style="font-size:22px;color:red;"></i>
-  {% endif %}
-
-  {% if post.data.media != 'none' %}
-  <i class="fas fa-video"></i>
-  {% endif %}
-
-  {{ post.data.webAuthor }}:
-  <a href="{{ post.url }}">{{ post.data.title }}</a>
+    {% if post.data.media != 'none' %}
+    <i class="fas fa-video" style="font-size:17px;"></i>
+    {% endif %}
+  </li>
 </ul>
 {% endif %}
 {% endfor %}

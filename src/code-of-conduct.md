@@ -1,6 +1,6 @@
 ---
 layout: _layouts/general.liquid
-title: 'Code of conduct'
+title: "Code of conduct"
 ---
 
 All attendees, speakers, sponsors, and volunteers at the WAC are required to agree with the following code of conduct. The WAC code of conduct is based on the <a href="http://berlincodeofconduct.org/" target="_blank">Berlin Code of Conduct</a>, and was updated in 2019 based on the <a href="https://lovdata.no/dokument/NLE/lov/2017-06-16-51" target="_blank">Norwegian Equality and Anti-Discrimination Act</a>.
@@ -53,7 +53,7 @@ If you feel you have been falsely or unfairly accused of violating this Code of 
 
 ## Scope
 
-We expect all community participants (contributors, paid or otherwise; sponsors; and other guests) to abide by this Code of Conduct in all community venues—online and in-person—as well as in all one-on-one communications pertaining to community business.
+We expect all community participants (contributors, paid or otherwise; sponsors; and other guests) to abide by this Code of Conduct in all community venues— online and in-person— as well as in all one-on-one communications pertaining to community business.
 
 ## License and Attribution
 

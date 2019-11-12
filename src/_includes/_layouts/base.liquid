@@ -1,77 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport"/>
-    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
-    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0cb65f14a9.js"></script>
-    <link href="/assets/css/style.css" rel="stylesheet" type="text/css"/>
-    <title>
-      {{ settings.siteName }}
-      |
-      {{ title }}
-    </title>
 
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0cb65f14a9.js"></script>
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+  <title>
+    {{ settings.siteName }}
+    |
+    {{ title }}
+  </title>
 
-    <a href="/"><img alt="Responsive image" class="img-fluid" src="/assets/images/wac-header.png"></a>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-      <!--a class="navbar-brand" href="/">WAC</a-->
-      <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+</head>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <div class="mx-auto">
-          <ul class="navbar-nav">
-            <li {% if page.url == "/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-              <a class="nav-link" href="/">Home<span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li {% if page.url == "/past/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-              <a class="nav-link" href="/past">Past WACs</a>
-            </li>
-            <li {% if page.url == "/proceedings/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-              <a class="nav-link" href="/proceedings">Proceedings</a>
-            </li>
-            <li {% if page.url == "/code-of-conduct/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
-              <a class="nav-link" href="/code-of-conduct">Code of Conduct</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<body>
 
-    <main>
-      {{ content }}
-    </main>
+  <a href="/"><img alt="Responsive image" class="img-fluid" src="/assets/images/wac-header.png"></a>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <!--a class="navbar-brand" href="/">WAC</a-->
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <nav class="navbar fixed-bottom navbar-dark bg-dark footer">
-      <div class="navbar container-fluid text-light">
-        <div class="row mx-auto">
-          <div class="col-6">Copyright &copy;</div>
-
-          <div class="col-6">Contact:<a class="link" href="@gmail.com">@gmail.com</a>
-          </div>
-        </div>
-
-        <div class="row align-items-end">
-
-          <div class="col-lg-3 col-3">
-            <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/webaudioconf" target="_blank">
-              <i class="fab fa-twitter fa-2x" style="color:white"></i>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="mx-auto">
+        <ul class="navbar-nav">
+          <li {% if page.url == "/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span>
             </a>
-          </div>
+          </li>
+          <li {% if page.url == "/past/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+            <a class="nav-link" href="/past">Past WACs</a>
+          </li>
+          <li {% if page.url == "/proceedings/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+            <a class="nav-link" href="/proceedings">Proceedings</a>
+          </li>
+          <li {% if page.url == "/code-of-conduct/" %} class="nav-item active" {% else %} class="nav-item" {% endif %}>
+            <a class="nav-link" href="/code-of-conduct">Code of Conduct</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
+  <main>
+    {{ content }}
+  </main>
+
+  <nav class="navbar fixed-bottom navbar-dark bg-dark footer">
+    <div class="navbar container-fluid text-light">
+      <div class="row mx-auto">
+        <div class="col-6">
+          <p class="align-middle mx-auto">Copyright &copy;</p>
+        </div>
+
+        <div class="col-6" style="font-size:20px;">Contact:<a class="link" href="@gmail.com">@gmail.com</a>
         </div>
       </div>
-    </nav>
 
-    <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    <script src="/assets/scripts/script.js"></script>
-  </body>
+      <div class="row align-items-end">
+
+        <div class="">
+          <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/webaudioconf" target="_blank">
+            <i class="fab fa-twitter fa-2x" style="color:white"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </nav>
+
+  <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="/assets/scripts/script.js"></script>
+</body>
+
 </html>

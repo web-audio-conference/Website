@@ -1,11 +1,10 @@
-const bibtexParse = require('bibtex-parse');
-const fs = require('fs');
-const path = require('path');
-//const pdfNumPg = require('./pdfNumPg.js');
-const pdfParse = require('pdf-parse');
+const bibtexParse = require("bibtex-parse");
+const fs = require("fs");
+const path = require("path");
+//const pdfNumPg = require("./pdfNumPg.js");
 
-let mdPath = 'src/posts/';
-let jsonPath = 'src/_data/papers/json/';
+let mdPath = "src/posts/";
+let jsonPath = "src/_data/papers/json/";
 
 module.exports = function(bibs) {
   // Parsing bibfiles and writing md files from it
@@ -13,13 +12,13 @@ module.exports = function(bibs) {
   bibFiles = fs.readdirSync(bibs);
 
   bibFiles.forEach(function(file) {
-    let bib = fs.readFileSync(path.join(bibs, file), 'utf8');
+    let bib = fs.readFileSync(path.join(bibs, file), "utf8");
     let parsed = bibtexParse.parse(bib);
 
     fs.writeFileSync(
-      path.join(jsonPath, 'bibtojson.json'),
+      path.join(jsonPath, "bibtojson.json"),
       JSON.stringify(parsed),
-      'utf8'
+      "utf8"
     );
 
     for (let i in parsed.entries) {
@@ -37,53 +36,45 @@ module.exports = function(bibs) {
         pdflink,
         media;
 
-      let newAuthors = '';
+      let newAuthors = "";
 
-      if (parsed.entries[i].properties.hasOwnProperty('abstract')) {
+      if (parsed.entries[i].properties.hasOwnProperty("abstract")) {
         abstract = parsed.entries[i].properties.abstract.value;
 
         if (abstract.includes('"')) {
           abstract = abstract.replace(/"/g, "'");
         }
-        if (abstract.includes('- ')) {
-          abstract = abstract.replace(/- /gi, '');
+        if (abstract.includes("- ")) {
+          abstract = abstract.replace(/- /gi, "");
         }
       } else {
-        abstract = '';
+        abstract = "";
       }
 
       address = parsed.entries[i].properties.address.value;
       author = parsed.entries[i].properties.author.value;
 
-      if (author.includes(' and ')) {
-        let authors = author.split(' and ');
+      if (author.includes(" and ")) {
+        let authors = author.split(" and ");
         authors.forEach(function(element) {
           let revAuthor = element
-            .split(',')
+            .split(",")
             .reverse()
-            .join(' ');
-          newAuthors += revAuthor + ',';
+            .join(" ");
+          newAuthors += revAuthor + ",";
         });
         webAuthor = newAuthors.slice(1, -1);
-      } else if (author.includes(',')) {
-        let revAuthor = author.split(',').reverse();
+      } else if (author.includes(",")) {
+        let revAuthor = author.split(",").reverse();
         newAuthors += revAuthor;
-        webAuthor = newAuthors.replace(',', ' ').slice(1);
+        webAuthor = newAuthors.replace(",", " ").slice(1);
       } else {
         webAuthor = author;
       }
 
       booktitle = parsed.entries[i].properties.booktitle.value;
       editor = parsed.entries[i].properties.editor.value;
-
       month = parsed.entries[i].properties.booktitle.value;
-
-      /*       if (parsed.entries[i].properties.hasOwnProperty('pages')) {
-                  pages = parsed.entries[i].properties.pages.value;
-                } else {
-                  pages = '';
-                } */
-
       publisher = parsed.entries[i].properties.publisher.value;
       series = parsed.entries[i].properties.series.value;
       title = parsed.entries[i].properties.title.value;
@@ -91,43 +82,30 @@ module.exports = function(bibs) {
       id = parsed.entries[i].id;
       type = parsed.entries[i].properties.type.value;
 
-      if (parsed.entries[i].type == 'inproceedings') {
+      if (parsed.entries[i].type == "inproceedings") {
         pdflink = `/_data/papers/pdf/${year}/${year}_${id
-          .split('_')
+          .split("_")
           .slice(-1)}.pdf`;
       } else {
-        pdflink = 'none';
+        pdflink = "none";
       }
 
-      if (parsed.entries[i].properties.hasOwnProperty('url')) {
+      if (parsed.entries[i].properties.hasOwnProperty("url")) {
         media = parsed.entries[i].properties.url.value;
       } else {
-        media = 'none';
+        media = "none";
       }
       /*
-      if (parsed.entries[i].type == 'inproceedings') {
+      if (parsed.entries[i].type == "inproceedings") {
         try {
-          pdfID = id.split('_').slice(-1);
-
-          let dataBuffer = fs.readFileSync(
-            `src/_data/papers/pdf/${year}/${year}_${pdfID}.pdf`
-          );
-
-          pages = pdfParse(dataBuffer).then(function(data) {
-            return data.numpages;
+          pages = pdfNumPg(year, id).then(res => {
+            return res;
           });
-
-          async function callAsync() {
-            var x = await pages;
-            console.log(x);
-          }
-          pages = callAsync();
-          console.log(pages);
         } catch (error) {
           console.log(error);
         }
       } else {
-        pages = '';
+        pages = "";
       }
 */
       data = `--- 
@@ -139,7 +117,7 @@ webAuthor: "${webAuthor}"
 booktitle: "${booktitle}" 
 editor: "${editor}" 
 month: "${month}"
-pages: "${pages}" 
+pages: "" 
 publisher: "${publisher}" 
 series: "${series}"
 type: "${type}"  

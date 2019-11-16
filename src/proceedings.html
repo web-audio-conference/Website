@@ -29,7 +29,7 @@ date: '2019-05-23'
 <h3>Papers</h3>
 
 {% for post in collections.year2018 %}
-{% if post.data.type == 'Paper' %}
+{% if post.data.track == 'Paper' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -50,7 +50,7 @@ date: '2019-05-23'
 <h3>Talks</h3>
 
 {% for post in collections.year2018 %}
-{% if post.data.type == 'Talk' %}
+{% if post.data.track == 'Talk' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -71,7 +71,7 @@ date: '2019-05-23'
 <h3>Demos</h3>
 
 {% for post in collections.year2018 %}
-{% if post.data.type == 'Demo' %}
+{% if post.data.track == 'Demo' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -92,7 +92,7 @@ date: '2019-05-23'
 <h3>Performances</h3>
 
 {% for post in collections.year2018 %}
-{% if post.data.type == 'Performance' %}
+{% if post.data.track == 'Performance' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -113,7 +113,7 @@ date: '2019-05-23'
 <h3>Keynotes</h3>
 
 {% for post in collections.year2018 %}
-{% if post.data.type == 'Keynote' %}
+{% if post.data.track == 'Keynote' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -136,7 +136,7 @@ date: '2019-05-23'
 <h3>Papers</h3>
 
 {% for post in collections.year2017 %}
-{% if post.data.type == 'Paper' %}
+{% if post.data.track == 'Paper' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -157,7 +157,7 @@ date: '2019-05-23'
 <h3>Posters</h3>
 
 {% for post in collections.year2017 %}
-{% if post.data.type == 'Poster' %}
+{% if post.data.track == 'Poster' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -178,7 +178,7 @@ date: '2019-05-23'
 <h3>Talks</h3>
 
 {% for post in collections.year2017 %}
-{% if post.data.type == 'Talk' %}
+{% if post.data.track == 'Talk' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -199,7 +199,7 @@ date: '2019-05-23'
 <h3>Demos</h3>
 
 {% for post in collections.year2017 %}
-{% if post.data.type == 'Demo' %}
+{% if post.data.track == 'Demo' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -220,7 +220,7 @@ date: '2019-05-23'
 <h3>Artworks</h3>
 
 {% for post in collections.year2017 %}
-{% if post.data.type == 'Artwork' %}
+{% if post.data.track == 'Artwork' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -241,7 +241,7 @@ date: '2019-05-23'
 <h3>Performances</h3>
 
 {% for post in collections.year2017 %}
-{% if post.data.type == 'Performance' %}
+{% if post.data.track == 'Performance' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -262,7 +262,7 @@ date: '2019-05-23'
 <h3>Keynotes</h3>
 
 {% for post in collections.year2017 %}
-{% if post.data.type == 'Keynote' %}
+{% if post.data.track == 'Keynote' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -285,7 +285,7 @@ date: '2019-05-23'
 <h3>Papers</h3>
 
 {% for post in collections.year2016 %}
-{% if post.data.type == 'Paper' %}
+{% if post.data.track == 'Paper' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -306,7 +306,7 @@ date: '2019-05-23'
 <h3>Talks</h3>
 
 {% for post in collections.year2016 %}
-{% if post.data.type == 'Talk' %}
+{% if post.data.track == 'Talk' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -327,7 +327,7 @@ date: '2019-05-23'
 <h3>Demos</h3>
 
 {% for post in collections.year2016 %}
-{% if post.data.type == 'Demo' %}
+{% if post.data.track == 'Demo' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -348,7 +348,7 @@ date: '2019-05-23'
 <h3>Artworks</h3>
 
 {% for post in collections.year2016 %}
-{% if post.data.type == 'Artwork' %}
+{% if post.data.track == 'Artwork' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -369,7 +369,7 @@ date: '2019-05-23'
 <h3>Performances</h3>
 
 {% for post in collections.year2016 %}
-{% if post.data.type == 'Performance' %}
+{% if post.data.track == 'Performance' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -390,7 +390,7 @@ date: '2019-05-23'
 <h3>Keynotes</h3>
 
 {% for post in collections.year2016 %}
-{% if post.data.type == 'Keynote' %}
+{% if post.data.track == 'Keynote' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -411,7 +411,7 @@ date: '2019-05-23'
 <h3>Tutorials</h3>
 
 {% for post in collections.year2016 %}
-{% if post.data.type == 'Tutorial' %}
+{% if post.data.track == 'Tutorial' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -434,7 +434,7 @@ date: '2019-05-23'
 <h3>Papers</h3>
 
 {% for post in collections.year2015 %}
-{% if post.data.type == 'Paper' %}
+{% if post.data.track == 'Paper' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -455,7 +455,7 @@ date: '2019-05-23'
 <h3>Posters</h3>
 
 {% for post in collections.year2015 %}
-{% if post.data.type == 'Poster' %}
+{% if post.data.track == 'Poster' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:
@@ -476,7 +476,7 @@ date: '2019-05-23'
 <h3>Keynotes</h3>
 
 {% for post in collections.year2015 %}
-{% if post.data.type == 'Keynote' %}
+{% if post.data.track == 'Keynote' %}
 <ul>
   <li>
     {{ post.data.webAuthor }}:

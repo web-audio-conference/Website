@@ -80,6 +80,7 @@ h3 {
 ul {
     padding-left: 0;
     margin-bottom: 3rem;
+    margin-left: 3rem;
 }
 
 p,
@@ -87,4 +88,8 @@ ul,
 .abstract,
 a {
     font-size: 20px;
+}
+
+#developers {
+    font-size: 12px;
 }

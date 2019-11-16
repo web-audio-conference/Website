@@ -13,15 +13,15 @@ module.exports = function(bibs) {
 
   bibFiles.forEach(function(file) {
     let bib = fs.readFileSync(path.join(bibs, file), "utf8");
-    let parsed = bibtexParse.parse(bib);
+    let parsed = bibtexParse.entries(bib);
 
     fs.writeFileSync(
-      path.join(jsonPath, "bibtojson.json"),
+      path.join(jsonPath, "bibtojson2.json"),
       JSON.stringify(parsed),
       "utf8"
     );
 
-    for (let i in parsed.entries) {
+    for (let i in parsed) {
       let title,
         abstract,
         booktitle,
@@ -34,12 +34,14 @@ module.exports = function(bibs) {
         address,
         id,
         pdflink,
-        media;
+        media,
+        track,
+        type;
 
       let newAuthors = "";
 
-      if (parsed.entries[i].properties.hasOwnProperty("abstract")) {
-        abstract = parsed.entries[i].properties.abstract.value;
+      if (parsed[i].hasOwnProperty("ABSTRACT")) {
+        abstract = parsed[i].ABSTRACT;
 
         if (abstract.includes('"')) {
           abstract = abstract.replace(/"/g, "'");
@@ -51,8 +53,8 @@ module.exports = function(bibs) {
         abstract = "";
       }
 
-      address = parsed.entries[i].properties.address.value;
-      author = parsed.entries[i].properties.author.value;
+      address = parsed[i].ADDRESS;
+      author = parsed[i].AUTHOR;
 
       if (author.includes(" and ")) {
         let authors = author.split(" and ");
@@ -72,17 +74,18 @@ module.exports = function(bibs) {
         webAuthor = author;
       }
 
-      booktitle = parsed.entries[i].properties.booktitle.value;
-      editor = parsed.entries[i].properties.editor.value;
-      month = parsed.entries[i].properties.booktitle.value;
-      publisher = parsed.entries[i].properties.publisher.value;
-      series = parsed.entries[i].properties.series.value;
-      title = parsed.entries[i].properties.title.value;
-      year = parsed.entries[i].properties.year.value;
-      id = parsed.entries[i].id;
-      type = parsed.entries[i].properties.type.value;
+      booktitle = parsed[i].BOOKTITLE;
+      editor = parsed[i].EDITOR;
+      month = parsed[i].BOOKTITLE;
+      publisher = parsed[i].PUBLISHER;
+      series = parsed[i].SERIES;
+      title = parsed[i].TITLE;
+      year = parsed[i].YEAR;
+      id = parsed[i].key;
+      type = parsed[i].type;
+      track = parsed[i].TYPE;
 
-      if (parsed.entries[i].type == "inproceedings") {
+      if (type == "inproceedings") {
         pdflink = `/_data/papers/pdf/${year}/${year}_${id
           .split("_")
           .slice(-1)}.pdf`;
@@ -90,13 +93,13 @@ module.exports = function(bibs) {
         pdflink = "none";
       }
 
-      if (parsed.entries[i].properties.hasOwnProperty("url")) {
-        media = parsed.entries[i].properties.url.value;
+      if (parsed[i].hasOwnProperty("URL")) {
+        media = parsed[i].URL;
       } else {
         media = "none";
       }
       /*
-      if (parsed.entries[i].type == "inproceedings") {
+      if (parsed[i].type == "inproceedings") {
         try {
           pages = pdfNumPg(year, id).then(res => {
             return res;
@@ -120,7 +123,7 @@ month: "${month}"
 pages: "" 
 publisher: "${publisher}" 
 series: "${series}"
-type: "${type}"  
+track: "${track}"  
 year: "${year}" 
 id: "${id}" 
 tags: year${year}

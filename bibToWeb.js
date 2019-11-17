@@ -1,7 +1,7 @@
 const bibtexParse = require("bibtex-parse");
 const fs = require("fs");
 const path = require("path");
-//const pdfNumPg = require("./pdfNumPg.js");
+const pdfNumPg = require("./pdfNumPg.js");
 
 let mdPath = "src/posts/";
 let jsonPath = "src/_data/papers/json/";
@@ -98,11 +98,32 @@ module.exports = function(bibs) {
       } else {
         media = "none";
       }
-      /*
+
       if (parsed[i].type == "inproceedings") {
         try {
-          pages = pdfNumPg(year, id).then(res => {
-            return res;
+          pdfNumPg(year, id).then(pages => {
+            data = `--- 
+title: "${title}" 
+abstract: "${abstract}" 
+address: "${address}" 
+author: "${author}"
+webAuthor: "${webAuthor}" 
+booktitle: "${booktitle}" 
+editor: "${editor}" 
+month: "${month}"
+pages: "1-${pages}" 
+publisher: "${publisher}" 
+series: "${series}"
+track: "${track}"  
+year: "${year}" 
+id: "${id}" 
+tags: year${year}
+media: ${media} 
+pdflink: ${pdflink}
+ISSN: 2663-5844
+---`;
+
+            fs.writeFileSync(path.join(mdPath, `${id}.md`), data);
           });
         } catch (error) {
           console.log(error);
@@ -110,7 +131,7 @@ module.exports = function(bibs) {
       } else {
         pages = "";
       }
-*/
+
       data = `--- 
 title: "${title}" 
 abstract: "${abstract}" 

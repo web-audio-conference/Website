@@ -8,7 +8,7 @@ module.exports = function(year, id) {
     `src/_data/papers/pdf/${year}/${year}_${pdfID}.pdf`
   );
 
-  pages = pdfParse(dataBuffer).then(function(data) {
+  let pages = pdfParse(dataBuffer).then(function(data) {
     return data.numpages;
   });
 

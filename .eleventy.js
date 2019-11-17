@@ -2,7 +2,9 @@ const bibToWeb = require("./bibToWeb");
 const excelToWeb = require("./excelToWeb");
 
 module.exports = function(config) {
-  //excelToWeb('CameraReadyPapers2017.xls');
+  //excelToWeb("CameraReadyPapers2017.xls", "Performances and Artworks");
+  //excelToWeb("CameraReadyPapers2017.xls", "Talks and Demos");
+  //excelToWeb("CameraReadyPapers2017.xls", "Papers and Posters");
 
   bibToWeb("src/_data/papers/bib/");
 

@@ -84,7 +84,7 @@ module.exports = function(bibs) {
       id = parsed[i].key;
       type = parsed[i].type;
       track = parsed[i].TYPE;
-      /*
+
       if (type == "inproceedings") {
         pdflink = `/_data/papers/pdf/${year}/${year}_${id
           .split("_")
@@ -98,7 +98,7 @@ module.exports = function(bibs) {
       } else {
         media = "none";
       }
-
+      /*
       if (parsed[i].type == "inproceedings") {
         try {
           pdfNumPg(year, id).then(pages => {

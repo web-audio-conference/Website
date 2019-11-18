@@ -3,11 +3,6 @@ body {
     position: relative;
 }
 
-.link {
-    color: rgb(0, 184, 230);
-    font-weight: 2px;
-}
-
 .link:hover {
     color: rgb(2, 204, 255);
 }
@@ -90,6 +85,14 @@ a {
     font-size: 20px;
 }
 
-#developers {
-    font-size: 12px;
+#bird {
+    color: rgba(255, 255, 255, 0.295);
+}
+
+#bird {
+    transition: all 0.2s;
+}
+
+#bird:hover {
+    color: white;
 }

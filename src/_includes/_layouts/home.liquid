@@ -3,26 +3,16 @@ layout: _layouts/base.liquid
 ---
 
 <div class="mb-5">
-  <div class="container-fluid">
-    <div class="row justify-content-md-center">
-      <div class="col-lg-6">
-        <h1 class="title">{{ title }}</h1>
-        <div>{{ content }}</div>
-      </div>
-      <div class="col-lg-2 twitter">
-        <a
-          class="twitter-timeline"
-          data-theme="light"
-          href="https://twitter.com/WebAudioConf?ref_src=twsrc%5Etfw"
-          data-tweet-limit="3"
-        ></a>
+  <div class="row justify-content-md-center">
+    <div class="col-lg-8">
+      <h1 class="title">{{ title }}</h1>
+      <div>{{ content }}</div>
+    </div>
+    <div class="col-lg-4 twitter">
+      <a class="twitter-timeline" data-theme="light" href="https://twitter.com/WebAudioConf?ref_src=twsrc%5Etfw"
+        data-tweet-limit="3"></a>
 
-        <script
-          async
-          src="https://platform.twitter.com/widgets.js"
-          charset="utf-8"
-        ></script>
-      </div>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
   </div>
 </div>

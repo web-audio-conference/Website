@@ -2,20 +2,19 @@
 layout: _layouts/base.liquid
 ---
 
-<div class="mb-5 mx-auto">
-  <div class="container-fluid">
-    <div class="row justify-content-md-center">
-      <div class="col-lg-6">
-        <h1 class="title" id="title">{{ title }}</h1>
-        <div>
-          <div class="author">{{ webAuthor }}</div>
+<div class=" mb-5 mx-auto">
+  <div class="row justify-content-md-center">
+    <div class="col-sm">
+      <h1 class="title text-center" id="title">{{ title }}</h1>
+      <div>
+        <div class="author">{{ webAuthor }}</div>
 
-          <div class="row">
-            <div class="col-md-6">
-              <div class="abstract">{{ abstract }}</div>
-            </div>
-            <div class="col-md-6">
-              <pre class="bibtex">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="abstract">{{ abstract }}</div>
+          </div>
+          <div class="col-xl-6">
+            <pre class="bibtex">
             <code>
 @inproceedings&#123;{{id}},
   abstract = &#123;{{abstract}}&#125;,
@@ -33,17 +32,16 @@ layout: _layouts/base.liquid
 }
               </code>
             </pre>
-            </div>
           </div>
-          <div class="row">
-            <div class="col-md-6">
-              <div>
-                {% if pdflink != 'none' %}
-                <a href="{{ pdflink }}" target="blank" class="PDF">Download PDF</a>
-                {% endif %} {% if media != 'none' %}
-                <a href="{{ media }}" target="blank" class="media">Watch video</a>
-                {% endif %}
-              </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-xl-6">
+            <div>
+              {% if pdflink != 'none' %}
+              <a href="{{ pdflink }}" target="blank" class="PDF">Download PDF</a>
+              {% endif %} {% if media != 'none' %}
+              <a href="{{ media }}" target="blank" class="media">Watch video</a>
+              {% endif %}
             </div>
           </div>
         </div>

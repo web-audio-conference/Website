@@ -48,32 +48,27 @@
     </div>
   </nav>
 
-  <main>
+  <main class="container">
     {{ content }}
   </main>
 
-  <nav class="navbar fixed-bottom navbar-dark bg-dark footer">
-    <div class="navbar container-fluid text-light">
-      <div class="row mx-auto">
-        <div class="col-6 align-items-center " id="developers">
+  <footer class="fixed-bottom py-2 bg-dark text-light">
+    <div class="container-fluid">
+      <div class="row" style="font-size:1rem;color:gray;">
+        <div class="col-md-4 text-md-left text-center align-self-center">
           Developed by: Jørgen Varpe and Eigil Aandahl
         </div>
-
-        <div class="col-6 style=" font-size:20px;">Contact:<a class="link" href="@gmail.com">@gmail.com</a>
+        <div class="col-md-4 text-center align-self-center">
+          Contact:<a class="link" href="@gmail.com" style="font-size:1rem;color:#1fa5ff">@gmail.com</a>
         </div>
-      </div>
-
-      <div class="row align-items-end">
-
-        <div class="">
+        <div class="col-md-4 text-md-right text-center align-self-center">
           <a class="btn btn-social-icon btn-twitter" href="https://twitter.com/webaudioconf" target="_blank">
-            <i class="fab fa-twitter fa-2x" style="color:white"></i>
+            <i class="fab fa-twitter fa-2x" id="bird"></i>
           </a>
         </div>
-
       </div>
     </div>
-  </nav>
+  </footer>
 
   <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

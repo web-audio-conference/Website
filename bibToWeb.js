@@ -76,7 +76,7 @@ module.exports = function(bibs) {
 
       booktitle = parsed[i].BOOKTITLE;
       editor = parsed[i].EDITOR;
-      month = parsed[i].BOOKTITLE;
+      month = parsed[i].MONTH;
       publisher = parsed[i].PUBLISHER;
       series = parsed[i].SERIES;
       title = parsed[i].TITLE;

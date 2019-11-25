@@ -1,0 +1,2139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+  <Styles>
+    <Style ss:ID="s1">
+      <Font x:Family="Swiss" ss:Bold="1" />
+    </Style>
+    <Style ss:ID="s2">
+      <NumberFormat ss:Format="0%" />
+    </Style>
+  </Styles>
+  <Worksheet ss:Name="Performances and Artworks">
+    <Table>
+      <Row>
+        <Cell ss:Index="1">
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+      </Row>
+      <Row ss:Index="3">
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Paper ID</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Paper Title</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Abstract</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Author Names</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Author Emails</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Primary Contact Author Email</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Track Name</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Files</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">4</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Improvise musical ...Loops with others thanks to your Wi-Fi device’s Web browser</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">During a 15 to 30 minutes live performance, members of the audience are invited to trigger and modulate sounds with their mobile device’s Web browsers.
+They are offered a preset musical theme (composed of several melodic/rhythmic patterns, synthesizer presets and audio samples). Performers may modify these patterns or presets, make new versions of these and thus create a new musical theme.
+During a collective live performance, players connected to the ...Loops system experience instrument switches so they may discover and play different musical parts (from drum samples and monophonic synthesizer step sequencers to touch keyboard triggered polyphonic synthesizers).
+Notes played by the connected crowd are displayed on a video projected screen.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Iwan Lavanant (...Loops - Collective Musical Jams)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">loops@solam.co</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">loops@solam.co</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">13</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Open band - Audio Type</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Open Band, a platform for collective sound dialogues, is a performance that aims to experience the empowerment of public in musical context, blurring the limits of audience and performers. In this project we seek to create a web based open environment for people to play music together in a web agora, using web technologies to propose an anonymous open chat, where letters are converted to music. Instead of lone playing experience of the musician with his own instrument, we try to extend the power of individual action through a collective network. In this current version, we are working only with web audio synthesis, based on an idea of audio typography.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ariane Stolfi (Universidade de São Paulo)*; Fabio Goródscy (Universidade de São Paulo); Mathieu Barthet (QMUL)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">arianestolfi@gmail.com; fabiogorodscy@gmail.com; m.barthet@qmul.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">arianestolfi@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">open-band-audiotype.pdf (1432504 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">19</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Smartphony #1</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">This work is a continuation of my last year's performance "Concert for Smartphones". This time i'm going to dive deeper into spatialized sound synthesis. Main concepts and technical ideas of the performance: 1. network time synchronization for precise rhythmic patterns; 2. distributed diffusion of harmonics of complex tones; 3. different approaches to controlling the musical expression; 4. classical 4-part musical form based on contrasts. Performance duration: 12-18 min. Previous recordings of my audience participation performances are accessible at: https://www.youtube.com/watch?v=ivWLK6wnBdU&amp;index=1&amp;list=PL-R2oTCHob0TAGe3_cCWm2rHcVKxCyr3M.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Andrei Bundin (Herzen University)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">iBundin@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">iBundin@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">21</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Synchronia</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In search for new electronic instruments and fun interactive experiences, I'm developing a website in order to perform live dance music.
+The page itself should be projected on the stage screen for visual and illumination purposes, of course, audio and images are synchronized.
+I want to implement some interaction via websockets so the audience can play along, but this is still work in progress...
+I’m using Web Midi so I can use my little Arturia keyboard to assign some knobs and buttons. For the audio, the amazing ToneJS library. For the canvas, it’s CreateJS and the rest divs and pieces are VanillaJS.  
+
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">alfonso pardo (lalluvia)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">alfonsofonso@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">alfonsofonso@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">23</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">GridSound</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">The GridSound's DAW is a free open-source HTML5 Digital Audio Workstation based on the Web Audio API. Mix samples and create a composition directly in your modern browser. The project is currently in pre-alpha.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Thomas Tortorini (GridSound)*; Mélanie Ducani (GridSound)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">thomastortorini@gmail.com; melanieducani@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">thomastortorini@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">31</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Live JS</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">A completely live electronic music performance with visuals and lighting entirely powered by JavaScript.
+
+Following on from my submitted talk "Is Web Audio ready for the stage/dancefloor", I along with other members of Live JS (http://livejs.network) would like to demonstrate that it INDEED is ready!
+
+At JSConf.asia, we were given the opportunity to take over the entire venue (including their massive lighting rig) and broadcast our pirate JavaScript signal to everyone for the after party! We'll be doing something similar at JSConf.eu in May (if all goes to plan).
+
+Here is a video of our JSConf.asia talk (30mins) and full improvised performance: https://youtu.be/s3fsRnFfyuo?t=2131
+
+Matt, Martin and Tim (possibly more of us, depending on who can come) will be dropping Web Audio powered samples, synthesisers, and looping using multiple midi controllers. We'll also be using JavaScript to drive a massive LED wall, realtime visuals and (if possible) moving head lighting via DMX.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Matt McKegg (Loop Drop)*; Martin Schuhfuss (Live JS); Tim Pietrusky (Live JS)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">matt@wetsand.co.nz; m.schuhfuss@gmail.com; timpietrusky@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">matt@wetsand.co.nz</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">33</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Smartphone Orchestra</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">The Smartphone Orchestra is an orchestra in which ten to thousands of smartphones are synchronised to potentially form the biggest orchestra in the world. An orchestra in which every participant's smartphone plays a unique part. An orchestra that can perform anywhere in the world. From contemporary music to a dance party. From supporting a singer-songwriter to an interactive theatrical piece; everything is possible.
+
+Our technology lets us synchronise thousands of smartphones in the browser and opens up numerous possibilities to tell stories or share experiences with mass audiences. It makes use of new technologies like Web Audio, Canvas, and WebSockets, and allows the user to simply go to a website with their WiFi or mobile connection and participate instantly. Compositions are made in Ableton Live and automatically converted into JavaScript code, allowing composers who might not be familiar with coding work with our system.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Hidde de Jong (Smartphone Orchestra)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">hiddedejong0@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">hiddedejong0@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">34</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">88 Fingers</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">88 Fingers is a performance in which up to 88 players in the audience perform on an automatized piano (i.e. a YAMAHA Disklavier) via their mobile devices.
+The piano is presented in the performance space as if it would be the instrument of a solo performer (e.g. on stage or in the center of the space). 
+Apart from the web-based system that allows the players to select a single key of the piano and to play it during the concert the concept of the performance does not impose any further constraints. 
+The performance is structured into two parts of 10 minutes separated by a discussion among the members of the audience of approximately 10 minutes.
+The experience establishes a metaphor of a free and responsible society.
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Norbert Schnell (Ircam)*; Benjamin Matuszewski (Ircam)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Norbert.Schnell@ircam.fr; benjamin.matuszewski@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Norbert.Schnell@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WAC-2017-88-Fingers-final.pdf (416228 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">35</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Drops #2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Drops #2 is a collective improvisation for an unlimited number of players who are partially co-located in a common space, partially connected remotely over the internet.
+The players trigger sounds and interact through their mobile devices by touching the screen whereby the sounds played by each player are repeated by the devices of two other players.
+The sound is played via the loudspeakers of the players' mobile devices.
+Around each player unfolds a complex entanglement of different layers of sound.
+The player's sound is embedded into the polyphony generated by the players at immediate proximity as well as into the sound texture created by all players together.
+The sound of the players' mobile devices is completed by an resonating low-pitch sound texture.
+This sound texture is associated to the video projection of an earth globe that visualizes all drops at the geolocation position of their player.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Norbert Schnell (Ircam)*; Benjamin Matuszewski (Ircam)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Norbert.Schnell@ircam.fr; benjamin.matuszewski@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Norbert.Schnell@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">36</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Piano Phase Perpetuum</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">"Piano Phase Perpetuum" is a listening experience that rearranges the first section of Steve Reich's piece "Piano Phase" as an automatic performance for an unlimited number of low-latency mobile devices.
+The participants, distributed over a performance space (e.g. the audience of a concert hall or a gallery space) hold up their mobile devices without further interacting with them.
+The arrangement follows the original score of the piece in which two piano voices playing the same melodic figure of twelve 16th notes.
+Since one pianist regularly slightly increases the tempo, the figures shift in time creating a constantly evolving pattern. 
+Instead of two pianists, the piece is played automatically by two groups of mobile devices.
+Each mobile device plays one note of the five pitch classes of the melodic figure using five piano samples so that the shifting patterns are create complex echoes and motion in space.
+A reasonable duration for the performance is between 10 and 15 minutes.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Benjamin Matuszewski (Ircam); Norbert Schnell (Ircam)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">benjamin.matuszewski@ircam.fr; Norbert.Schnell@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Norbert.Schnell@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">41</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">-</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">-</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Anna Terzaroli (Santa Cecilia Conservatory of Rome, Dept. of Composition and Conducting)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">anna.giw@libero.it</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">anna.giw@libero.it</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">46</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">GrainField</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">GrainField is a performance for solo performer and an unlimited number of players in the audience who participate through their mobile devices.
+In this performance, the sound produced by the improvising performer (e.g. a percussionist, beatboxer or singer) is recorded via a microphone and sent in chunks of a few seconds round-robin to the mobile devices of the players.
+Controlling a granular synthesis engine, the players perform with a segment of sound by tilting their mobile device.
+The players' sounds change asynchronously and smoothly at different phases of the recording cycle of 10 to 30 seconds.
+The resulting soundfield is perceived as a diffuse granular echo or resonance of the performer.
+The performance is an exercise of collective improvisation that is nourished by the mutual listening of the solo performer and the players in the audience.
+The duration of the performance is determined by the performer and typically lies between 10 and 20 minutes.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Benjamin Matuszewski (Ircam); Norbert Schnell (Ircam)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">benjamin.matuszewski@ircam.fr; Norbert.Schnell@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Norbert.Schnell@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">47</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Quiver, Pop, and Dissolve: Three Essays in Gastromorphology </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">The worlds of art and gastronomy have been colliding with increasing frequency in recent years. As artists are reconsidering the aesthetic potential of the chemical senses of taste and smell, chefs have been exploring the narrative and communicative potential of a meal. The Web Audio API represents a uniquely portable and scalable solution to the challenges of synchronizing sound to a dining experience. 
+
+Working in collaboration with a well-regarded London-based chef, we propose a multisensory performance actuated by the audience members themselves. Three small dishes will be distributed to audience members in succession. Each dish will be accompanied by music from a custom-built web app using the Web Audio API, played from audience members’ mobile devices.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ben Houge (Berklee College of Music)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">bhouge@berklee.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">bhouge@berklee.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ben Houge WAC Performance 2017 formatted, revised.pdf (129363 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">50</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Apophenia</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Apophenia is an interactive music piece that sets out to explore ways to achieve a balance between artistic narration and interactivity in a generative music system. The piece is delivered as an interactive musical system that heavily utilises the Web Audio API for real-time sound synthesis, sampling and audio processing.
+
+Users are initially presented with a set of points where each points represents a note. The user can use the mouse to hover over multiple notes to generate chords and trigger melodies by clicking. The piece progresses as the user finds special connections between the notes. These special connections will reveal a visual pattern and eventually the user will discover a new dimension in the piece. 
+
+Apophenia: http://zya.github.io/apophenia
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ehsan Ziya (Freelance)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ehsan.ziya@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ehsan.ziya@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ehsan Ziya - Apophenia Camera Ready.pdf (1738336 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">53</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">FutureCollider: Generative Sonification of Large Hadron Collider data using Tone.JS</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">FutureCollider is an interactive sonification of particle collisions in the Large Hadron Collider.
+The dataset consists of predictions of particle identity, trajectory, momentum and energy, generated by running an unsupervised learning algorithm on a dataset from the CERN Open Data Portal. As these collisions have not occurred yet, the listener is exploring a sonification of future particle collisions.
+The vertical scroll position affects the timbre, tempo and progress of the music, transforming a gesture associated with passive information consumption into active musical engagement.
+The audio itself is triggered and synthesised using Tone.js, a Web Audio framework, allowing every part of the audio to vary in response to the user’s input.
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Nontokozo Sihwa (Goldsmiths College)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">nsihw001@gold.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">nsihw001@gold.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">58</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WebbyJam, a Web Tune Editor to Find Enjoyment</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">This paper describes the functions, concept and technical points of WebbyJam.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Hiroyuki Takakura (CodeNinth)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">takakura@codeninth.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">takakura@codeninth.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">webbyjam_58.doc (110592 bytes); webbyjam_58.pdf (236794 bytes); 58_webbyjam_58_CENTRED_AUHTOR-DELETED_PAGE.pdf (240972 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">64</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Live Coding YouTube </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Music listening has changed greatly with the emergence of music streaming services, such as Spotify or Youtube. However, did it inspire us to make new experimental music? Live Coding YouTube is a response to the anticipation of novel performance practices using streaming media. A live coder uses any available video from YouTube, a video streaming service, as source material to perform an improvised audiovisual piece. The challenge is to manipulate the emerging media that are streamed from a networked service given the limited functionality of the API provided. The piece finds parallels in early experimental music that manipulates magnetic tape and vinyl records. On the contrary, the audiovisual space that a musician can explore on the fly is practically infinite. The performance system is built entirely on a web browser and publicly available in the following address: https://livecodingyoutube.github.io/
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Jungho Bang (University of Michigan)*; Sang Won Lee (University of Michigan); Georg Essl (University of Wisconsin, Milwaukee)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">bjungho@umich.edu; snaglee@umich.edu; essl@uwm.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">bjungho@umich.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">69</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Sonification and Visualization of Parametric Equations</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">This paper describes how parametric equations can be sonified using the Web Audio API and visualized using a vectorscope built using the HTML5 canvas element. A working demonstration can be found at academo.org/demos/vectorscope, with a selection of user-adjustable parametric equations, including Lissajous figures and hypotrochoids.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Edward Ball (Academo)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">info@academo.org</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">info@academo.org</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Latex (7) (2).pdf (1702195 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">70</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Hyperconnected Action Painting</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">This performance invites the audience to participate in an immersive experience using their mobile devices. The aim is at capturing their actions on a digital painting inspired by Jackson Pollock's action painting technique. The audience is connected to a wireless network and a Web Audio application that recognizes a number of gestures through the mobile accelerometer sensor, which trigger different sounds. Gestures will be recognized and mapped to a digital canvas. A set of loudspeakers will complement the audience's actions with ambient sounds. The performance explores audio spatialization using both loudspeakers and mobile phone speakers, that combined with the digital painting provides an immersive audiovisual experience. The final digital canvas will be available online as a memory of the performance.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Anna Xambó (Georgia Institute of Technology)*; Gerard Roma (University of Huddersfield)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">anna.xambo@gatech.edu; gerard.roma@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">anna.xambo@gatech.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WACp2017.pdf (135512 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">71</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Sunspots</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Sunspots is a web art piece that allows the audience to explore a virtual 3D world. It is an interactive component to a physical audio release on dual-LP vinyl (also called Sunspots), allowing the material to go beyond fixed-media representation. Three environments can be navigated, each with their own audio and visual textures. The visuals make use of Three.js and custom shaders to allow for strange cloth-based physical simulations live in the browser. WebAudio is used for creation and spatialization of the sound in the 3D environment. 
+The audio for each environment is generated by overlapping multiple channels of "instruments" that are created by randomly loading different short segments of closely-related analog synthesizer material. The idea is to create generative versions of the pieces on the album that will vary endlessly and create a unique user experience.
+
+https://spiricom.github.io/sunspots/
+
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Jeffrey Snyder (Princeton University)*; Drew Wallace (Princeton University)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">josnyder@princeton.edu; drewjpwallace@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">josnyder@princeton.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Sunspots_WAC_text.doc (24576 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">75</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Frabjous day</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Frabjous day is a live-coding performance using a browser-based live-coding environment, gibberwocky, co-developed by the performer with Dr. Graham Wakefield. gibberwocky features deep integration with Ableton Live, possessing a variety of affordances for both musical sequencing and rapidly creating / assigning audio-rate modulation graphs. gibberwocky places emphasis on dynamic annotations to source code that reveal the state of underlying algorithms, including animated sparklines visually depicting synthesis modulations over time. gibberwocky also makes heavy use of a new JavaScript synthesis library, genish.js, to generate musical patterns via digital signal processing techniques.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Charlie Roberts (Worcester Polytechnic Institute)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">charlie@charlie-roberts.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">charlie@charlie-roberts.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">performance.wac.2017.camera.pdf (31953 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">76</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Sound Colour Space – A Virtual Museum</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">The project Sound Colour Space – A Virtual Museum investigates the conceptual field of sound, tone, pitch, and timbre in its relation to visual phenomena and geometrical concepts. It thus contributes to an interdisciplinary field of research and explores its adequate modes of representation and communication. Many scientists and philosophers from antiquity to modern times have studied the relationships between sound, light and geometry. Their visualisations of acoustical, optical and perceptual topics appeal to the eye and can be studied comparatively. These pictures are interesting because of their diagrammatic structure, as well as how they combine text, images and spatial structures on a flat surface and in the way they address topological, philosophical and psychological questions. They often have an aesthetic value of their own. Besides preparing these diagrams for online publication, we created interactive audiovisual examples that were also used for artistic projects.
+.
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Raimund Vogtenhuber (University of Arts Zurich / ICST)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">raimund.vogtenhuber@zhdk.ch</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">raimund.vogtenhuber@zhdk.ch</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Sound_Colour_Space_A_Virtual_Museum.pdf (960340 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">78</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">DIALECTIC IN SUSPENSE</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">A sound work about the conflicting relation between nature and contradictory human development. Natural spaces and ambient sounds mixed with residual human pollution are combined with real-time audio and data processing that shows both human and nature strategies to overcome the critical anthropocentric presence. The work has three different movements bringing the public the opportunity to enhance their environmental conscience and perspective about it. 
+No-input technique will be used not just as a compositional resource but as a metaphor: the sound made by the residual noise of human-made equipment. The noise will be treated through delays, looper, ring modulator, different distortions, filters. In parallel, a pre-analysis based on MIR stored in a database is combined with real-time processing and synthesis, random processes and human control via external interfaces. Historical climate data is used to model sound in real-time.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Matias Lennie Bruno (Redpanal.org)*; Hernán Ordiales (RedPanal)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">matias.lennie@gmail.com; hordiales@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">matias.lennie@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">82</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Diamonds in Dystopia</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Diamonds in Dystopia is a body of work and web framework for creatively datamining large sources of text and incorporating improvisation into experiential storytelling. The audience acts as collaborator by selecting words to trigger reactions generating and sending distilled, improvisational phrases culled from a massive corpus of text to the poet on stage. The individual taps coming from the audience also trigger synthesized audio effects to create a musical experience and contributing to a visual projection of the generated poem. The creators are interested in creative data mining and incorporating interactive media into performances that challenge people’s perceptions and expectations for the mediums of music, digital art and design, and poetry.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Jesse Allison (Louisiana State University)*; Derick Ostrenko (Louisiana State University); Vincent Cellucci (Louisiana State University)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">jtallison@lsu.edu; dostrenko@lsu.edu; vcellu1@lsu.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">jtallison@lsu.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Performances and Artworks</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">wac-2017-diamonds-final.pdf (213737 bytes)</Data>
+        </Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+  <Worksheet ss:Name="Talks and Demos">
+    <Table>
+      <Row>
+        <Cell ss:Index="1">
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+      </Row>
+      <Row ss:Index="3">
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Paper ID</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Paper Title</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Abstract</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Author Names</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Author Emails</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Primary Contact Author Email</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Track Name</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Files</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">10</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Demonstrating Interactive Machine Learning Tools for Rapid Prototyping of Gestural Instruments in the Browser </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">These demonstrations will allow visitors to prototype gestural, interactive musical instruments in the browser. Different browser based synthesisers can be controlled by either a Leap Motion sensor or a Myo armband. The visitor will be able to use an interactive machine learning toolkit to quickly and iteratively explore different interaction possibilities.
+
+The demonstrations show how interactive, browser-based machine learning tools can be used to rapidly prototype gestural controllers for audio.
+
+These demonstrations showcase RapidLib, a browser based machine learning library developed through the RAPID-MIX project.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Adam Parkinson (Goldsmiths)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">a.d.parkinson@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">a.d.parkinson@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WAC_RMDEMOS_CR.pdf (294338 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">14</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WebX0X Version 2</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WebX0X Version 2 is a drum synthesizer and sequencer built using the Web Audio API. It is a redesign of WebX0X Version 1 which was presented at Web Audio Conference 2016 in Atlanta, GA. Please see the attached abstract for more detailed information.
+
+WebX0X Version 2 is currently in development. The most recent stable version can be viewed at https://v2.webx0x.com.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Tony Wallace (Irritant Creative Inc.)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">tony@irritantcreative.ca</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">tony@irritantcreative.ca</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WAC2017 - WebX0X Demo Abstract - Camera.pdf (242079 bytes); WAC2017 - WebX0X Demo Abstract - Camera.doc (282624 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">16</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">MIDI.website: a web tool for MIDI communication</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">MIDI.website: an online tool for direct real-time MIDI communiction between remote clients. This web application is based on the combination of Web MIDI API, Web Audio API, and Web RTC. MIDI.website provides peer-to-peer connection between browsers and establishes RTC Data Channel for exchanging MIDI messages from and to any connected devices or virtual midi ports. The application could be useful as an acessible platform for online musical education and, in some cases, as an online MIDI-hub.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Andrei Bundin (Herzen University)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">iBundin@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">iBundin@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">22</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Noiseless Web Audio tests</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">There is a reason why the sentence "bring your own headphones" is part of every invitation to an audio related hackathon. And of course the whole point of working with audio engines like the Web Audio API is to create impressive sonic experiences. But while building such an experience it can quickly become cumbersome to test the same sound over and over again. A hackathon project might not need any tests at all, but more mature projects will benefit from tests which can be run automatically. This is even more important for projects which deal with ever evolving APIs like the Web Audio API. Every browser update may introduce a breaking change. If you don’t have automated tests to check if everything still works as expected, you might need to keep your headphones at hand.
+
+I would like to introduce a new category of tests which I call expectation tests. The idea behind expectation tests is to separate code which deals with browser anomalies from the business logic. This opens up the possibility to write code as if you dealt with one single (perfect) browser. Whenever there is a shortcoming in a supported browser which needs to be patched with a polyfill, this should be accompanied by an expectation test which checks if the browser still behaves wrongly. Later on this test will break when the polyfill can be removed again. This makes sure that only necessary patches are part of the production code.
+
+In addition to that, the polyfills should be completely separate from any business logic. Instead the polyfills should make sure to provide a uniform API in each supported browser, which then can be used by the business logic.
+
+Another benefit from using expectation tests is that it’s not necessary anymore to test your business logic with the "real" Web Audio API. I would like to present a framework which mocks the Web Audio API and allows to advance the currentTime of an AudioContext in a controlled way to make sure scheduling and AudioParam automations work correctly.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Christoph Guttandin (Media Codings)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">chrisguttandin@web.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">chrisguttandin@web.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">noiseless-web-audio-tests-talk-christoph-guttandin.pdf (28941 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">27</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WebAudio Guitar Tube Amplifier vs native amp simulations</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">We developed a tube guitar amplifier simulation made with the WebAudio API, that reproduces the main parts of the Marshall JCM 800 amplifier schematics. Each stage of the real amp has been recreated (preamp, tone stack, reverb, power amp and speaker simulation, and we added an extra multiband EQ). The “classic rock” amp simulation we built has been used in real gigs and can be compared with some native amp simulation both in terms of latency, sound quality, dynamics and comfort of the guitar play. 
+The amp is open source and can be tested online, even without a guitar (it comes with an audio player, dry guitar samples and a wave generator that can be used at input).  Our initial goal was to evaluate the limits of the WebAudio API and see if it was possible to design a web based guitar amp simulator that could compete with native simulations.
+Proposed demo: this simulation can be played in real time, guitar in hands. Today, for the best experience, we recommend using Mac OSX and a low latency sound card. We propose to compare, guitar in hands, this WebAudio based tube amp simulation with native simulations such as Guitar Rig by Native instruments (a commercial reference used by many musicians and guitarists), with GarageBand amp simulations and with Guitarix, an open source native amp simulator.
+
+Search YouTube for "WebAudio guitar amp simulation" and you will find many videos of our work. Links to the WebAudio guitar amp simulations are in the video descriptions an in the PDF paper of the submission.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Michel Buffa (Université Côte d’Azur, CNRS, INRIA)*; Jerome Lebrun (CNRS)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">buffa@i3s.unice.fr; lebrun@i3s.unice.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">buffa@i3s.unice.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">DEMO_WebAudioGuitarAmp_14ju_18h.pdf (545423 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">29</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Soundtrap: A collaborative music studio with Web Audio</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Soundtrap is an online music studio and DAW built using the latest Web Audio, Web MIDI and WebRTC standards and supported across nearly all major browsers. With over 1.5 million users and a focus on collaborative music production, Soundtrap aims to create an easy-to-use environment for users who are just getting started with music production, while still providing the advanced features required by more experienced users.
+
+The platform allows users to connect and compose music together using MIDI, live instruments and voice, in addition to providing a wide variety of loops and effects. Inside the studio users have access to integrated video chat over WebRTC, enabling instant feedback with collaborators as they create projects together in real-time.
+
+Soundtrap also works on a variety of hardware, scaling the audio experience to work on devices ranging from high end workstations to Chromebooks and mobile (Android and iOS). This scaling is made transparent to the user by auto-detecting basic performance characteristics on startup and during studio sessions, and modifying the Web Audio graph as necessary. The studio also uses a few additional techniques such as freezing finished tracks within a project to ease the runtime CPU load, doing some processing server-side where possible, and using libvorbis through emscripten to encode large WAV files to ease memory requirements.
+
+As Soundtrap wants to match the functionality and performance of a native application DAW there are still some challenges encountered around issues like audio latency, streaming, disk usage, and greater access to multiple CPU cores. To this end Soundtrap developers are contributing code towards lower audio latencies in the Chromium browser and are closely following work on the Web Audio spec around things like AudioWorklets. There is also work being done on new projects around things like "live jamming" with Web Audio over WebRTC, and integrations with other open-source projects like Google Magenta.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Andrew MacPherson (Soundtrap)*; Fredrik Lind (Soundtrap)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">andrew.macpherson@soundtrap.com; fredrik.lind@soundtrap.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">andrew.macpherson@soundtrap.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WAC2017__Soundtrap.pdf (86013 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">30</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Is Web Audio ready for the stage/dancefloor?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">The web platform now appears to have all the pieces needed to drive a full live electronic music setup. We can connect to keyboards and controllers using MIDI, synthesise any sound and process live audio. We can also leverage the vast UI toolkit that is HTML and CSS.
+
+We can build a DAW (digital audio workstation), but is it solid enough to use realtime on stage? Could we play an entire show with just JavaScript and a few midi controllers?
+
+I have been experimenting with this idea for the last couple of years. Using my own software (with a user interface designed specifically for playing live), I've now played a bunch of semi-improvised shows and learnt a whole lot along the way. From user interface design to squeezing as much performance out of Web Audio and JavaScript, I have a lot to share!
+
+For reference, here's a selection of videos featuring me playing live electronic music entirely with Web Audio and JavaScript: https://www.youtube.com/user/mmckegg/videos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Matt McKegg (Loop Drop)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">matt@wetsand.co.nz</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">matt@wetsand.co.nz</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">32</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Loop Drop: Live Electronic Music Software powered by Web Audio</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">As a follow up to my talk "Is Web Audio ready for the stage / dancefloor" I also submit a demo of the software Loop Drop (http://loopjs.com) that I will be mostly talking about. I'll also be available to discuss with attendees in more depth about the various associated challenges and the endless possibilities opened up by these new web standards!</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Matt McKegg (Loop Drop)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">matt@wetsand.co.nz</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">matt@wetsand.co.nz</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">38</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Intelligent audio plugin framework for the Web Audio API</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">The Web Audio API introduced native audio processing into web browsers. 
+Audio plugin standards have been created for developers to create audio-rich processors and deploy them into media rich websites. 
+It is critical these standards support flexible designs with clear host-plugin interaction to ease integration and avoid non-standard plugins. 
+Intelligent features should be embedded into standards to help develop next-generation interfaces and designs. 
+This paper presents a discussion on audio plugins in the web audio API, how they should behave and leverage web technologies with an overview of current standards.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Nicholas Jillings (Birmingham City University)*; Yonghao Wang (Birmingham City University); Ryan Stables (Birmingham City University); Joshua Reiss (Queen Mary's College, University of London)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">nicholas.jillings@mail.bcu.ac.uk; yonghao.wang@bcu.ac.uk; ryan.stables@bcu.ac.uk; joshua.reiss@eecs.qmul.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">nicholas.jillings@mail.bcu.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">intelligent-audio-plugin (1).pdf (274864 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">42</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">--</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">--</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Anna Terzaroli (Santa Cecilia Conservatory of Rome, Dept. of Composition and Conducting)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">anna.giw@libero.it</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">anna.giw@libero.it</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">43</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">A collaborative web platform for sound archives management and analysis</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In the context of digital sound archives, an innovative web framework for automatic analysis and manual annotation of audio files has been developed. This web framework, is called Timeside and is available under an open-source license.
+
+The TimeSide framework associates an audio processing engine, an audio database, a web API and a client-side multimedia player.
+
+The audio processing engine is written in Python language and has been designed for speech and audio signal analysis and Music Information Retrieval (MIR) tasks. It includes a set of audio analysis plugins and additionally wraps several state-of-the-art audio features extraction libraries to provide automatic annotation, segmentation and Music Information Retrieval analysis. It also provides decoding and encoding methods for most common multimedia formats.
+
+The audio database application is handled through Django (Python) and is interfaced with the audio processing engine.
+
+The web API component provides these functionalities over the web to enable web client to run analysis on the sounds in the audio database.
+Last but not least, the multimedia player provides an web player associated with several sound and analysis visualizations together with an annotations editor through a multi-tracks display.
+
+
+The TimeSide platform is available as an open-source project at the following addresses:
+
+TimeSide: https://github.com/Parisson/TimeSide</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Thomas Fillon (Parisson)*; Guillaume Pellerin (Parisson/IRCAM)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">thomas.fillon.research@gmail.com; guillaume.pellerin@parisson.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">thomas.fillon.research@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">44</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">HTML Web Audio Elements: Easy Interaction with the Web Audio API Through HTML</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">The JavaScript Web Audio API has a powerful but low-level and complicated structure. Therefore, many JavaScript-based wrapper libraries exist, which are intended to simplify its usage. This paper presents a completely new approach, which transalates the API into HTML Custom Elements and allows definition, usage and control of complex audio scenarios using only normal HTML elements</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Stephanus Volke (Jade Hochschule)*; Bastian Bechtold (Jade Hochschule); Joerg Bitzer (Jade Hochschule)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">stephanus.volke@jade-hs.de; bastian.bechtold@jade-hs.de; joerg.bitzer@jade-hs.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">stephanus.volke@jade-hs.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">webaudio-elements.pdf (83305 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">45</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Building an IDE for an embedded system using web technologies</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Implementing an understandable, accessible and effective user interface is a major challenge for many products in the microcontroller and embedded computing community. Bela, an embedded system for ultra-low latency audio and sensor processing, features a browser-based integrated development environment (IDE) using web technologies (Node.js, HTML5 and CSS). This methodology has allowed us to create an IDE that is simplified and intuitive for beginners while still being useful to those more advanced, thus supporting users as they evolve in expertise. </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Astrid Bin (QMUL)*; Jack Armitage (Queen Mary University of London); Liam Donovan (QMUL); Andrew McPherson (QMUL)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">astrid@astridbin.com; j.d.k.armitage@qmul.ac.uk; l.b.donovan@qmul.ac.uk; a.mcpherson@qmul.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">astrid@astridbin.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">building-ide-embedded.pdf (890067 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">49</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Playing (with) Mobile Devices and Web Standards ... Together</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In this talk, we present an overview over the experiences we conducted with developers, artists, pedagogues, and many different audiences over the past three years in the framework of the \textit{CoSiMa} research projects. The hypothesis of our research was that people would more or less spontaneously take their mobile device out of their pocket to join others around them in making music together. Our methodology basically consisted in trying everything we could and taking on any collaboration that fitted this hypothesis while carefully observing various aspects of design. We have focussed in this work on the exploration of affordances of mobile devices and web standards which we consider to be strong ecological factors in the development of communication, entertainment, and poetry.
+The talk includes a panorama of the applications and scenarios (i.e. participative concerts, installations, and workshops) we have developed over the past three years as well as an overview of the most important findings we have been able to formulate so far.
+The presentation concludes with a collective improvisation in which we invite the audience to participate.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Norbert Schnell (Ircam)*; Benjamin Matuszewski (Ircam)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Norbert.Schnell@ircam.fr; benjamin.matuszewski@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Norbert.Schnell@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WAC-2017-CoSiMa-final.pdf (137014 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">54</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Piper: Audio Feature Extraction in Browser and Mobile Applications</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Piper is a protocol for audio analysis and feature extraction. We propose a data schema and API that can be used to support both remote audio feature extraction services and feature extractors loaded directly into a host application. We provide a means of using existing audio feature extractor implementations with this protocol.
+
+We demonstrate several use-cases for Piper, including an “audio notebook” mobile application that uses Piper modules to analyse recordings; a web service for remote feature extraction; and the refactoring of an existing desktop application, Sonic Visualiser, to communicate with a Piper feature extraction service using a simple IPC mechanism.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Lucas Thompson (Queen Mary University of London)*; Chris Cannam (Queen Mary University of London)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">lucas.thompson@qmul.ac.uk; c.cannam@qmul.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">lucas.thompson@qmul.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">piper.pdf (210743 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">55</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Web Audio in the Dining Room</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">The worlds of the arts, gastronomy, and technology have been colliding and recombining with increasing frequency in recent years, resulting in unusual new forms of expression that engage with all of the senses in a uniquely responsive way.  Artists are increasingly seeking to exploit the expressive potential of the chemical senses of smell and taste, while at the same time chefs have been investigating how to refine the narrative, aesthetic, and communicative capabilities of a meal.
+
+Web audio technologies offer a uniquely practicable solution to some of the unexpected challenges that arise when developing multisensory dining experiences, especially when considering the inherently indeterminate nature of a meal. A sophisticated and responsive real-time system is required to respond to diners’ unpredictable choices and actions. Siting the source of the sound as close as possible to the food helps reinforce the links between the perception of taste, smell, and sound.
+
+Presenting the soundtrack to a meal via the mobile devices that diners are already bringing with them to the restaurant setting provides an innovative, scalable, and cost-effective solution to these challenges. Moreover, by coordinating the music emanating from each diner’s device, the restaurant space is transformed into an emergent sound environment, driven by the activities of the diners.
+
+This talk presents examples from the author's work collaborating with chefs to develop multisensory dining experiences since 2010, surveying different approaches to deploying responsive audio in the dining room, highlighting the promising potential of web audio technologies.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ben Houge (Berklee College of Music)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">bhouge@berklee.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">bhouge@berklee.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ben Houge WAC Talk 2017 formatted, revised.pdf (147408 bytes); 55_Ben Houge WAC Talk 2017 formatted, revised_DELETED_EMPTY_PAGE.pdf (146548 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">65</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Usage of Physics Engines for UI Design in NexusUI</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In preparation to expand the experimental interfaces in NexusUI widgets, the authors have been evaluating physics engines and exploring physics-based user interfaces on the web. Tying physics simulation events, influenced by user interactions, to web audio encourages exploration of novel methods of interactivity between users and web-based instruments. Object collisions, deformation of a mesh of objects with elastic connections, and liquid simulation via particle generation were identified as systems with dynamics that may provide interesting links to audio synthesis. Two popular physics engines explored are LiquidFun and Matter.js, with new prototype widgets taking advantage of LiquidFun's Elastic Particles and Matter.js' Cloth and Newton's Cradle composites. One of our goals is to discover methods of audio synthesis that complement the behaviors of each physical simulation. </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Anthony Marasco (Louisiana State University)*; Chase Mitchusson (Louisiana State University); Jesse Allison (Louisiana State University)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">amarasco@lsu.edu; cmitc79@lsu.edu; jtallison@lsu.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">amarasco@lsu.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">usage-physics-engines_CamReady.pdf (264928 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">73</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">An approach to assess loudness and dynamics with Web Audio native nodes</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Music content providers on the Internet like YouTube, Spotify or Apple Music, as well as a range of software playback systems like the media player “foobar2000” have a loudness normalization feature to match a series of diverse audio tracks in overall loudness. This is done to keep perceived volume differences between audio tracks as low as possible. Thus, it is important for music producers, especially mastering engineers, to master audio tracks with a particular amount of dynamic range, so that streaming services will not turn the playback volume of their tracks down. With their already low dynamic range, a listener would now even better be able to recognize their inferior sound compared to other tracks with higher dynamic range.
+
+To correctly assess the dynamics of audio material, this paper introduces two web applications that compute and visualize the loudness and dynamic range of audio material, using a subset of the loudness units described in the recommendation R 128 by the European Broadcasting Union, and using only native notes by the W3C Web Audio API.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Sebastian Zimmer (Cologne Center for eHumanities)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">sebastian.zimmer@uni-koeln.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">sebastian.zimmer@uni-koeln.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Zimmer, Sebastian - A modern approach to assess loudness and dynamics with Web Audio native nodes_CR.pdf (513351 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">79</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Real Time Synthesized Sound Effects Web Service</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">A browser based platform (RTSFX) has been created on which the sounds are generated in real time. A client-side architecture has been employed, allowing for a more flexible workflow for the sound designers. This approach makes it easily accessible to the user, while simultaneously not requiring any permanent local memory allocation. This also means that the platform is not limited by server availability, while also providing a low latency experience. A number of different approaches are used in the model design process, ranging from accurate representations of physical phenomena, to more perceptually informed qualitative methods. RTSFX offers a centralised set of elements  to establish a framework for synthesising effects. 
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Adan Benito (Queen Mary University of London)*; Thomas Vasallo (Queen Mary University of London)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">adan.benito@qmul.ac.uk; t.vassallo@qmul.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">adan.benito@qmul.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Talks and Demos</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+  <Worksheet ss:Name="Papers and Posters">
+    <Table>
+      <Row>
+        <Cell ss:Index="1">
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+      </Row>
+      <Row ss:Index="3">
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Paper ID</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Paper Title</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Abstract</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Author Names</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Author Emails</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Primary Contact Author Email</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Track Name</Data>
+        </Cell>
+        <Cell ss:StyleID="s1">
+          <Data ss:Type="String">Files</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">5</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Independent music producers making revenue from streaming: Can it form part of their business model?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">The music industry, along with other media industries has changed due to the disruptive influence of the Internet. Like any change there is a cycle before acceptance. The music industry’s first response was to try and clamp down and sue digital consumer services such as Napster, before going its own individual ways with bespoke download stores. Eventually, services such as iTunes normalised the market offering a one stop solution for producers and consumers. The new challenge is streaming. Empirical evidence suggests that it has reduced the level of piracy, but it remains difficult to establish a sustainable business model in streaming for niche independent music production companies. This paper takes three case studies and considers the potential direction for a localised, curated and tailored future for the music industry as well as a case study of a new curated streaming service.
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Steffan Thomas (Bangor University)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">s.w.thomas@bangor.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">s.w.thomas@bangor.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">6</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Play the light of Monet : Interactive web-audio/visual networking system with JavaScript</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Web technologies have expeditiously developed by programming developer and web company such as some Web applications for audio processing and synthesizing and node.js server platform by JavaScript. Especially, JavaScript has a possibility of incredible and flexible programming language such as interactive factors of dynamic action on the Web.
+This project aims to find interactive networking collab- oration system through web technologies with JavaScript in real-time that to control musical expression and various multimedia factors by Web-based API controller at each different place such as mobile SNS message chat through node.js server In this paper, we have tried to find interactive networking real-time system through web-based technologies with JavaScript for artistic expression and various multimedia works.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Euy Shick Hong (MARTE)*; Jun Kim (MARTE)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">antaresax@dongguk.edu; music@dongguk.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">antaresax@dongguk.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">7</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">DrSax.js : Web Audio Library and framework</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In last few years, web audio technologies have expeditiously developed by web developer and software company such as some web audio library and frameworks for audio processing and synthesizing by JavaScript. conspicuously, JavaScript has developed a possibility of novel and flexible program- ming language that front-end and server side such as inter- active factors of dynamic action on the Web. This paper aims to create a united sound library and framework system through web technologies with JavaScript for musical instrument and voice through Web Audio API for artistic expression and various musical works.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Euy Shick Hong (MARTE)*; Jun Kim (MARTE)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">antaresax@dongguk.edu; music@dongguk.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">antaresax@dongguk.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">8</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Webxophone : Web Audio wind instrument</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In last few years, a musical application has developed by developer and computer software company such as sound effects, midi controller, musical instrument for music play- ing and collaborate musical works in mobile, tablet PC with iPhone or Android. Especially, by Web technologies, Web audio application with Web Audio API have expeditely studied thought JavaScript that possibility of novel and flexible language.The Webxophone is a web wind instrument designed for mobile with the web and mobile technologies that microphone input (for blowing), multitouch (for finger- ing button), Gyro sensors, sound processing and synthesis in real-time on the web without install. This paper aims to present a web wind instrument application like saxophone through Web Audio API with JavaScript for musical ex pression and various musical performance.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Euy Shick Hong (MARTE)*; Jun Kim (MARTE)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">antaresax@dongguk.edu; music@dongguk.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">antaresax@dongguk.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">9</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Web Technologies for Scientific Hearing Experiments and Teaching - An Overview</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Scientists of audio-related fields need to verify their theories by conducting controlled experiments with human test subjects. The process of developing and conducting such experiments often poses non-trivial challenges to scientists and test subjects. Web technologies promise simple delivery of experiments as interactive websites, possibly even on subjects' own computers. Similar benefits are possible for teaching science. While many tasks in hearing experiments and teaching are well-supported with current web-based tools, support for scientific data structures, signal processing operations and statistical data analysis methods is still incomplete in comparison with entrenched non-web tools. These shortcomings could easily be overcome with a few libraries, however, and would provide a great boon to scientists and educators in many areas of research.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Bastian Bechtold (Jade Hochschule)*; Joerg Bitzer (Jade Hochschule); Stephanus Volke (Jade Hochschule)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">bastian.bechtold@jade-hs.de; joerg.bitzer@jade-hs.de; stephanus.volke@jade-hs.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">bastian.bechtold@jade-hs.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">scientific-audio.pdf (158589 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">11</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Open band: Audience Creative Participation Using Web  Audio Synthesis</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">This work investigates a web-based open environment enabling collaborative music experiences. We propose an artifact, Open Band, which enables collective sound dialogues in a web ``agora", blurring the limits between audience and performers. The systems relies on a multi-user chat system where textual inputs are translated to sounds. We depart from individual music playing experiences in favor of creative participation in networked music making. A previous implementation associated typed letters to pre-composed samples. We present and discuss in this paper a novel instance of our system which operates using Web Audio synthesis.
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Ariane Stolfi (Universidade de São Paulo)*; Fabio Goródscy (Universidade de São Paulo); Mathieu Barthet (QMUL); Antônio  Carvalho Junior (Universidade de São Paulo); Fernando Iazzetta (Universidade de São Paulo)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">arianestolfi@gmail.com; fabiogorodscy@gmail.com; m.barthet@qmul.ac.uk; deusanyjunior@gmail.com; iazzetta@usp.br</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">arianestolfi@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">open-band-web.pdf (2847918 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">12</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">A Web Audio Node for the Fast Creation of Natural Language Interfaces for Audio Production</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Audio production involves the use of tools such as rever- berators, compressors, and equalizers to transform raw audio into a state ready for public consumption. These tools are in wide use by both musicians and expert audio engineers for this purpose. The typical interfaces for these tools use low-level signal parameters as controls for the audio effect. These signal parameters often have unintuitive names such as “feedback” or “low-high” that have little meaning to many people. This makes them difficult to use and learn for many people. Such low-level interfaces are also common throughout audio production interfaces using the Web Audio API. Recent work in bridging the semantic gap between verbal descriptions of audio effects (e.g. “underwater”, “warm”, “bright”) and low-level signal parameters has resulted in provably better interfaces for a population of laypeople. In that work, a vocabulary of hundreds of descriptive terms was crowdsourced, along with their mappings to audio effects settings for rever- beration and equalization. In this paper, we present a Web Audio node that lets web developers leverage this vocabulary to easily create web-based audio effects tools that use natural language interfaces. Our Web Audio node and additional documentation can be accessed at https://interactiveaudiolab.github.io/audealize_api</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Michael Donovan (Northwestern University)*; Prem Seetharaman (Northwestern University); Bryan Pardo (Northwestern University)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mbdono56@gmail.com; prem@u.northwestern.edu; pardo@cs.northwestern.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">mbdono56@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Audealize_API-3.pdf (827070 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">17</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">BAT: An open-source, web-based audio events annotation tool</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In this paper we present BAT (BMAT Annotation Tool), an open-source, web-based tool for the manual annotation of events in audio recordings developed at BMAT (Barcelona Music and Audio Technologies, www.bmat.com). The main feature of the tool is that it provides an easy way to annotate the salience of simultaneous sound sources. Additionally, it allows to define multiple ontologies to adapt to multiple tasks and offers the possibility to cross-annotate audio data. Moreover, it is easy to install and deploy on servers. We carry out an evaluation where 3 annotators use BAT to annotate a small dataset composed of broadcast media recordings. The results of the experiments show that BAT offers fast annotation mechanisms and a method to assign salience that produces high agreement among annotators.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Blai Melendez-Catalan (Universitat Pompeu Fabra (UPF), Music Technology Group (MTG).)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">blaimelcat@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">blaimelcat@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">wac-2017.pdf (243434 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">18</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Write once run anywhere revisited: machine learning and audio tools in the browser with C++ and Emscripten</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">A methodology for deploying interactive machine learning and audio tools written in C++ across a wide variety of platforms, including web browsers, is described. The work flow involves development of the code base in C++, making use of all the facilities available to C++ programmers, then transpiling to asm.js bytecode, using Emscripten to allow use of the libraries in web browsers.. Audio capabilities are provided via the C++ Maximilian library that is transpiled and connected to the Web Audio API, via the ScriptProcessorNode. Machine learning is provided via the RapidLib library which implements neural networks and K-NN for regression and classification tasks. An online, browser based IDE is the final part of the system.  It aims to make the toolkit available for education and rapid prototyping purposes, without requiring software other than a web browser. Two example use cases are described: rapid prototyping of novel,  electronic instruments and education. Finally, an evaluation of the performance of the libraries is presented, showing that they perform acceptably well in the web browser, compared to the native counterparts but there is room for improvement here. The system is being used by thousands of students in our on-campus and online courses. </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Matthew Yee-King (Goldsmiths, University of London)*; Mick Grierson (Goldsmiths University of London); Michael Zbyszynski (Goldsmiths University of London); Leon Fedden (Goldsmiths University of London)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">m.yee-king@gold.ac.uk; M.Grierson@gold.ac.uk; M.Zbyszynski@gold.ac.uk; leonfedden@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">m.yee-king@gold.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Web audio conference rapidmix codecircle paper(1).doc (731853 bytes); Web audio conference rapidmix codecircle paper(2).pdf (485618 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">24</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Web Sonification Sandbox - an Easy-to-Use Web Application for Sonifying Data and Equations</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Auditory and multimodal presentation of data (“auditory
+graphs”) can allow for discoveries in a data set that are sometimes
+impossible with visual-only inspection. At the same
+time, multimodal graphs can make data, and the STEM
+fields that rely on them, more accessible to a much broader
+range of people, including many with disabilities. There
+have been a variety of software tools developed to turn data
+into sound, including the widely-used Sonification Sandbox,
+but there remains a need for simple, powerful, and more accessible
+tool for the construction and manipulation of multimodal
+graphs. Web-based audio functionality is now at
+the point where it can be leveraged to provide just such a
+tool. Thus, we developed a web application, the Web Soni-
+fication Sandbox (or simply the Web Sandbox), that allows
+users to create and manipulate multimodal graphs that convey
+information through both sonification and visualization.
+The Web Sandbox is designed to be usable by individuals
+with no technical or musical expertise, which separates it
+from existing software. The easy-to-use nature of the Web
+Sandbox, combined with its multimodal nature, allow it to
+be a maximally accessible application by a diverse audience
+of users. Nevertheless, the application is also powerful and
+flexible enough to support advanced users.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Zachary Kondak (Georgia Tech)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">zachk414@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">zachk414@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">web-sonification-sandbox (3).pdf (422532 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">25</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Loop-aware Audio Recording for the Web</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Music loops are audio recordings used as basic building blocks in many types of music. The use of pre-recorded loops facilitates engagement into music creation to users regardless of their background in music theory. Using online loop databases also affords simple collaboration and exchange. Hence, music loops are particularly attractive for Web Audio applications.
+However, traditional musical audio recording currently relies on complex DAW software. Recording loops usually requires consideration of musical meter and tempo, and withstanding metronome sounds. 
+
+In this paper, we propose "loop-aware" audio recording as a use-case for Web Audio technologies. Our approach allows for hands-free, low-stress recording of music loops in web-enabled devices. The system is able to detect repetitions in an incoming audio stream. Based on this information, it segments and ranks the repeated fragments, presenting the list to the user. We provide an example implementation, and evaluate the use of the different MIR libraries available in the Web Audio platform for the proposed task.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Gerard Roma (University of Huddersfield)*; Anna Xambó (Georgia Institute of Technology); Jason Freeman (Georgia Institute of Technology)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">gerard.roma@gmail.com; anna.xambo@gatech.edu; jason.freeman@gatech.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">gerard.roma@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">loop-aware-audio-recording.pdf (772473 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">28</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Hi-precision audio in listening tests - also in the browser?</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In listening tests, detailed sound control is sometimes mandatory down to each individual digital sample value and guarantee is needed that they are not unintentionally altered. At other times, a lesser degree of control is acceptable, if on the other hand test execution becomes less restricted. Detailed control of sound is often possible only under "laboratory" conditions where hardware and software are under complete control and sound pressure levels can be accurately calibrated. On the other hand, if test persons can do listening tests at home, via an internet browser for example, collecting large amounts of data becomes faster and cheaper (no laboratory facilities required, and more persons can do tests in parallel). Online listening tests made possible by the Web Audio API offers great flexibility in test execution, but compromises in precise stimulus control must be accepted. This paper analyzes such compromises by discussing technological limitations of Web Audio API followed by validation measurements of sound playback in popular internet browsers. The measurements show that at the detailed level there are significant differences in actual performance of different browsers and behavior is not always as expected. Finally, a solution is presented where audio presentation is delegated to an external audio presenter for situations where the limitations of Web Audio API are not acceptable.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Benjamin Pedersen (DELTA)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">benjaminpedersen@outlook.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">benjaminpedersen@outlook.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Hi_precision_audio_in_listening_tests.pdf (304111 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">37</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Intelligent audio workstation in the browser</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Music production is a complex process requiring skill and time to undertake. The industry has undergone a digital revolution, but unlike other industries the process has not changed. However, intelligent systems, using the semantic web and signal processing, can reduce this complexity by making certain decisions for the user with minimal interaction, saving both time and investment on the engineers' part. This paper will outline an intelligent Digital Audio Workstation (DAW) in designed for use in the browser. It outlines the architecture of the DAW with its audio engine (built on the Web Audio API), using AngularJS for the user interface and a relational database.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Nicholas Jillings (Birmingham City University)*; Ryan Stables (Birmingham City University)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">nicholas.jillings@mail.bcu.ac.uk; ryan.stables@bcu.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">nicholas.jillings@mail.bcu.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">intelligent-audio-workstation (1).pdf (582643 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">39</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">LFO – A Graph-based Modular Approach to the Processing of Data Streams</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">This paper introduces "lfo" — for Low Frequency Operators — a graph-based Javascript (ES2015) API for online and offline processing (i.e. analysis and transformation) of data streams such as audio and motion sensor data. The library is open-source and entirely based on web standards. The project aims at creating an ecosystem consisting of platform-independent stream operator modules such as filters and extractors as well as platform-specific source and sink modules such as audio i/o, motion sensor inputs, and file access. The modular approach of the API allows for using the library in virtually any Javascript environment. A first set of operators as well as basic source and sink modules for web browsers and Node.js are included in the distribution of the library. The paper introduces the underlying concepts, describes the implementation of the API, and reports on benchmarks of a set of operators. It concludes with the presentation of a set of example applications.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Benjamin Matuszewski (Ircam)*; Norbert Schnell (Ircam)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">benjamin.matuszewski@ircam.fr; Norbert.Schnell@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">benjamin.matuszewski@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">2017-wac-lfo_camera-ready.pdf (464939 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">40</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">The WASABI Project: a 2 million song database with audio and cultural metadata plus WebAudio enhanced client applications</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">The WASABI project (started in early 2017), is a 42-month project founded by the French National Agency for Research (ANR). Partners in this project are: the I3S laboratory from CNRS, IRCAM, DEEZER, and a private company named Parisson. Other collaborators are Radio France (journalists, archivists), music composers, musicologists, music schools, sound engineering schools.
+Its primary goal consists in building a 2 million song knowledge base that contains metadata collected from music databases on the Web (artists, discography, producers, year of production, etc.), from the analysis of song lyrics (what are they talking about? are locations or people mentioned? Which emotions do they convey? What is the structure of the song lyrics?), and from the audio analysis (beat, loudness, chords, structure, cover detection, source separation / demixing).
+The main originality of this project is the collaboration between the algorithms that will extract semantic metadata from the web and from song lyrics with the algorithms that will work on the audio. Unmixing (separate the different audio sources from a stereo audio file) can be enhanced if we know in advance the orchestration, genre detection can be more accurate if we know the song topic and emotions from the words used in its lyrics, etc.
+A preliminary version of this database is already online and will be enriched during the duration of this project. WebAudio enhanced applications will be associated with each song in this database. An online mixing table, guitar amp simulations with a virtual pedalboard, audio analysis visualization tools, annotation tools, a similarity search tool that works by uploading audio extracts or playing some melody using a MIDI device, etc. are planned as companions for the WASABI database. Some prototype tools have already been published or demoed at different conferences.
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Michel Buffa (Université Côte d’Azur, CNRS, INRIA)*; Catherine Faron-Zucker (Université Côte d’Azur, CNRS, INRIA); Alain Giboin (Université Côte d’Azur, CNRS, INRIA); Isabelle Mirbel (Université Côte d’Azur, CNRS, INRIA); Elena Cabrio (Université Côte d’Azur, CNRS, INRIA); Geoffroy Peeters (Telecom ParisTech); Guillaume Pelerin (IRCAM); Thomas Fillon (PARISSON); Manuel Moussalam (DEEZER); Romain Hennequin (DEEZER); Gabriel Meseguer Brocal (IRCAM); Francesco Piccoli (DEEZER); Fabrice Jauvat (Université Côte d’Azur, CNRS, INRIA); Elmahdi Korfed (Université Côte d’Azur, CNRS, INRIA)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">buffa@i3s.unice.fr; faron@i3s.unice.fr; alain.giboin@inria.fr; isabelle.mirbel@i3s.unice.fr; Elena.cabrio@i3s.unice.fr; geoffroy.peeters@telecom-paristech.fr; Guillaume.Pellerin@ircam.fr; thomas@parisson.com; manuel.moussallam@deezer.com; rhennequin@deezer.com; Gabriel.MeseguerBrocal@ircam.fr; fpiccoli@deezer.com; fabrice.jauvat@i3s.unice.fr; elmahdi.korfed@i3s.unice.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">buffa@i3s.unice.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WasabiFinal.pdf (2029613 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">48</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Sound recycling from public databases</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Discovering new sounds from online databases is a tedious task. Standard search tools and manual exploration fails to manage the actual amount of information available.This paper presents a new approach to the problem which takes advantage of grown technologies like Big Data and Machine Learning,  keeping in mind compositional concepts and focusing on artistic performances. Among several different distributed systems useful for music experimentation, a new workflow is proposed based on analysis techniques from Music Information Retrieval (MIR) combined with massive online databases, dynamic user interfaces, physical controllers and real-time synthesis. Based on Free Software tools and standard communication protocols to classify, cluster and segment sound. The control architecture allows multiple clients request the API services concurrently enabling collaborative work. The resulting system can retrieve well defined or pseudo-aleatory, audio samples from the web, mix and transform them in real-time during a live-coding performance, play like another instrument in a band, as a solo artist combined with visual feedback or working alone as automated multimedia installation.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Hernán Ordiales (RedPanal)*; Matias Lennie Bruno (Redpanal.org)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">hordiales@gmail.com; matias.lennie@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">hordiales@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">51</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">trackswitch.js: A Versatile Web-Based Audio Player for Presenting Scientific Results</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">trackswitch.js is a versatile web-based audio player that enables researchers to conveniently present examples and results from scientific audio processing applications. Based on a multitrack architecture, trackswitch.js allows a listener to seamlessly switch between multiple audio tracks, while synchronously indicating the playback position within images associated to the audio tracks. These images may correspond to feature representations such as spectrograms or to visualizations of annotations such as structural boundaries or musical note information. The provided switching and playback functionalities are simple yet useful tools for analyzing, navigating, understanding, and evaluating results obtained from audio processing algorithms. Furthermore, trackswitch.js is an easily extendible and manageable software tool, designed for non-expert developers and unexperienced users. Offering a small but useful selection of options and buttons, trackswitch.js requires only basic knowledge to implement a versatile range of components for web-based audio demonstrators and user interfaces. Besides introducing the underlying techniques and the main functionalities of trackswitch.js we provide several use cases that indicate the flexibility and usability of our software for different audio-related research areas.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Nils Werner (International Audio Laboratories Erlangen)*; Stefan Balke (International Audio Laboratories Erlangen); Fabian-Robert Stöter (International Audio Laboratories Erlangen); Meinard Müller (International Audio Laboratories Erlangen); Bernd Edler (International Audio Laboratories Erlangen)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">nils.werner@audiolabs-erlangen.de; stefan.balke@audiolabs-erlangen.de; fabian-robert.stoeter@audiolabs-erlangen.de; meinard.mueller@audiolabs-erlangen.de; bernd.edler@audiolabs-erlangen.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">nils.werner@audiolabs-erlangen.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">paper-17-07-18.pdf (953387 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">59</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Practicable Soundmapping:  JavaScript enabled Edge Compute</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In this paper, we report on developments of the Citygram project, which provides a comprehensive platform to capture, stream, analyze, visualize, and provide easy access to spatiotemporal soundscape data. Launched in 2011, Citygram’s recent strategic decision has resulted in system migration from compiled languages to JavaScript. Citygram now runs on standard web-browsers or in node.js significantly alleviating problems concerning core soundmapping system complexities including operating system limitations, hardware dependency, software update and dissemination issues, data access mechanism, data visualization, and cost. This strategy has made practicable a key design philosophy for soundmapping: rapid sensor network growth for spatiotemporally granular soundscape capture through community and citizen-scientist engagement. We summarize research and development for the following modules (1) sensor module allowing high-value data transmission through edge compute paradigms, (2) machine learning module focusing on environmental sound classification, (3) visualization and data access prototypes.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Tae Hong Park (NYU)*; Minjoon Yoo (NYU)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">thp1@nyu.edu; minjoon.yoo@nyu.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">thp1@nyu.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">PracticalSoundmapping.Final.pdf (407949 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">60</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Compiling Faust audio DSP code to WebAssembly</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">After a first version based on asm.js [4], we show in this paper how the Faust audio DSP language can be used to generate efficient Web Audio nodes based on WebAssem- bly. Two new compiler backends have been developed. The libfaust library version of the compiler has been compiled for the Web, thus allowing to have an efficient compilation chain from Faust DSP sources and libraries to audio nodes directly available in the browser.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Stéphane  Letz (GRAME)*; Yann Orlarey (GRAME); Dominique Fober (GRAME)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">letz@free.fr; orlarey@grame.fr; fober@grame.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">letz@free.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Faust-web-wac.pdf (931176 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">61</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Towards a Framework for the Discovery of Collections of Live Music Recordings and Artefacts on the Semantic Web</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">This paper introduces a platform for the representation and discovery of live music recordings and associated artefacts based on a dedicated data model. We demonstrate our technology by implementing a Web-based discovery tool for the Grateful Dead collection of the Internet Archive, a large collection of concert recordings annotated with editorial metadata. We represent this information using a Linked Data model complemented with data aggregated from several additional Web resources discussing and describing these events. These data include descriptions and images of physical artefacts such as tickets, posters and fan photos, as well as other information, e.g. about location and weather. The system uses signal processing techniques for the analysis and alignment of the digital recordings. During the discovery, users can juxtapose and compare different recordings of a given concert, or different performances of a given song by interactively blending between them.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Thomas Wilmering (Queen Mary University of London)*; Florian Thalmann (Queen Mary University of London); Mark B. Sandler (Queen Mary University of London)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">t.wilmering@qmul.ac.uk; f.thalmann@qmul.ac.uk; mark.sandler@qmul.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">t.wilmering@qmul.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">framework-discovery-collections.pdf (2636963 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">62</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Exploring Musical Expression on the Web by Deforming, Exaggerating, and Blending Audio Recordings of Performances</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">We introduce a prototype of an educational web application for comparative performance analysis based on source separation and object-based audio techniques. The underlying system decomposes recordings of classical music performances into note events using score-informed source separation and represents the decomposed material using semantic web technologies. In a visual and interactive way, users can explore individual performances by highlighting specific musical aspects directly within the audio and by altering the temporal characteristics to obtain versions in which the micro-timing is exaggerated or suppressed. Multiple performances of the same work can be compared by juxtaposing and blending between the corresponding recordings. Finally, by adjusting the timing of events, users can generate intermediates of multiple performances to investigate their commonalities and differences.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Florian Thalmann (Queen Mary University of London); Sebastian Ewert (Queen Mary University of London)*; Geraint Wiggins (Vrije Universiteit Brussel); Mark B. Sandler (Queen Mary University of London)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">f.thalmann@qmul.ac.uk; s.ewert@qmul.ac.uk; geraint.wiggins@qmul.ac.uk; mark.sandler@qmul.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">s.ewert@qmul.ac.uk</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">exploring-musical-expression-final.pdf (336885 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">63</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Nü Soundworks: Using spectators smartphones as a distributed network of speakers and sensors during live performances.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">This paper presents the Nü framework. The objective of the framework is to provide composers with a tool to control web-based audio processes on spectators smartphones during live performances. Connecting their devices to a webpage broadcasted by the performer's laptop, spectators become part of the composition: from simple sound sources to active musicians. From a Max based interface, the performer can then control the behaviours of conceptual units, referred to as Nü modules, designed for live composition (distributed room reverb, granular synthesis, etc.). Each module is composed of a pair of JavaScript classes - one for the client, another for the server - relying on the Web Audio API for audio processing, and OSC messages for parameters control. Nü is an open source project based on the Soundworks framework. </Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">David Poirier-Quinot (IRCAM)*; Norbert Schnell (Ircam); Olivier Warusfel (IRCAM)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">davipoir@gmail.com; Norbert.Schnell@ircam.fr; olivier.warusfel@ircam.fr</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">davipoir@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WAC_2017_SoundworksNu_v2.1.pdf (1214707 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">67</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">ARCADE 3D-audio codec: an implementation for the web</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">This poster introduces the implementation of the ARCADE 3D-audio codec for web browsers.
+ARCADE can embed a full 3D audio scene in a simple stereo-compatible audio stream that can be further compressed with standard lossy compression schemes, aired to analog or digital radio receivers or even stored on analog supports. An ARCADE-encoded stream can be decoded to any 2D or 3D-audio rendering format, for instance using Vector-Based Amplitude Panning (VBAP), Higher Order Ambisonics (HOA), or personalized binaural with headtracking.
+ARCADE adapts seamlessly to the audio industry needs, from storage to production, distribution/delivery, and rendering. It finds uses in Virtual or Augmented Reality (VR/AR), movies, gaming, music, telepresence &amp; teleconferencing.
+We present a JavaScript (JS) and Web Audio API implementation of the ARCADE decoder, which was originally written in C++11, along with technical details of the porting operations. Live demos of 3D-audio content transmission, decoding and dynamic binaural rendering will be given during the poster session.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">François Becker (Coronal Audio)*; Benjamin Bernard (Coronal Audio); Clément Carron (Coronal Audio)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">francois@coronal.audio; benjamin@coronal.audio; clement@coronal.audio</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">francois@coronal.audio</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">WAC2017 - CORONAL.pdf (446045 bytes); WAC2017 - POSTER.pdf (122436 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">68</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Usage of Physics Engines for UI Design in NexusUI</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In preparation to expand NexusUI, the authors have decided to utilize physics engines for new NexusUI widgets. This research is exploring new avenues of physics-based user interfaces on the web. Tying physics-based user interfaces to web audio encourages exploration of non-linear connections to sound synthesis. The research is meant to study the benefits of liquid simulation alongside rigid bodies when used in sound synthesis and aims to answer whether or not physics-based user interfaces enhance performances. The two physics engines being utilized for the new NexusUI collections are LiquidFun and Matter.js. The new NexusUI widget prototypes are going to take advantage of LiquidFun's Elastic Particles and Matter.js' Cloth to compare uniform distribution disruption with the intent of investigating what 2D space means to music. One of our goals is to find methods of audio synthesis that complement the behaviors of each physics engine. The research breaks down to:
+Why physics engines?
+	What new avenues open for web audio?
+	Are interactions within physics engines more intuitive than those 		without?
+	Do they encourage more exploration than those without?
+	What about non-linear connections to musical parameters?
+	Do svg’s help us utilize physics engines?
+What are the benefits of each physics engine and what can they bring to web audio?
+	Liquid simulation vs rigid bodies
+How do we take advantage of elements of each library? (one tackles surface tension, etc.)
+	Section dedicated to comparing and contrasting the two libraries
+How can they enhance performance?
+
+Usage of Physics Engines with new NexusUI widgets for new user interfaces is a part of expanding the NexusUI library with new widget collections. NexusUI aims to create new interfaces for audio performance in the browser by taking advantage of unique properties of certain engines. The NexusUI team is researching the pros cons of the applications of each physics engine to develop widgets that play to their strengths.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Chase Mitchusson (LSU)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">cmtchssn@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">cmtchssn@gmail.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String" />
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">72</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Strategies for Per-Sample Processing of Audio Graphs in the Browser</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Due to current browser limitations, most synthesis in the browser is currently performed using the block-rate nodes included in the WebAudio API. However, block-rate processing of audio graphs precludes many types of synthesis in addition to limiting both the accuracy and flexibility of scheduling. We describe alternative strategies for performing efficient, per-sample processing of audio graphs in the browser using the ScriptProcessor node, affording synthesis techniques that are not commonly found in existing JavaScript audio libraries. We introduce a new library, Genish.js, that provides unit generators for common low-level synthesis tasks and acts as a compiler for signal processing functions; this library is a loose port of the Gen framework for Max/MSP. We used Genish.js to update a higher-level library for audio programming, Gibberish.js, realizing improvements to both efficiency and audio quality. Preliminary benchmarks comparing the performance of Genish.js audio graphs to equivalent graphs made with the WebAudio API show promising results.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Charlie Roberts (Worcester Polytechnic Institute)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">charlie@charlie-roberts.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">charlie@charlie-roberts.com</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">wac.2017.pdf (677405 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">80</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Active Server Roles for Extended Distributed Performance Complexity in Diamonds in Dystopia</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Distributed performance systems that utilize a centralized server for connectivity have the potential to also provide extended computational and storage resources that would not be beneficial or even possible if distributed onto mobile clients. The usage of large datasets, shared or collaborative resources, and processor intensive techniques can be performed on the server while allowing time sensitive and less complex user specific computation to occur on client devices. Many of these types of problems can be solved using tools developed for cloud computing. This approach is demonstrated in the work "Diamonds in Dystopia", a collaborative poetry performance that incorporates audience interaction on mobile devices, generation of poetic material on server side resources, real-time synthesis distributed through mobile and venue speakers, a live poetry reading performance and the live synthesis of poetry from the collective ensemble.</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Jesse Allison (Louisiana State University)*; Derick Ostrenko (Louisiana State University); Vincent Cellucci (Louisiana State University)</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">jtallison@lsu.edu; dostrenko@lsu.edu; vcellu1@lsu.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">jtallison@lsu.edu</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">wac-2017-active-final.pdf (369889 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">83</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Cloudspeakers - a mobile performance network</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">In this project we developed a network of cloudspeakers. These are mobile speakers connected to a raspberry pi3 equipped with a lowlatency audio card. They are connected to a wifi network and run a SuperCollider-Server (scsynth). Our cloudspeaker can be addressed with the SuperCollider (sclang) in the network. For this purpose we had to create a stable and scaleable network, and we had to find
+solutions for problems like latency, jitter, or software management. This network can be used for artistic projects and can be combined with a webserver and the use of mobile devices.
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Raimund Vogtenhuber (University of Arts Zurich / ICST)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">raimund.vogtenhuber@zhdk.ch</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">raimund.vogtenhuber@zhdk.ch</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Cloudspeakers - a mobile performance network.pdf (345254 bytes)</Data>
+        </Cell>
+      </Row>
+      <Row>
+        <Cell>
+          <Data ss:Type="String">84</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Synchronized mobile devices using web audio technology on a Raspberry Pi</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">This paper describes the ongoing development of a system
+for the creation of a distributed musical space: the MusicBox.
+The MusicBox has been realized as an open access
+point for mobile devices. It provides a musical web application
+enabling the musician to distribute audio events
+onto the connected mobile devices and control synchronous
+playback of these events.
+</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Jan-Torsten Milde (Fulda university of applied science)*</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">milde@hs-fulda.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">milde@hs-fulda.de</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">Papers and Posters</Data>
+        </Cell>
+        <Cell>
+          <Data ss:Type="String">wac-84-final.pdf (1843771 bytes)</Data>
+        </Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workbook>

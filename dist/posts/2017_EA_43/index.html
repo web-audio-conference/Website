@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
+  <meta content="ie=edge" http-equiv="X-UA-Compatible" />
+  <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/0cb65f14a9.js"></script>
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+  <title>
+    WAC
+    |
+    A collaborative web platform for sound archives management and analysis
+  </title>
+
+</head>
+
+<body>
+
+  <a href="/"><img alt="Responsive image" class="img-fluid" src="/assets/images/wac-header.png"></a>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <!--a class="navbar-brand" href="/">WAC</a-->
+    <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+      class="navbar-toggler" data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <div class="mx-auto">
+        <ul class="navbar-nav">
+          <li  class="nav-item" >
+            <a class="nav-link" href="/">Home<span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li  class="nav-item" >
+            <a class="nav-link" href="/past">Past WACs</a>
+          </li>
+          <li  class="nav-item" >
+            <a class="nav-link" href="/proceedings">Proceedings</a>
+          </li>
+          <li  class="nav-item" >
+            <a class="nav-link" href="/code-of-conduct">Code of Conduct</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="container">
+    
+<div class=" mb-5 mx-auto">
+  <div class="row justify-content-md-center">
+    <div class="col-sm">
+      <h1 class="title text-center" id="title">A collaborative web platform for sound archives management and analysis</h1>
+      <div>
+        <div class="author">Thomas Fillon, Guillaume Pellerin</div>
+
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="abstract">In the context of digital sound archives, an innovative web framework for automatic analysis and manual annotation of audio files has been developed. This web framework, is called Timeside and is available under an open-source license. The TimeSide framework associates an audio processing engine, an audio database, a web API and a client-side multi-media player. The audio processing engine is written in Python language and has been designed for speech and audio signal analysis and Music Information Retrieval (MIR) tasks. It includes a set of audio analysis plugins and additionally wraps several state-of-the-art audio features extraction libraries to provide automatic annotation, segmentation and Music Information Retrieval analysis. It also provides decoding and encoding methods for most common multimedia formats. The audio database application is handled through Django (Python) and is interfaced with the audio processing engine. The web API component provides these functionalities over the web to enable web client to run analysis on the sounds in the audio database. Last but not least, the multi-media player provides an web player associated with several sound and analysis visualizations together with an annotations editor through a multi-tracks display. The TimeSide platform is available as an open-source project at the following addresses: TimeSide: https://github.com/Parisson/TimeSide</div>
+          </div>
+          <div class="col-xl-6">
+            <pre class="bibtex">
+            <code>
+@inproceedings&#123;2017_EA_43,
+  abstract = &#123;In the context of digital sound archives, an innovative web framework for automatic analysis and manual annotation of audio files has been developed. This web framework, is called Timeside and is available under an open-source license. The TimeSide framework associates an audio processing engine, an audio database, a web API and a client-side multi-media player. The audio processing engine is written in Python language and has been designed for speech and audio signal analysis and Music Information Retrieval (MIR) tasks. It includes a set of audio analysis plugins and additionally wraps several state-of-the-art audio features extraction libraries to provide automatic annotation, segmentation and Music Information Retrieval analysis. It also provides decoding and encoding methods for most common multimedia formats. The audio database application is handled through Django (Python) and is interfaced with the audio processing engine. The web API component provides these functionalities over the web to enable web client to run analysis on the sounds in the audio database. Last but not least, the multi-media player provides an web player associated with several sound and analysis visualizations together with an annotations editor through a multi-tracks display. The TimeSide platform is available as an open-source project at the following addresses: TimeSide: https://github.com/Parisson/TimeSide&#125;,
+  address = &#123;London&#125;,
+  author = &#123;Fillon, Thomas and Pellerin, Guillaume&#125;,
+  booktitle = &#123;Proceedings of the International Web Audio Conference&#125;,
+  editor = &#123;Thalmann, Florian and Ewert, Sebastian&#125;,
+  month = &#123;August&#125;,
+  pages = &#123;&#125;,
+  publisher = &#123;Queen Mary University of London&#125;,
+  series = &#123;WAC '17&#125;,
+  title = &#123;A collaborative web platform for sound archives management and analysis&#125;,
+  year = &#123;2017&#125;,
+  ISSN = &#123;2663-5844&#125;
+}
+              </code>
+            </pre>
+          </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-xl-6">
+            <div>
+              
+              <a href="/_data/papers/pdf/2017/2017_43.pdf" target="blank" class="PDF">Download PDF</a>
+               
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
+
+  <footer class="fixed-bottom py-2 bg-dark text-light">
+    <div class="container-fluid">
+      <div class="row" style="color:gray;">
+        <div class="col-md-6 text-md-left text-center align-self-center" id="developers">
+          Developed by: Jørgen Varpe and Eigil Aandahl
+        </div>
+        <div class="col-md-6 text-md-right text-center align-self-center">
+          <a href="https://twitter.com/webaudioconf" target="_blank">
+            <img src="/assets/images/twitter.svg" width="40px" height="40px" id="bird" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="/assets/scripts/script.js"></script>
+</body>
+
+</html>

@@ -95,7 +95,8 @@ a {
     filter: opacity(50%);
 }
 
-#bird {
+#bird,
+.devLink {
     transition: all 0.2s;
 }
 
@@ -103,9 +104,24 @@ a {
     filter: opacity(100%);
 }
 
+.devLink {
+    font-size: 1rem;
+    color: #66abfa;
+    text-decoration: none;
+}
+
+.devLink:hover {
+    text-decoration: none;
+    color: black;
+}
+
 @media (max-width: 576px) {
     #developers {
         font-size: 70%;
+    }
+
+    .devLink {
+        font-size: 100%;
     }
 
     #bird {

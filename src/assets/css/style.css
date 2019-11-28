@@ -3,6 +3,12 @@ body {
     position: relative;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .link:hover {
     color: rgb(2, 204, 255);
 }

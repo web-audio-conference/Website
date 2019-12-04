@@ -4,11 +4,11 @@ const pdfParse = require("pdf-parse");
 module.exports = function(year, id) {
   const pdfID = id.split("_").slice(-1);
 
-  let dataBuffer = fs.readFileSync(
+  const dataBuffer = fs.readFileSync(
     `src/_data/papers/pdf/${year}/${year}_${pdfID}.pdf`
   );
 
-  let pages = pdfParse(dataBuffer).then(function(data) {
+  const pages = pdfParse(dataBuffer).then(function(data) {
     return data.numpages;
   });
 

@@ -12,8 +12,8 @@ module.exports = function(bibs) {
   const bibFiles = fs.readdirSync(bibs);
 
   bibFiles.forEach(function(file) {
-    let bib = fs.readFileSync(path.join(bibs, file), "utf8");
-    let parsed = bibtexParse.entries(bib);
+    const bib = fs.readFileSync(path.join(bibs, file), "utf8");
+    const parsed = bibtexParse.entries(bib);
 
     fs.writeFileSync(
       path.join(jsonPath, "bibtojson2.json"),
@@ -58,7 +58,7 @@ module.exports = function(bibs) {
       author = parsed[i].AUTHOR;
 
       if (author.includes(" and ")) {
-        let authors = author.split(" and ");
+        const authors = author.split(" and ");
         authors.forEach(function(element) {
           let revAuthor = element
             .split(",")
@@ -68,7 +68,7 @@ module.exports = function(bibs) {
         });
         webAuthor = newAuthors.slice(1, -1);
       } else if (author.includes(",")) {
-        let revAuthor = author.split(",").reverse();
+        const revAuthor = author.split(",").reverse();
         newAuthors += revAuthor;
         webAuthor = newAuthors.replace(",", " ").slice(1);
       } else {

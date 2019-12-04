@@ -9,7 +9,7 @@ let jsonPath = "src/_data/papers/json/";
 module.exports = function(bibs) {
   // Parsing bibfiles and writing md files from it
 
-  bibFiles = fs.readdirSync(bibs);
+  const bibFiles = fs.readdirSync(bibs);
 
   bibFiles.forEach(function(file) {
     let bib = fs.readFileSync(path.join(bibs, file), "utf8");
@@ -36,7 +36,8 @@ module.exports = function(bibs) {
         pdflink,
         media,
         track,
-        type;
+        type,
+        webAuthor;
 
       let newAuthors = "";
 
@@ -132,7 +133,7 @@ ISSN: 2663-5844
         pages = "";
       }
 */
-      data = `--- 
+      const data = `--- 
 title: "${title}" 
 abstract: "${abstract}" 
 address: "${address}" 

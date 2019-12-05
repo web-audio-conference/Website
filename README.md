@@ -4,7 +4,7 @@
 
 1. Run "npm install" to install dependencies
 
-2. Run "npx eleventy --serve" to generate output folder called "dist" and to start servers.
+2. Run "npm start" to generate output folder called "dist" and to start servers.
 
 ## Website purpose
 

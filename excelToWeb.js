@@ -7,7 +7,7 @@ let jsonPath = "src/_data/papers/json/";
 
 module.exports = function(excelFile, sheetname) {
   // Parsing excel sheet 1 and writing md files from it
-  excel = path.join("src/_data/papers/excel/", excelFile);
+  const excel = path.join("src/_data/papers/excel/", excelFile);
 
   excel2json(
     {

@@ -1,7 +1,6 @@
 const bibtexParse = require("bibtex-parse");
 const fs = require("fs");
 const path = require("path");
-const pdfNumPg = require("./pdfNumPg.js");
 
 let mdPath = "src/posts/";
 let jsonPath = "src/_data/papers/json/";
@@ -9,11 +8,11 @@ let jsonPath = "src/_data/papers/json/";
 module.exports = function(bibs) {
   // Parsing bibfiles and writing md files from it
 
-  bibFiles = fs.readdirSync(bibs);
+  const bibFiles = fs.readdirSync(bibs);
 
   bibFiles.forEach(function(file) {
-    let bib = fs.readFileSync(path.join(bibs, file), "utf8");
-    let parsed = bibtexParse.entries(bib);
+    const bib = fs.readFileSync(path.join(bibs, file), "utf8");
+    const parsed = bibtexParse.entries(bib);
 
     fs.writeFileSync(
       path.join(jsonPath, "bibtojson2.json"),
@@ -36,7 +35,8 @@ module.exports = function(bibs) {
         pdflink,
         media,
         track,
-        type;
+        type,
+        webAuthor;
 
       let newAuthors = "";
 
@@ -57,7 +57,7 @@ module.exports = function(bibs) {
       author = parsed[i].AUTHOR;
 
       if (author.includes(" and ")) {
-        let authors = author.split(" and ");
+        const authors = author.split(" and ");
         authors.forEach(function(element) {
           let revAuthor = element
             .split(",")
@@ -67,7 +67,7 @@ module.exports = function(bibs) {
         });
         webAuthor = newAuthors.slice(1, -1);
       } else if (author.includes(",")) {
-        let revAuthor = author.split(",").reverse();
+        const revAuthor = author.split(",").reverse();
         newAuthors += revAuthor;
         webAuthor = newAuthors.replace(",", " ").slice(1);
       } else {
@@ -98,41 +98,7 @@ module.exports = function(bibs) {
       } else {
         media = "none";
       }
-      /*
-      if (parsed[i].type == "inproceedings") {
-        try {
-          pdfNumPg(year, id).then(pages => {
-            data = `--- 
-title: "${title}" 
-abstract: "${abstract}" 
-address: "${address}" 
-author: "${author}"
-webAuthor: "${webAuthor}" 
-booktitle: "${booktitle}" 
-editor: "${editor}" 
-month: "${month}"
-pages: "1-${pages}" 
-publisher: "${publisher}" 
-series: "${series}"
-track: "${track}"  
-year: "${year}" 
-id: "${id}" 
-tags: year${year}
-media: ${media} 
-pdflink: ${pdflink}
-ISSN: 2663-5844
----`;
-
-            fs.writeFileSync(path.join(mdPath, `${id}.md`), data);
-          });
-        } catch (error) {
-          console.log(error);
-        }
-      } else {
-        pages = "";
-      }
-*/
-      data = `--- 
+      const data = `--- 
 title: "${title}" 
 abstract: "${abstract}" 
 address: "${address}" 

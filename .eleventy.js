@@ -1,14 +1,38 @@
 const bibToWeb = require("./bibToWeb");
 const excelToWeb = require("./excelToWeb");
 
-module.exports = function(config) {
-  //excelToWeb("CameraReadyPapers2017.xls", "Performances and Artworks");
-  //excelToWeb("CameraReadyPapers2017.xls", "Talks and Demos");
-  //excelToWeb("CameraReadyPapers2017.xls", "Papers and Posters");
+module.exports = function (config) {
+  const commonFields = {
+    address: "Trondheim",
+    booktitle: "Proceedings of the International Web Audio Conference 2019",
+    editor: "",
+    month: "December",
+    publisher: "NTNU",
+    series: "WAC'19",
+    year: "2019",
+    issn: "",
+  };
 
-  bibToWeb("src/_data/papers/bib/");
+  const xlToParse = "WAC19Metadata.xls";
+  const tracks = [
+    "Keynote",
+    "Workshop",
+    "Performance",
+    "Artwork",
+    "Demo",
+    "Talk",
+    "Poster",
+    "Paper",
+  ];
 
-  config.addCollection("posts", collection => {
+  for (let track of tracks) {
+    excelToWeb(xlToParse, track, commonFields);
+    console.log(xlToParse, track, commonFields);
+  }
+
+  //bibToWeb("src/_data/papers/bib/");
+
+  config.addCollection("posts", (collection) => {
     return collection.getFilteredByGlob(["src/posts/*.md"]);
   });
 
@@ -19,11 +43,11 @@ module.exports = function(config) {
   return {
     dir: {
       input: "src",
-      output: "dist"
+      output: "dist",
     },
     templateFormats: ["html", "md", "css", "liquid"],
     htmlTemplateEngine: "liquid",
     markdownTemplateEngine: "liquid",
-    passthroughFileCopy: true
+    passthroughFileCopy: true,
   };
 };

@@ -11,7 +11,8 @@ date: '2019-05-23'
     artworks and performances have been single peer-reviewed by an expert program commitee (with at least 2-3 reviews).
   </li>
   <li><strong>Creative Commons license</strong>: The WAC papers are licensed under a <a
-      href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution 4.0
+      href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">Creative Commons Attribution
+      4.0
       International License (CC BY 4.0)</a>, and the copyright remains to the author.</li>
   <li><strong>ISSN</strong>: The ISSN for the proceedings series is ISSN 2663-5844.</li>
   <li><strong>Items</strong>: Each item has an individual page with the title of the work, author
@@ -24,6 +25,176 @@ date: '2019-05-23'
 </ul>
 
 <h2>WAC Proceedings (in backwards chronological order)</h2>
+
+<h2>2019</h2>
+
+<h3>Papers</h3>
+
+{% for post in collections.year2019 %}
+{% if post.data.track == 'Paper' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <img src="/assets/images/pdf.svg" height="20px" width="20px" />
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <img src="/assets/images/video.svg" height="17px" width="17px" />
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Posters</h3>
+
+{% for post in collections.year2019 %}
+{% if post.data.track == 'Poster' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <img src="/assets/images/pdf.svg" height="20px" width="20px" />
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <img src="/assets/images/video.svg" height="17px" width="17px" />
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Talks</h3>
+
+{% for post in collections.year2019 %}
+{% if post.data.track == 'Talk' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <img src="/assets/images/pdf.svg" height="20px" width="20px" />
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <img src="/assets/images/video.svg" height="17px" width="17px" />
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Demos</h3>
+
+{% for post in collections.year2019 %}
+{% if post.data.track == 'Demo' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <img src="/assets/images/pdf.svg" height="20px" width="20px" />
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <img src="/assets/images/video.svg" height="17px" width="17px" />
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Artworks</h3>
+
+{% for post in collections.year2019 %}
+{% if post.data.track == 'Artwork' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <img src="/assets/images/pdf.svg" height="20px" width="20px" />
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <img src="/assets/images/video.svg" height="17px" width="17px" />
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Performances</h3>
+
+{% for post in collections.year2019 %}
+{% if post.data.track == 'Performance' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <img src="/assets/images/pdf.svg" height="20px" width="20px" />
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <img src="/assets/images/video.svg" height="17px" width="17px" />
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Keynotes</h3>
+
+{% for post in collections.year2019 %}
+{% if post.data.track == 'Keynote' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <img src="/assets/images/pdf.svg" height="20px" width="20px" />
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <img src="/assets/images/video.svg" height="17px" width="17px" />
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
+
+<h3>Workshops</h3>
+
+{% for post in collections.year2019 %}
+{% if post.data.track == 'Workshop' %}
+<ul>
+  <li>
+    {{ post.data.webAuthor }}:
+    <a href="{{ post.url }}">{{ post.data.title }}</a>
+
+    {% if post.data.pdflink != 'none' %}
+    <img src="/assets/images/pdf.svg" height="20px" width="20px" />
+    {% endif %}
+
+    {% if post.data.media != 'none' %}
+    <img src="/assets/images/video.svg" height="17px" width="17px" />
+    {% endif %}
+  </li>
+</ul>
+{% endif %}
+{% endfor %}
 
 <h2>2018</h2>
 

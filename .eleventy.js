@@ -5,12 +5,12 @@ module.exports = function (config) {
   const commonFields = {
     address: "Trondheim",
     booktitle: "Proceedings of the International Web Audio Conference 2019",
-    editor: "",
+    editor: "Xambó, Anna and Martín, Sara R. and Roma, Gerard", //Write in bibtex format
     month: "December",
     publisher: "NTNU",
     series: "WAC'19",
     year: "2019",
-    issn: "",
+    issn: "2663-5844",
   };
 
   const xlToParse = "WAC19Metadata.xls";

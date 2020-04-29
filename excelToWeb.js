@@ -81,7 +81,7 @@ year: "${commonFields.year}"
 tags: year${commonFields.year}
 media: "${result[x]["Media"]}"
 pdflink: "${pdfLink}"
-ISSN: ""
+ISSN: "${commonFields.issn}"
 ---`;
 
           fs.writeFileSync(

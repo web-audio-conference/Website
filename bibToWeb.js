@@ -5,20 +5,27 @@ const path = require("path");
 let mdPath = "src/posts/";
 let jsonPath = "src/_data/papers/json/";
 
-module.exports = function(bibs) {
+module.exports = function (bibs) {
   // Parsing bibfiles and writing md files from it
 
   const bibFiles = fs.readdirSync(bibs);
 
-  bibFiles.forEach(function(file) {
+  bibFiles.forEach(function (file, index) {
     const bib = fs.readFileSync(path.join(bibs, file), "utf8");
     const parsed = bibtexParse.entries(bib);
 
     fs.writeFileSync(
-      path.join(jsonPath, "bibtojson2.json"),
+      path.join(jsonPath, `bibtojson${index}.json`),
       JSON.stringify(parsed),
       "utf8"
     );
+
+    const newAddresses = [
+      "Paris, France",
+      "Atlanta, GA, USA",
+      "London, United Kingdom",
+      "Berlin, Germany",
+    ];
 
     for (let i in parsed) {
       let title,
@@ -58,11 +65,8 @@ module.exports = function(bibs) {
 
       if (author.includes(" and ")) {
         const authors = author.split(" and ");
-        authors.forEach(function(element) {
-          let revAuthor = element
-            .split(",")
-            .reverse()
-            .join(" ");
+        authors.forEach(function (element) {
+          let revAuthor = element.split(",").reverse().join(" ");
           newAuthors += revAuthor + ",";
         });
         webAuthor = newAuthors.slice(1, -1);
@@ -101,7 +105,7 @@ module.exports = function(bibs) {
       const data = `--- 
 title: "${title}" 
 abstract: "${abstract}" 
-address: "${address}" 
+address: "${newAddresses[index]}" 
 author: "${author}"
 webAuthor: "${webAuthor}" 
 booktitle: "${booktitle}" 

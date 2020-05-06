@@ -3,17 +3,18 @@ const excelToWeb = require("./excelToWeb");
 
 module.exports = function (config) {
   const commonFields = {
-    address: "Trondheim",
-    booktitle: "Proceedings of the International Web Audio Conference 2019",
+    // Change values to the current
+    address: "Trondheim, Norway",
+    booktitle: "Proceedings of the International Web Audio Conference",
     editor: "Xambó, Anna and Martín, Sara R. and Roma, Gerard", //Write in bibtex format
     month: "December",
     publisher: "NTNU",
-    series: "WAC'19",
+    series: "WAC '19",
     year: "2019",
     issn: "2663-5844",
   };
 
-  const xlToParse = "WAC19Metadata.xls";
+  const xlToParse = "WAC19Metadata.xls"; //Change to current year's xls-file
   const tracks = [
     "Keynote",
     "Workshop",

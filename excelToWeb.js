@@ -63,6 +63,9 @@ module.exports = function (excelFile, sheetname, commonFields) {
 
           let pdfLink = `/_data/papers/pdf/${commonFields.year}/${commonFields.year}_${result[x]["Paper ID"]}.pdf`;
 
+          let media = result[x]["Media"] != "" ? result[x]["Media"] : "none";
+          console.log(media);
+
           let data = `---
 title: "${result[x]["Paper Title"]}"
 abstract: "${result[x]["Abstract"]}"
@@ -72,14 +75,14 @@ editor: "${commonFields.editor}"
 month: "${commonFields.month}"
 publisher: "${commonFields.publisher}"
 series: "${commonFields.series}"
-pages: ""
+pages: "${result[x]["Pages"]}"
 ID: "${result[x]["Paper ID"]}"
 author: "${bibtexAuthor}"
 webAuthor: "${webAuthor}"
 track: "${result[x]["Track Name"]}"
 year: "${commonFields.year}"
 tags: year${commonFields.year}
-media: "${result[x]["Media"]}"
+media: ${media}
 pdflink: "${pdfLink}"
 ISSN: "${commonFields.issn}"
 ---`;

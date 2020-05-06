@@ -28,10 +28,9 @@ module.exports = function (config) {
 
   for (let track of tracks) {
     excelToWeb(xlToParse, track, commonFields);
-    console.log(xlToParse, track, commonFields);
   }
 
-  //bibToWeb("src/_data/papers/bib/");
+  bibToWeb("src/_data/papers/bib/");
 
   config.addCollection("posts", (collection) => {
     return collection.getFilteredByGlob(["src/posts/*.md"]);

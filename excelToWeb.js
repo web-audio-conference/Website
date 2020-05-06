@@ -64,7 +64,6 @@ module.exports = function (excelFile, sheetname, commonFields) {
           let pdfLink = `/_data/papers/pdf/${commonFields.year}/${commonFields.year}_${result[x]["Paper ID"]}.pdf`;
 
           let media = result[x]["Media"] != "" ? result[x]["Media"] : "none";
-          console.log(media);
 
           let data = `---
 title: "${result[x]["Paper Title"]}"

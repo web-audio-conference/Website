@@ -1,10 +1,30 @@
-# Website
+# Web Audio Conference website
 
 ## Get started
 
-1. Run "npm install" to install dependencies
+1. Install Node.js from [Node.js](https://nodejs.org/en/) or [NVM](https://github.com/nvm-sh/nvm).
+2. Clone the repository
+3. Run "npm install" to install dependencies.
 
-2. Run "npm start" to generate output folder called "dist" and to start servers.
+### Process of adding a new year
+
+- Export the xls-file from CMT.
+- Go through the xls-file.
+  1. Make sure it has no special caracters in the author names, captitalised names etc.
+  2. Add columns in the xls-files for pagination and Media-links. You can take a look at the [xls-file from 2019](src/_data/papers/excel) and see how it should be added.
+  3. The script seperates names by the character ";". Make sure that character is not used for anything else in "Author Names".
+- Add all the pdf's to a new folder with the current year in [this folder](src/_data/papers/pdf).
+- Every pdf should be named in the format "year_id". You can use the script [pdfRename](pdfRename.js) to rename every pdf in the new folder to this format. to run it write "node pdfRename.js" in the terminal.
+- Go to [ProceedingsTemp.js](ProceedingsTemp.js), and edit all occurences of 2019 to the year of the new proceedings. Also make sure to add/remove tracks to fit your xls-file if needed.
+- Copy the edited code and paste it above the last year (line 30) in [proceedings.html](src/proceedings.html).
+- Go to [eleventy.js](.eleventy.js) and edit the commonFields object values (line 7 to 14) to the values of the current proceedings.
+- Change the name of the xls-file to the current year's xls-file on line 17.
+- Make sure you have saved both eleventy.js and proceedings.html.
+- Run "npm start" in the terminal. This will build the dist-folder which can be served on https://webaudioconf.com/.
+
+If you encounter problems, it might be due to unexpected differences in the xls-file for the current year to the last year. You can debug what is going wrong in the terminal. I have not made the system handle all possible exceptions. If you have to (and please, if you want to) you can update [excelToWeb.js]() and make it handle your exceptions.
+
+All updates to the system that will improve the smooothness and lead to fewer steps needed for updating the proceedings are very much welcome!
 
 ## Website purpose
 

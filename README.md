@@ -9,7 +9,7 @@
 
 ## Website purpose
 
-This website serves all previous proceedings of the Web Audio Conference since its beginning in 2015. All proceedings are listed by year and track (Papers, Posters, Talks etc), and each conference items has its own webpage, displaying its abstract, BibTex, and link to PDF and video if these are available.
+This website serves all previous proceedings of the Web Audio Conference since its beginning in 2015. All proceedings are listed by year and track (Papers, Posters, Talks etc), and each conference item has its own webpage, displaying its abstract, BibTeX, and link to PDF and video if these are available.
 
 ## Built with
 
@@ -41,21 +41,64 @@ If you encounter problems, it might be due to unexpected differences in the xls-
 
 All updates to the system that will improve the smooothness and lead to fewer steps needed for updating the proceedings are very much welcome!
 
+## BibTex format
+
+Every conference item page displays a BibTex format, and it takes this form:
+
+```
+@inproceedings{YYYY_ID,
+  abstract = {Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.},
+  address = {City, Country},
+  author = {Surname1, Name1 and Surname2, Name2 and Surname3, Name3},
+  booktitle = {Proceedings of the  International Web Audio  Conference},
+  editor = {Surname4, Name4 and Surname5, Name5 and Surname6, Name6},
+  month = {Month},
+  pages = {0--00},
+  publisher = {PublisherName},
+  series = {WAC 'YY},
+  title = {Title of the Paper},
+  year = {YYYY},
+  ISSN = {2663-5844}
+}
+```
+
+Dynamic content that is fed by the xls-file includes:
+
+- ID
+- Abstract
+- Author
+- Pages
+- Title
+
+Content that is directly changed in the [eleventy.js](.eleventy.js)-file includes:
+
+- Address
+- Editor
+- Month
+- Publisher
+- Series
+- Year
+
+Content that always stays the same:
+
+- Booktitle
+- ISSN
+
 ## How it has been built
 
 Since there are a lot of proceedings, and there will be plenty more every year into the future, it is preferable to have this part of the website "build itself".
 
-Every conference item from 2015 until 2018 are built by extracting data from BibTeX-collections. This has been achieved using the bibtex-parse package, which is used in the module called "bibToWeb.js". In this module we convert the BibTeX-collection to JSON, loop through the JSON data, and extract the data we want to have diplayed on the website, or present in the BibTeX we display on the conference item pages. The extracted data is then written to markdown-files as YAML. When the loop is finished it has built a markdown-file for each conference item, and these files are what is passed to the output directory (dist) during the build process.
+Every conference item from 2015 until 2018 is built by extracting data from BibTeX-collections. This has been achieved using the bibtex-parse package, which is used in the module called "bibToWeb.js". In this module we convert the BibTeX-collection to JSON, loop through the JSON data, and extract the data we want to have diplayed on the website, or present in the BibTeX we display on the conference item pages. The extracted data is then written to markdown-files as YAML. When the loop is finished it has built a markdown-file for each conference item, and these files are what is passed to the output directory (dist) during the build process.
 
-When 11ty builds the website it looks in its configuration file, called .eleventy.js. Here we run the bibToWeb.js module, so that it is included in the build process. If this is how 11ty wants us to do things...We have no idea, but it turned out to work.
+When 11ty builds the website it looks in its configuration file, called .eleventy.js. Here we run the bibToWeb.js module, so that it is included in the build process. If this is how 11ty wants us to do things... We have no idea, but it turned out to work.
 
 ## From 2019 and into the future!
 
-From 2019 and forward we build these "proceeding-pages" from excel files. This has been achived using the module called xls-to-json, which converts excel-sheets to JSON, and is used in the module called excelToWeb.js. The extraction and build process is then almost identical to the one in bibToWeb. A step by step description on how to use the system is explained in section "Process of adding a new year".
+From 2019 and forward we build these conference item pages from excel files. This has been achived using the module called xls-to-json, which converts excel-sheets to JSON, and is used in the module called excelToWeb.js. The extraction and build process is then almost identical to the one in bibToWeb. A step by step description on how to use the system is explained in section ["Process of adding a new year"](#Process-of-adding-a-new-year).
 
 ## Code optimalization and improved automation of adding a new year
 
-The code is written to do its work, and few iterations are made. If you want to contribute, please do all the improvements you see necessary. Maybe the most needed work to be done, is to automate steps involving changes to proceedings.html, where you have to edit a bunch of code in the ProceedingsTemp.html and then paste it into proceedings.html. it should be possible to eliminate these steps completely. Not all the files that are passed to the dist-folder are necessary to serve, so if you want you can exclude them in eleventy.js.
+The code is written to do its work, and few iterations are made. If you want to contribute, please do all the improvements you see necessary. Maybe the most needed work to be done is the automation of the steps involving changes to proceedings.html, where you have to edit a bunch of code in the ProceedingsTemp.html and then paste it into proceedings.html. it should be possible to eliminate these steps completely. Not all the files that are passed to the dist-folder are necessary to serve, so if you want you can exclude them in eleventy.js.
 
 ## Improving design
 
@@ -69,7 +112,7 @@ Design has not been the main focus of the work done on this project. If you have
 
 - Jørgen Varpe
 
-#### BibTex metadata made by:
+#### BibTeX metadata made by:
 
 - Eigil Aandahl
 

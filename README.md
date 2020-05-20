@@ -41,9 +41,9 @@ If you encounter problems, it might be due to unexpected differences in the xls-
 
 All updates to the system that will improve the smooothness and lead to fewer steps needed for updating the proceedings are very much welcome!
 
-## BibTex format
+## BibTeX format
 
-Every conference item page displays a BibTex format, and it takes this form:
+Every conference item page displays a BibTeX format, and it takes this form:
 
 ```
 @inproceedings{YYYY_ID,

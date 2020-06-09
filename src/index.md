@@ -8,6 +8,6 @@ WAC is an international conference dedicated to web audio technologies and appli
 
 ## Upcoming Conference
 
-The 6th Web Audio Conference will be in Barcelona from the 9th to the 11th of December, 2020.
+The 6th Web Audio Conference will be in Barcelona in spring 2021.
 
-You can find all the information at <a href="https://www.webaudioconf2020.com/" target="_blank" rel="noopener">webaudioconf2020.com</a>
+You can find all the information at <a href="https://www.webaudioconf2021.com/" target="_blank" rel="noopener">webaudioconf2021.com</a>

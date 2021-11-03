@@ -1,11 +1,25 @@
 const fs = require("fs");
+const path = require('path');
 
-const year = "2019";
+const year = "2021";
 const dir = `src/_data/papers/pdf/${year}/`;
-const oldName = "CameraReadySubmission";
+const folderName = "CameraReadys 2-60/";
+const subfolderName = 'CameraReady'
 
-for (ID = 0; ID < 100; ID++) {
-  try {
-    fs.renameSync(`${dir}${oldName} ${ID}.pdf`, `${dir}${year}_${ID}.pdf`);
-  } catch (error) {}
+
+let folders = fs.readdirSync(path.resolve(__dirname, dir, folderName));
+console.log(folders.length)
+
+for (let folder of folders){
+  let files = fs.readdirSync(path.resolve(__dirname, dir, folderName, folder, subfolderName))
+  for (let file of files){
+
+      var oldPath = path.resolve(__dirname, dir, folderName, folder, subfolderName, file);
+      var newPath = path.resolve(__dirname, dir, year+'_'+ folder +'.pdf');
+
+      fs.rename(oldPath, newPath, function (err) {
+        if (err) throw err
+        console.log('Successfully renamed to '+ newPath)
+      })
+  }
 }
